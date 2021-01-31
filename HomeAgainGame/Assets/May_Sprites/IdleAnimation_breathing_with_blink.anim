@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleAnimation_breathing
+  m_Name: IdleAnimation_breathing_with_blink
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -62,13 +62,13 @@ AnimationClip:
       value: {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e,
         type: 3}
     - time: 1.1666666
-      value: {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e,
+      value: {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e,
         type: 3}
     - time: 1.25
-      value: {fileID: 5878916555047861095, guid: a4f10f1b11111bf4a9323749199bc30e,
+      value: {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e,
         type: 3}
     - time: 1.3333334
-      value: {fileID: -2982771735075685593, guid: a4f10f1b11111bf4a9323749199bc30e,
+      value: {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e,
         type: 3}
     - time: 1.4166666
       value: {fileID: 8645011242773462318, guid: a4f10f1b11111bf4a9323749199bc30e,
@@ -205,9 +205,9 @@ AnimationClip:
     - {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
     - {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
     - {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
-    - {fileID: -1569055328507108888, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
-    - {fileID: 5878916555047861095, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
-    - {fileID: -2982771735075685593, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
+    - {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
+    - {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
+    - {fileID: -4276291228555182465, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
     - {fileID: 8645011242773462318, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
     - {fileID: -207342748122142851, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
     - {fileID: 6071069995799042083, guid: a4f10f1b11111bf4a9323749199bc30e, type: 3}
