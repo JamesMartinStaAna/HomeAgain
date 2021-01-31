@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: c12bdb8c9ab6123458adc37e141c5bc3
+guid: 607cc65c2c199cc44829c64eea7de925
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6796254291709437451
-    second: Maywalk_0
+      213: 5837958530182322726
+    second: Maywalk_normalmap_0
   - first:
-      213: -5139813454216575460
-    second: Maywalk_1
+      213: -5477772364928634934
+    second: Maywalk_normalmap_1
   - first:
-      213: 3230241560354989418
-    second: Maywalk_2
+      213: 4559913118877948499
+    second: Maywalk_normalmap_2
   - first:
-      213: 8250008594240852677
-    second: Maywalk_3
+      213: -5392016327465130100
+    second: Maywalk_normalmap_3
   - first:
-      213: 3156378969261555208
-    second: Maywalk_4
+      213: -394408080068301935
+    second: Maywalk_normalmap_4
   - first:
-      213: -6876068928650777936
-    second: Maywalk_5
+      213: 7859738215687818120
+    second: Maywalk_normalmap_5
   - first:
-      213: -2965041990123041092
-    second: Maywalk_6
+      213: -8798236925616117409
+    second: Maywalk_normalmap_6
   - first:
-      213: 5996643426139995822
-    second: Maywalk_7
+      213: -1862226042203633024
+    second: Maywalk_normalmap_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
+    enableMipMap: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -42,7 +42,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: 0.25
+    heightScale: 0.016
     normalMapFilter: 0
   isReadable: 0
   streamingMipmaps: 0
@@ -73,9 +73,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -88,7 +88,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Maywalk_0
+      name: Maywalk_normalmap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,20 +119,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f95f63dabadea1a0800000000000000
-      internalID: -6796254291709437451
+      spriteID: 62a9af43a58940150800000000000000
+      internalID: 5837958530182322726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_1
+      name: Maywalk_normalmap_1
       rect:
         serializedVersion: 2
         x: 100
@@ -140,20 +140,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c16c5a135e6bba8b0800000000000000
-      internalID: -5139813454216575460
+      spriteID: acf2afb7e0b0bf3b0800000000000000
+      internalID: -5477772364928634934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_2
+      name: Maywalk_normalmap_2
       rect:
         serializedVersion: 2
         x: 200
@@ -161,20 +161,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a65a9a7a59f14dc20800000000000000
-      internalID: 3230241560354989418
+      spriteID: 35a1d5972d0184f30800000000000000
+      internalID: 4559913118877948499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_3
+      name: Maywalk_normalmap_3
       rect:
         serializedVersion: 2
         x: 300
@@ -182,20 +182,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c255a52b1bed7270800000000000000
-      internalID: 8250008594240852677
+      spriteID: c87a552e7b5bb25b0800000000000000
+      internalID: -5392016327465130100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_4
+      name: Maywalk_normalmap_4
       rect:
         serializedVersion: 2
         x: 400
@@ -203,20 +203,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e395703f5bdcb20800000000000000
-      internalID: 3156378969261555208
+      spriteID: 19b2cfad0f7c68af0800000000000000
+      internalID: -394408080068301935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_5
+      name: Maywalk_normalmap_5
       rect:
         serializedVersion: 2
         x: 500
@@ -224,20 +224,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ba6ba88dbb4390a0800000000000000
-      internalID: -6876068928650777936
+      spriteID: 88b82a5b346631d60800000000000000
+      internalID: 7859738215687818120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_6
+      name: Maywalk_normalmap_6
       rect:
         serializedVersion: 2
         x: 600
@@ -245,20 +245,20 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe499af40e0ad6d0800000000000000
-      internalID: -2965041990123041092
+      spriteID: f592de6912266e580800000000000000
+      internalID: -8798236925616117409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maywalk_7
+      name: Maywalk_normalmap_7
       rect:
         serializedVersion: 2
         x: 700
@@ -266,14 +266,14 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae71cbac6b583350800000000000000
-      internalID: 5996643426139995822
+      spriteID: 08a88f6f74b0826e0800000000000000
+      internalID: -1862226042203633024
       vertices: []
       indices: 
       edges: []
