@@ -6,33 +6,96 @@ public class May_control_script : MonoBehaviour
 {
     public float MovementSpeed = 1;
     public Animator animator;
+    public GameObject interactIcon;
+
+    private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
 
     private void Start()
     {
-        
+   
     }
 
 
     private void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.E))
+            CheckInteraction();
+
+
         // Character Movement:
         var movement = Input.GetAxis("Horizontal");
 
-        Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = -6;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = 6;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        transform.localScale = characterScale;
+
 
         // Character Animation 
         animator.SetFloat("speed", Mathf.Abs(movement));
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
+   
   
+    }
+
+    //void OnDrawGizmos()
+    //{
+    //    float maxDistance = 1f;
+    //    RaycastHit hit;
+
+    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale / 2f, Vector3.forward, out hit,
+    //        transform.rotation, maxDistance);
+    //    if (isHit)
+    //    {
+    //        Gizmos.color = Color.red;
+    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+    //    }
+    //    else
+    //    {
+    //        Gizmos.color = Color.green;
+    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+    //    }
+    //}
+
+    public void OpenInteractableIcon()
+    {
+        interactIcon.SetActive(true);
+
+    }
+
+    public void CloseInteractableIcon()
+    {
+        interactIcon.SetActive(false);
+
+    }
+
+    private void CheckInteraction()
+    {
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 2f, transform.forward, transform.rotation);
+
+
+        if (hits.Length > 0)
+
+        {
+            foreach (RaycastHit rc in hits)
+          
+            {
+                if (rc.transform.GetComponent<Interactable>())
+                {
+                    Debug.Log("Did Hit");
+                    rc.transform.GetComponent<Interactable>().Interact();
+
+                    return;
+
+                }
+            }
+        }
     }
 }
