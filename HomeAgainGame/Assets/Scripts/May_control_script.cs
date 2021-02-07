@@ -7,6 +7,7 @@ public class May_control_script : MonoBehaviour
     public float MovementSpeed = 1;
     public Animator animator;
     public GameObject interactIcon;
+    public GameObject interactIcon_Light;
     Rigidbody rb;
  
 
@@ -77,6 +78,18 @@ public class May_control_script : MonoBehaviour
     public void CloseInteractableIcon()
     {
         interactIcon.SetActive(false);
+
+    }
+
+    public void OpenInteractableIconlight()
+    {
+        interactIcon_Light.SetActive(true);
+
+    }
+
+    public void CloseInteractableIconlight()
+    {
+        interactIcon_Light.SetActive(false);
 
     }
 

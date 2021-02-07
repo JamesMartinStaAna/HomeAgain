@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class Openable_0bjects : Interactable
+public class Light_Switches : Interactable
 {
     public Sprite active;
     public Sprite inactive;
