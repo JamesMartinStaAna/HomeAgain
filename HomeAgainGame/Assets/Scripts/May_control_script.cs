@@ -44,26 +44,26 @@ public class May_control_script : MonoBehaviour
    
   
     }
+    //// for checking boxcast 
+    //void OnDrawGizmos()
+    //{
+    //    float maxDistance = 1f;
+    //    RaycastHit hit;
 
-    void OnDrawGizmos()
-    {
-        float maxDistance = 1f;
-        RaycastHit hit;
-
-        bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
-            transform.rotation, maxDistance);
-        if (isHit)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
-            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
-        }
-        else
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
-        }
-    }
+    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
+    //        transform.rotation, maxDistance);
+    //    if (isHit)
+    //    {
+    //        Gizmos.color = Color.red;
+    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+    //    }
+    //    else
+    //    {
+    //        Gizmos.color = Color.green;
+    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+    //    }
+    //}
 
     public void OpenInteractableIcon()
     {
@@ -80,7 +80,7 @@ public class May_control_script : MonoBehaviour
     private void CheckInteraction()
     {
        
-        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 4f, transform.forward, transform.rotation);
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 8f, transform.forward, transform.rotation);
 
 
         if (hits.Length > 0)
@@ -93,7 +93,6 @@ public class May_control_script : MonoBehaviour
                 {
                     Debug.Log("Did Hit");
                     rc.transform.GetComponent<Interactable>().Interact();
-
                     return;
 
                 }
