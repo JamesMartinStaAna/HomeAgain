@@ -7,6 +7,7 @@ public class May_control_script : MonoBehaviour
     public float MovementSpeed = 1;
     public Animator animator;
     public GameObject interactIcon;
+ 
 
     private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
 
@@ -44,25 +45,25 @@ public class May_control_script : MonoBehaviour
   
     }
 
-    //void OnDrawGizmos()
-    //{
-    //    float maxDistance = 1f;
-    //    RaycastHit hit;
+    void OnDrawGizmos()
+    {
+        float maxDistance = 1f;
+        RaycastHit hit;
 
-    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale / 2f, Vector3.forward, out hit,
-    //        transform.rotation, maxDistance);
-    //    if (isHit)
-    //    {
-    //        Gizmos.color = Color.red;
-    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
-    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
-    //    }
-    //    else
-    //    {
-    //        Gizmos.color = Color.green;
-    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
-    //    }
-    //}
+        bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
+            transform.rotation, maxDistance);
+        if (isHit)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+        }
+    }
 
     public void OpenInteractableIcon()
     {
@@ -78,7 +79,8 @@ public class May_control_script : MonoBehaviour
 
     private void CheckInteraction()
     {
-        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 2f, transform.forward, transform.rotation);
+       
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 4f, transform.forward, transform.rotation);
 
 
         if (hits.Length > 0)
