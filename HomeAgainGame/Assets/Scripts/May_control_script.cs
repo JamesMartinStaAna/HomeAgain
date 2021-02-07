@@ -7,12 +7,14 @@ public class May_control_script : MonoBehaviour
     public float MovementSpeed = 1;
     public Animator animator;
     public GameObject interactIcon;
+    Rigidbody rb;
  
 
     private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
    
     }
 
@@ -39,7 +41,8 @@ public class May_control_script : MonoBehaviour
 
         // Character Animation 
         animator.SetFloat("speed", Mathf.Abs(movement));
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
+        //transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
    
   
