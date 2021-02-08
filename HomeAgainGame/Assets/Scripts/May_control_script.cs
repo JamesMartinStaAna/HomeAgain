@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class May_control_script : MonoBehaviour
 {
-    public float MovementSpeed = 1;
+    private float MovementSpeed = 5;
     public Animator animator;
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
