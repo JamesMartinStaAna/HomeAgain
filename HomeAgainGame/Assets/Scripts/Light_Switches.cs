@@ -37,7 +37,7 @@ public class Light_Switches : Interactable
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-         sr.sprite = inactive;
+        sr.sprite = inactive;
    
     }
 }

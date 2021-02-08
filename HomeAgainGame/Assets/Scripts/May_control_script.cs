@@ -23,6 +23,16 @@ public class May_control_script : MonoBehaviour
     private void Update()
     {
 
+        if (GameObject.FindWithTag("view") != null)
+        {
+            MovementSpeed = MovementSpeed - MovementSpeed;
+        }
+        else
+        {
+            MovementSpeed = 5;
+        }
+    
+
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
 
@@ -43,7 +53,6 @@ public class May_control_script : MonoBehaviour
         // Character Animation 
         animator.SetFloat("speed", Mathf.Abs(movement));
         rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
-        //transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
    
   
