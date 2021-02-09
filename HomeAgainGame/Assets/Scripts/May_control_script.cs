@@ -8,6 +8,7 @@ public class May_control_script : MonoBehaviour
     public Animator animator;
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
+    public GameObject interactIcon_Door;
     Rigidbody rb;
  
 
@@ -23,7 +24,7 @@ public class May_control_script : MonoBehaviour
     private void Update()
     {
 
-        if (GameObject.FindWithTag("view") != null)
+        if (GameObject.FindWithTag("open_image") != null)
         {
             MovementSpeed = MovementSpeed - MovementSpeed;
         }
@@ -35,6 +36,9 @@ public class May_control_script : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
+
+        if (Input.GetKeyDown(KeyCode.W))
+            CheckInteractiondoorUp();
 
 
         // Character Movement:
@@ -102,6 +106,18 @@ public class May_control_script : MonoBehaviour
 
     }
 
+    public void OpenInteractableIcondoor()
+    {
+        interactIcon_Door.SetActive(true);
+
+    }
+
+    public void CloseInteractableIcondoor()
+    {
+        interactIcon_Door.SetActive(false);
+
+    }
+
     private void CheckInteraction()
     {
        
@@ -118,6 +134,29 @@ public class May_control_script : MonoBehaviour
                 {
                     Debug.Log("Did Hit");
                     rc.transform.GetComponent<Interactable>().Interact();
+                    return;
+
+                }
+            }
+        }
+    }
+
+    private void CheckInteractiondoorUp()
+    {
+
+        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 8f, transform.forward, transform.rotation);
+
+
+        if (hits.Length > 0)
+
+        {
+            foreach (RaycastHit rc in hits)
+
+            {
+                if (rc.transform.GetComponent<Interactable>())
+                {
+                    Debug.Log("Did Hit");
+                    rc.transform.GetComponent<Interactable>().InteractdoorUp();
                     return;
 
                 }

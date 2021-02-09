@@ -10,6 +10,7 @@ TagManager:
   - light
   - view
   - May_room_light
+  - open_image
   layers:
   - Default
   - TransparentFX

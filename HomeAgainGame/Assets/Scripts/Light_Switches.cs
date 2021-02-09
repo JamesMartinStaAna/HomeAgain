@@ -34,6 +34,11 @@ public class Light_Switches : Interactable
 
     }
 
+    public override void InteractdoorUp()
+    {
+
+    }
+
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();

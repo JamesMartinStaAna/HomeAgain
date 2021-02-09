@@ -10,13 +10,18 @@ public abstract class Interactable : MonoBehaviour
 
     public abstract void Interact();
 
+    public abstract void InteractdoorUp();
+
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && gameObject.tag == "view")
             collision.GetComponent<May_control_script>().OpenInteractableIcon();
 
         if (collision.CompareTag("Player") && gameObject.tag == "light")
             collision.GetComponent<May_control_script>().OpenInteractableIconlight();
+
+        else if (collision.CompareTag("Player") && gameObject.tag == "Door")
+            collision.GetComponent<May_control_script>().OpenInteractableIcondoor();
 
 
 
@@ -25,11 +30,14 @@ public abstract class Interactable : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && gameObject.tag == "view")
             collision.GetComponent<May_control_script>().CloseInteractableIcon();
 
         if (collision.CompareTag("Player") && gameObject.tag == "light")
             collision.GetComponent<May_control_script>().CloseInteractableIconlight();
+
+        if (collision.CompareTag("Player") && gameObject.tag == "Door")
+            collision.GetComponent<May_control_script>().CloseInteractableIcondoor();
 
         Debug.Log(collision.name + "Exit");
     }
