@@ -10,7 +10,6 @@ public abstract class Interactable : MonoBehaviour
 
     public abstract void Interact();
 
-    public abstract void InteractdoorUp();
 
     private void OnTriggerEnter(Collider collision)
     {

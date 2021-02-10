@@ -9,11 +9,7 @@ public class Doors : Interactable
 
     public override void Interact()
     {
- 
-    }
-
-    public override void InteractdoorUp()
-    {
         Scene_Control.TransitionPlayer(target.transform.position);
     }
+
 }

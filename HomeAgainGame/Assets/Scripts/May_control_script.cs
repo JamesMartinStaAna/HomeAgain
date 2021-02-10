@@ -37,8 +37,7 @@ public class May_control_script : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
 
-        if (Input.GetKeyDown(KeyCode.W))
-            CheckInteractiondoorUp();
+  
 
 
         // Character Movement:
@@ -141,26 +140,4 @@ public class May_control_script : MonoBehaviour
         }
     }
 
-    private void CheckInteractiondoorUp()
-    {
-
-        RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 8f, transform.forward, transform.rotation);
-
-
-        if (hits.Length > 0)
-
-        {
-            foreach (RaycastHit rc in hits)
-
-            {
-                if (rc.transform.GetComponent<Interactable>())
-                {
-                    Debug.Log("Did Hit");
-                    rc.transform.GetComponent<Interactable>().InteractdoorUp();
-                    return;
-
-                }
-            }
-        }
-    }
 }

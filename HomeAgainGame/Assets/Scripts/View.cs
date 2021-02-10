@@ -29,10 +29,6 @@ public class View : Interactable
 
     }
 
-    public override void InteractdoorUp()
-    {
-
-    }
 
     private void Start()
     {
