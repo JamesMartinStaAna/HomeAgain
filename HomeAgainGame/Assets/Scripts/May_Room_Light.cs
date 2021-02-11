@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Object_Sprite_Change_cause : MonoBehaviour
+public class May_Room_Light : MonoBehaviour
 {
     public Sprite active;
     public Sprite inactive;
