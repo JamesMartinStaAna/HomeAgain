@@ -27,10 +27,12 @@ public class May_control_script : MonoBehaviour
         if (GameObject.FindWithTag("open_image") != null)
         {
             MovementSpeed = MovementSpeed - MovementSpeed;
+            animator.enabled = false;
         }
         else
         {
             MovementSpeed = 5;
+            animator.enabled = true;
         }
     
 
@@ -43,6 +45,7 @@ public class May_control_script : MonoBehaviour
         // Character Movement:
         var movement = Input.GetAxis("Horizontal");
 
+   
         if (Input.GetAxis("Horizontal") < 0)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
@@ -53,12 +56,14 @@ public class May_control_script : MonoBehaviour
         }
 
 
-        // Character Animation 
+        // Character Animation                                          
+
         animator.SetFloat("speed", Mathf.Abs(movement));
         rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
 
-   
-  
+
+
+
     }
     //// for checking boxcast 
     //void OnDrawGizmos()
