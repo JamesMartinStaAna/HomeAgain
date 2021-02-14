@@ -33,9 +33,9 @@ public class Scene_Control : MonoBehaviour
     {
         fade.gameObject.SetActive(true);
 
-        for(float f = 0; f < 1; f += Time.deltaTime / 0.25f)
+        for(float f = 0; f < 1; f += Time.deltaTime / 0.5f)
         {
-            fade.color = new Color(0, 0, 0, Mathf.Lerp(0f, 1f, f));
+            fade.color = new Color(0, 0, 0, Mathf.Lerp(0.0f, 1f, f));
             yield return null;
         }
 
@@ -43,9 +43,9 @@ public class Scene_Control : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
-        for (float f = 0; f < 1; f += Time.deltaTime / 0.25f)
+        for (float f = 0; f < 1; f += Time.deltaTime / 0.5f)
         {
-            fade.color = new Color(0, 0, 0, Mathf.Lerp(1f, 0f, f));
+            fade.color = new Color(0, 0, 0, Mathf.Lerp(1f, 0.0f, f));
             yield return null;
         }
 

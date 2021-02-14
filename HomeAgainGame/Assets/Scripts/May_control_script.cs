@@ -9,8 +9,7 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
-    public float cooldownTime = 2;
-    public float nextTime = 0;
+
     Rigidbody rb;
  
 
@@ -39,17 +38,8 @@ public class May_control_script : MonoBehaviour
     
 
         // Character Interact:
-        if (Time.time > nextTime)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                CheckInteraction();
-                nextTime = Time.time + cooldownTime;
-            
-            }
-
-        }
-
+        if (Input.GetKeyDown(KeyCode.E))
+            CheckInteraction();
 
   
 
