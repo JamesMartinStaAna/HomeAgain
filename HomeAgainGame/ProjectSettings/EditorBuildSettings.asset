@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 0e98821b56097c74fa998a8f7ae810a9
+  - enabled: 1
+    path: Assets/Scenes/May_Bedroom.unity
+    guid: 84781ff8f1d1ebc4ea6b3cb49d130e77
   m_configObjects: {}
