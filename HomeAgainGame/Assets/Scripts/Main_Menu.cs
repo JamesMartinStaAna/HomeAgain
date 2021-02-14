@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu : MonoBehaviour
 {
+   public Animator animator;
+
    public void PlayGame()
     {
         SceneManager.LoadScene("May_Bedroom");
     }
+
 }
