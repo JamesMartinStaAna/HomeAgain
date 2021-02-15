@@ -9,6 +9,7 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
+
     Rigidbody rb;
  
 
@@ -36,6 +37,7 @@ public class May_control_script : MonoBehaviour
         }
     
 
+        // Character Interact:
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
 

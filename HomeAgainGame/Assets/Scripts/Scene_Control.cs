@@ -35,7 +35,7 @@ public class Scene_Control : MonoBehaviour
 
         for(float f = 0; f < 1; f += Time.deltaTime / 0.5f)
         {
-            fade.color = new Color(0, 0, 0, Mathf.Lerp(0, 1, f));
+            fade.color = new Color(0, 0, 0, Mathf.Lerp(0.0f, 1f, f));
             yield return null;
         }
 
@@ -45,7 +45,7 @@ public class Scene_Control : MonoBehaviour
 
         for (float f = 0; f < 1; f += Time.deltaTime / 0.5f)
         {
-            fade.color = new Color(0, 0, 0, Mathf.Lerp(1, 0, f));
+            fade.color = new Color(0, 0, 0, Mathf.Lerp(1f, 0.0f, f));
             yield return null;
         }
 

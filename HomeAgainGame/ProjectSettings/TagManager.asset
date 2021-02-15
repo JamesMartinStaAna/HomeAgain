@@ -12,6 +12,7 @@ TagManager:
   - May_room_light
   - open_image
   - kitchen_light
+  - transition
   layers:
   - Default
   - TransparentFX
