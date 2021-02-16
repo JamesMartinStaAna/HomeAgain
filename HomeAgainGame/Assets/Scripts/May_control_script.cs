@@ -9,6 +9,7 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
+    public GameObject pauseMenu;
 
     Rigidbody rb;
  
@@ -41,6 +42,11 @@ public class May_control_script : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
             CheckInteraction();
 
+        //Pause Menu
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
   
 
 
@@ -121,6 +127,12 @@ public class May_control_script : MonoBehaviour
     public void CloseInteractableIcondoor()
     {
         interactIcon_Door.SetActive(false);
+
+    }
+
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
 
     }
 
