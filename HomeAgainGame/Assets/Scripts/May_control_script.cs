@@ -9,7 +9,9 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
+    public GameObject interactIcon_Stairs;
     public GameObject pauseMenu;
+    private bool animateMove;
 
     Rigidbody rb;
  
@@ -30,17 +32,22 @@ public class May_control_script : MonoBehaviour
         {
             MovementSpeed = MovementSpeed - MovementSpeed;
             animator.enabled = false;
+            animateMove = false;
         }
         else
         {
             MovementSpeed = 5;
             animator.enabled = true;
+            animateMove = true;
         }
     
 
         // Character Interact:
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && rb.velocity.magnitude == 0)
+        {
             CheckInteraction();
+        }
+
 
         //Pause Menu
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -53,15 +60,19 @@ public class May_control_script : MonoBehaviour
         // Character Movement:
         var movement = Input.GetAxis("Horizontal");
 
-   
-        if (Input.GetAxis("Horizontal") < 0)
+        if(animateMove == true)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        }
+
 
 
         // Character Animation                                          
@@ -73,26 +84,26 @@ public class May_control_script : MonoBehaviour
 
 
     }
-    //// for checking boxcast 
-    //void OnDrawGizmos()
-    //{
-    //    float maxDistance = 1f;
-    //    RaycastHit hit;
+    // for checking boxcast 
+    void OnDrawGizmos()
+    {
+        float maxDistance = 1f;
+        RaycastHit hit;
 
-    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
-    //        transform.rotation, maxDistance);
-    //    if (isHit)
-    //    {
-    //        Gizmos.color = Color.red;
-    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
-    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
-    //    }
-    //    else
-    //    {
-    //        Gizmos.color = Color.green;
-    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
-    //    }
-    //}
+        bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
+            transform.rotation, maxDistance);
+        if (isHit)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+        }
+    }
 
     public void OpenInteractableIcon()
     {
@@ -130,6 +141,18 @@ public class May_control_script : MonoBehaviour
 
     }
 
+    public void OpenInteractableIconstairs()
+    {
+        interactIcon_Stairs.SetActive(true);
+
+    }
+
+    public void CloseInteractableIconstairs()
+    {
+        interactIcon_Stairs.SetActive(false);
+
+    }
+
     public void Pause()
     {
         pauseMenu.SetActive(true);
@@ -142,13 +165,13 @@ public class May_control_script : MonoBehaviour
         RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.lossyScale / 8f, transform.forward, transform.rotation);
 
 
-        if (hits.Length > 0)
+        if (hits.Length > 0 )
 
         {
-            foreach (RaycastHit rc in hits)
+            foreach (RaycastHit rc in hits )
           
             {
-                if (rc.transform.GetComponent<Interactable>())
+                if (rc.transform.GetComponent<Interactable>() )
                 {
                     Debug.Log("Did Hit");
                     rc.transform.GetComponent<Interactable>().Interact();

@@ -6,6 +6,7 @@ public class View : Interactable
 
     public GameObject objView;
     private bool isActive;
+    public Animator animator;
 
     public override void Interact()
     {
@@ -18,7 +19,6 @@ public class View : Interactable
         {
             objView.SetActive(true);
             isActive = true;
-
             
         }
         else

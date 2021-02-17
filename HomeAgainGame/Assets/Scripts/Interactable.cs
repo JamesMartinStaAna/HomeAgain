@@ -19,8 +19,11 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "light")
             collision.GetComponent<May_control_script>().OpenInteractableIconlight();
 
-        else if (collision.CompareTag("Player") && gameObject.tag == "Door")
+        if (collision.CompareTag("Player") && gameObject.tag == "Door")
             collision.GetComponent<May_control_script>().OpenInteractableIcondoor();
+
+        if (collision.CompareTag("Player") && gameObject.tag == "stairs")
+            collision.GetComponent<May_control_script>().OpenInteractableIconstairs();
 
 
 
@@ -37,6 +40,10 @@ public abstract class Interactable : MonoBehaviour
 
         if (collision.CompareTag("Player") && gameObject.tag == "Door")
             collision.GetComponent<May_control_script>().CloseInteractableIcondoor();
+
+        if (collision.CompareTag("Player") && gameObject.tag == "stairs")
+            collision.GetComponent<May_control_script>().CloseInteractableIconstairs();
+
 
         Debug.Log(collision.name + "Exit");
     }
