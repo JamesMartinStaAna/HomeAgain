@@ -6,11 +6,11 @@ public class Pickup : Interactable
 {
     private Inventory inventory;
     public GameObject itemButton;
+    public GameObject deposit;
 
 
     private void Start()
     {
-
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     public override void Interact(){
@@ -20,7 +20,12 @@ public class Pickup : Interactable
                 //item can be added to inventory
                 inventory.isFull[i] = true;
                 Instantiate(itemButton, inventory.slots[i].transform, false);
-                Destroy(gameObject);         
+                transform.position = deposit.transform.position;    
+                
+                //if (transform.position == deposit.transform.position)
+                //{
+                //    Destroy(gameObject);
+                //}
                 break;
 
           }
@@ -29,9 +34,8 @@ public class Pickup : Interactable
            
         
     }
-    public void OnDestroy()
+    public void Update()
     {
-       GetComponent<May_control_script>().OpenInteractableIcongrab();
-       Debug.Log("Picked");
+     
     }
 }

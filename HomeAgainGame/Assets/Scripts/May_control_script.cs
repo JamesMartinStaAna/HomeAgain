@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class May_control_script : MonoBehaviour
 {
+    //Movement Elements
     private float MovementSpeed = 5;
-    public Animator animator;
+    Rigidbody rb;
+
+    //Icon Notifs
     public GameObject interactIcon;
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
     public GameObject interactIcon_Stairs;
     public GameObject interactIcon_GrabObject;
 
-    public GameObject pauseMenu;
+    //Animations
     private bool animateMove;
+    public Animator animator;
 
-    Rigidbody rb;
  
 
     private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
@@ -50,13 +53,6 @@ public class May_control_script : MonoBehaviour
             CheckInteraction();
         }
 
-
-        //Pause Menu
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pause();
-        }
-  
 
 
         // Character Movement:
@@ -168,12 +164,6 @@ public class May_control_script : MonoBehaviour
     }
 
 
-    public void Pause()
-    {
-        pauseMenu.SetActive(true);
-
-    }
-
     private void CheckInteraction()
     {
        
@@ -196,5 +186,6 @@ public class May_control_script : MonoBehaviour
             }
         }
     }
+
 
 }

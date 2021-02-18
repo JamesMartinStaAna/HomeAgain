@@ -3,6 +3,8 @@
 [RequireComponent(typeof(BoxCollider))]
 public abstract class Interactable : MonoBehaviour
 {
+    Collider collision;
+
     public void Reset()
     {
         GetComponent<BoxCollider>().isTrigger = true;
@@ -25,8 +27,11 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "stairs")
             collision.GetComponent<May_control_script>().OpenInteractableIconstairs();
 
-        if (collision.CompareTag("Player") && gameObject.tag == "grab_object")
+        if (collision.CompareTag("Player") && gameObject.tag == "grab_object") 
             collision.GetComponent<May_control_script>().OpenInteractableIcongrab();
+
+        
+
 
 
         Debug.Log(collision.name + "Enter");
@@ -46,16 +51,14 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "stairs")
             collision.GetComponent<May_control_script>().CloseInteractableIconstairs();
 
-        if (collision.CompareTag("Player") && gameObject.tag == "grab_object" )
+        if (collision.CompareTag("Player") && gameObject.tag == "grab_object")
             collision.GetComponent<May_control_script>().CloseInteractableIcongrab();
-
+ 
 
         Debug.Log(collision.name + "Exit");
     }
 
 
-    private void Start()
-    {
 
-    }
+       
 }

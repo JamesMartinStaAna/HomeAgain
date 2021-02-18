@@ -11,7 +11,6 @@ public class View : Interactable
     public override void Interact()
     {
 
-
         isActive = !isActive;
 
 
