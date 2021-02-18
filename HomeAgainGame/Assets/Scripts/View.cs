@@ -28,10 +28,4 @@ public class View : Interactable
         }
 
     }
-
-
-    private void Start()
-    {
-
-    }
 }

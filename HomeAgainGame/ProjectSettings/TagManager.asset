@@ -15,6 +15,7 @@ TagManager:
   - transition
   - stairs
   - Mom
+  - grab_object
   layers:
   - Default
   - TransparentFX

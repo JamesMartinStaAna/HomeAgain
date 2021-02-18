@@ -10,6 +10,8 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon_Light;
     public GameObject interactIcon_Door;
     public GameObject interactIcon_Stairs;
+    public GameObject interactIcon_GrabObject;
+
     public GameObject pauseMenu;
     private bool animateMove;
 
@@ -152,6 +154,19 @@ public class May_control_script : MonoBehaviour
         interactIcon_Stairs.SetActive(false);
 
     }
+
+    public void OpenInteractableIcongrab()
+    {
+        interactIcon_GrabObject.SetActive(true);
+
+    }
+
+    public void CloseInteractableIcongrab()
+    {
+        interactIcon_GrabObject.SetActive(false);
+
+    }
+
 
     public void Pause()
     {
