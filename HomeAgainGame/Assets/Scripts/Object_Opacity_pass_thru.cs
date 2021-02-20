@@ -36,6 +36,7 @@ public class Object_Opacity_pass_thru : MonoBehaviour
             alphaLevel = 1f;
 
         sprite.color = new Color(1, 1, 1, alphaLevel);
+
     }
  
 }
