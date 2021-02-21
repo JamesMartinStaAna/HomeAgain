@@ -21,11 +21,7 @@ public class Pickup : Interactable
                 inventory.isFull[i] = true;
                 Instantiate(itemButton, inventory.slots[i].transform, false);
                 transform.position = deposit.transform.position;    
-                
-                //if (transform.position == deposit.transform.position)
-                //{
-                //    Destroy(gameObject);
-                //}
+               
                 break;
 
           }
