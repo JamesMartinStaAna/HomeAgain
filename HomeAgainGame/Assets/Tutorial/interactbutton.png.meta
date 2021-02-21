@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: c1213b1345553744fbd89078e7c24439
+guid: c59695ddd394ebb4bb833a1b00a66409
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5775399491718878476
-    second: cooking_0
+      213: -8607239659372753983
+    second: interactbutton_0
   - first:
-      213: -5185503198019325367
-    second: cooking_1
+      213: 1296955773590974877
+    second: interactbutton_1
   - first:
-      213: -1702955247647347919
-    second: cooking_2
+      213: -8993380350273433892
+    second: interactbutton_2
   - first:
-      213: 3331835059220327459
-    second: cooking_3
-  - first:
-      213: 4502139162302178085
-    second: cooking_4
+      213: -6065990188952170808
+    second: interactbutton_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cooking_0
+      name: interactbutton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 68
-        height: 118
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4faef1cf2c8a9dfa0800000000000000
-      internalID: -5775399491718878476
+      spriteID: 1cbce660221fc8880800000000000000
+      internalID: -8607239659372753983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cooking_1
+      name: interactbutton_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 0
-        width: 68
-        height: 118
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 942f76cb0546908b0800000000000000
-      internalID: -5185503198019325367
+      spriteID: d91384e8766bff110800000000000000
+      internalID: 1296955773590974877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cooking_2
+      name: interactbutton_2
       rect:
         serializedVersion: 2
-        x: 136
+        x: 128
         y: 0
-        width: 68
-        height: 118
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ba7939933ed58e0800000000000000
-      internalID: -1702955247647347919
+      spriteID: cde49fb6838113380800000000000000
+      internalID: -8993380350273433892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cooking_3
+      name: interactbutton_3
       rect:
         serializedVersion: 2
-        x: 204
+        x: 192
         y: 0
-        width: 68
-        height: 118
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,29 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c2503655e0d3e20800000000000000
-      internalID: 3331835059220327459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cooking_4
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 0
-        width: 68
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 523656af6bfca7e30800000000000000
-      internalID: 4502139162302178085
+      spriteID: 8ce4088ef0641dba0800000000000000
+      internalID: -6065990188952170808
       vertices: []
       indices: 
       edges: []

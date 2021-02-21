@@ -7,7 +7,8 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
     Collider collision;
-    public GameObject tutorial;
+    public GameObject Movement;
+    public GameObject Interact;
     float alphaLevel;
     SpriteRenderer sprite;
 
@@ -21,13 +22,24 @@ public class Tutorial : MonoBehaviour
         GetComponent<BoxCollider>().isTrigger = true;
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("Player") && gameObject.tag == "view")
+        
+            Interact.SetActive(true); 
+    }
 
     private void OnTriggerExit(Collider collision)
     {
         if (collision.CompareTag("Player"))
-        //alphaLevel = 0;
-        //sprite.color = new Color(1, 1, 1, alphaLevel);
-        tutorial.SetActive(false);
+        {
+            Destroy(Movement);
+        }
+
+        if (collision.CompareTag("Player") && gameObject.tag == "view")
+        {
+            Destroy(Interact);
+        }
 
         Debug.Log(collision.name + "Exit Tutorial");
     }
