@@ -15,17 +15,23 @@ public class Pickup : Interactable
     }
     public override void Interact(){
 
-       for (int i = 0; i < inventory.slots.Length; i++){
-          if (inventory.isFull[i] == false){
-                //item can be added to inventory
-                inventory.isFull[i] = true;
-                Instantiate(itemButton, inventory.slots[i].transform, false);
-                transform.position = deposit.transform.position;    
-               
-                break;
+        if (inventory.CompareTag("Player") && gameObject.tag == "grab_object")
+        {
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == false)
+                {
+                    //item can be added to inventory
+                    inventory.isFull[i] = true;
+                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    transform.position = deposit.transform.position;
 
-          }
-       }
+                    break;
+
+                }
+            }
+        }
+
 
            
         
