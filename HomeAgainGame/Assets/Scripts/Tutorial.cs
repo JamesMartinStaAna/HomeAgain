@@ -34,11 +34,13 @@ public class Tutorial : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(Movement);
+            Destroy(gameObject);
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "view")
         {
             Destroy(Interact);
+            Destroy(gameObject);
         }
 
         Debug.Log(collision.name + "Exit Tutorial");

@@ -19,6 +19,10 @@ TagManager:
   - living_room_light
   - footstool
   - reminder
+  - footstool_receiver
+  - key
+  - key_receiver
+  - Spoon
   layers:
   - Default
   - TransparentFX

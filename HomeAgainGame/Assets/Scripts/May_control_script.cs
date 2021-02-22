@@ -19,7 +19,9 @@ public class May_control_script : MonoBehaviour
     private bool animateMove;
     public Animator animator;
 
- 
+    //Inventory
+    private bool InvenisActive;
+    public Animator Invenanimator;
 
     private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
 
@@ -32,19 +34,7 @@ public class May_control_script : MonoBehaviour
 
     private void Update()
     {
-
-        if (GameObject.FindWithTag("open_image") != null)
-        {
-            MovementSpeed = MovementSpeed - MovementSpeed;
-            animator.enabled = false;
-            animateMove = false;
-        }
-        else
-        {
-            MovementSpeed = 5;
-            animator.enabled = true;
-            animateMove = true;
-        }
+        
     
 
         // Character Interact:
@@ -53,6 +43,29 @@ public class May_control_script : MonoBehaviour
             CheckInteraction();
         }
 
+        //if (Input.GetKeyDown(KeyCode.Tab))
+        //{
+        //    InvenisActive = !InvenisActive;
+
+        //    if (InvenisActive)
+        //    {
+        //        Invenanimator.SetTrigger("open");
+        //        MovementSpeed = 0;
+        //        animator.enabled = false;
+        //        animateMove = false;
+        //    }
+        //    else
+        //    {
+        //        Invenanimator.SetTrigger("close");
+        //        MovementSpeed = 5;
+        //        animator.enabled = true;
+        //        animateMove = true;
+        //    }
+
+        //}
+   
+        ViewStop();
+        
 
 
         // Character Movement:
@@ -82,26 +95,42 @@ public class May_control_script : MonoBehaviour
 
 
     }
-    // for checking boxcast 
-    void OnDrawGizmos()
+    private void ViewStop()
     {
-        float maxDistance = 1f;
-        RaycastHit hit;
 
-        bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
-            transform.rotation, maxDistance);
-        if (isHit)
+        if (GameObject.FindWithTag("open_image") != null)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
-            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+            MovementSpeed = 0;
+            animator.enabled = false;
+            animateMove = false;
         }
         else
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+            MovementSpeed = 5;
+            animator.enabled = true;
+            animateMove = true;
         }
     }
+    // for checking boxcast 
+    //void OnDrawGizmos()
+    //{
+    //    float maxDistance = 1f;
+    //    RaycastHit hit;
+
+    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
+    //        transform.rotation, maxDistance);
+    //    if (isHit)
+    //    {
+    //        Gizmos.color = Color.red;
+    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
+    //    }
+    //    else
+    //    {
+    //        Gizmos.color = Color.green;
+    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+    //    }
+    //}
 
     public void OpenInteractableIcon()
     {

@@ -6,7 +6,7 @@ public class GameObject_no_Interaction_reminder : MonoBehaviour
 {
 
     public float currentTime = 0f;
-    private float startTime = 2f;
+    public float startTime = 2f;
     // Start is called before the first frame update
     void Start()
     {

@@ -23,7 +23,7 @@ public class Inventory_tab : MonoBehaviour
             if (isActive)
             {
                 animator.SetTrigger("open");
-
+                
             }
             else
             {
