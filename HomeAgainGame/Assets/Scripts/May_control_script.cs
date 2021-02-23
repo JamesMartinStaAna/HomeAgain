@@ -5,7 +5,7 @@ using UnityEngine;
 public class May_control_script : MonoBehaviour
 {
     //Movement Elements
-    private float MovementSpeed = 5;
+    private float MovementSpeed = 4;
     Rigidbody rb;
 
     //Icon Notifs
@@ -14,6 +14,8 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon_Door;
     public GameObject interactIcon_Stairs;
     public GameObject interactIcon_GrabObject;
+    public GameObject interactIcon_To_Lobby;
+    public GameObject interactIcon_To_LivingRoom;
 
     //Animations
     private bool animateMove;
@@ -43,27 +45,6 @@ public class May_control_script : MonoBehaviour
             CheckInteraction();
         }
 
-        //if (Input.GetKeyDown(KeyCode.Tab))
-        //{
-        //    InvenisActive = !InvenisActive;
-
-        //    if (InvenisActive)
-        //    {
-        //        Invenanimator.SetTrigger("open");
-        //        MovementSpeed = 0;
-        //        animator.enabled = false;
-        //        animateMove = false;
-        //    }
-        //    else
-        //    {
-        //        Invenanimator.SetTrigger("close");
-        //        MovementSpeed = 5;
-        //        animator.enabled = true;
-        //        animateMove = true;
-        //    }
-
-        //}
-   
         ViewStop();
         
 
@@ -106,7 +87,7 @@ public class May_control_script : MonoBehaviour
         }
         else
         {
-            MovementSpeed = 5;
+            MovementSpeed = 4;
             animator.enabled = true;
             animateMove = true;
         }
@@ -180,6 +161,32 @@ public class May_control_script : MonoBehaviour
 
     }
 
+    public void OpenInteractableIconToLobby()
+    {
+        interactIcon_To_Lobby.SetActive(true);
+
+    }
+
+    public void CloseInteractableIconToLobby()
+    {
+        interactIcon_To_Lobby.SetActive(false);
+
+    }
+
+    public void OpenInteractableIconToLivingRoom()
+    {
+        interactIcon_To_LivingRoom.SetActive(true);
+
+    }
+
+    public void CloseInteractableIconToLivingRoom()
+
+    {
+        interactIcon_To_LivingRoom.SetActive(false);
+
+    }
+
+
     public void OpenInteractableIcongrab()
     {
         interactIcon_GrabObject.SetActive(true);
@@ -187,11 +194,11 @@ public class May_control_script : MonoBehaviour
     }
 
     public void CloseInteractableIcongrab()
+
     {
         interactIcon_GrabObject.SetActive(false);
 
     }
-
 
     private void CheckInteraction()
     {

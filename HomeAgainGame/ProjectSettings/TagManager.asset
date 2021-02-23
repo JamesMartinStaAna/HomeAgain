@@ -24,6 +24,9 @@ TagManager:
   - key_receiver
   - spoon
   - spoon_receiver
+  - stair_way_light
+  - To_lobby
+  - To_livingroom
   layers:
   - Default
   - TransparentFX
@@ -58,6 +61,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 4289346851
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
