@@ -10,6 +10,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     public GameObject StoolActivate;
     public GameObject KitchenCounterActivate;
     public GameObject DestroyObject_kitchen;
+    public GameObject deposit;
 
     bool StoolCheck;
     bool KeyCheck;
@@ -72,7 +73,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("key_receiver") == null && KeyCheck == true)
         {
             KitchenCounterActivate.SetActive(true);
-            DestroyObject_kitchen.SetActive(false);
+            DestroyObject_kitchen.transform.position = deposit.transform.position;
             Debug.Log("Destroyed key");
         }
 

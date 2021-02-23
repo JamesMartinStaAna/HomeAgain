@@ -22,7 +22,8 @@ TagManager:
   - footstool_receiver
   - key
   - key_receiver
-  - Spoon
+  - spoon
+  - spoon_receiver
   layers:
   - Default
   - TransparentFX
