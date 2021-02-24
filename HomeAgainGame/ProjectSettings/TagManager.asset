@@ -27,6 +27,11 @@ TagManager:
   - stair_way_light
   - To_lobby
   - To_livingroom
+  - dadmug
+  - dadmug_receiver
+  - crumpledpaper
+  - crumpledpaper_receiver
+  - inventorychecker
   layers:
   - Default
   - TransparentFX

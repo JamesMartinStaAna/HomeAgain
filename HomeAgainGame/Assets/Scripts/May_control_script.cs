@@ -79,7 +79,7 @@ public class May_control_script : MonoBehaviour
     private void ViewStop()
     {
 
-        if (GameObject.FindWithTag("open_image") != null)
+        if (GameObject.FindWithTag("open_image") != null || GameObject.FindWithTag("reminder") != null)
         {
             MovementSpeed = 0;
             animator.enabled = false;
