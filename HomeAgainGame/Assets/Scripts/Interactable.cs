@@ -30,7 +30,12 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "grab_object") 
             collision.GetComponent<May_control_script>().OpenInteractableIcongrab();
 
-        
+        if (collision.CompareTag("Player") && gameObject.tag == "To_livingroom")
+            collision.GetComponent<May_control_script>().OpenInteractableIconToLivingRoom();
+
+        if (collision.CompareTag("Player") && gameObject.tag == "To_lobby")
+            collision.GetComponent<May_control_script>().OpenInteractableIconToLobby();
+
 
 
 
@@ -53,7 +58,14 @@ public abstract class Interactable : MonoBehaviour
 
         if (collision.CompareTag("Player") && gameObject.tag == "grab_object")
             collision.GetComponent<May_control_script>().CloseInteractableIcongrab();
- 
+
+        if (collision.CompareTag("Player") && gameObject.tag == "To_livingroom")
+            collision.GetComponent<May_control_script>().CloseInteractableIconToLivingRoom();
+
+        if (collision.CompareTag("Player") && gameObject.tag == "To_lobby")
+            collision.GetComponent<May_control_script>().CloseInteractableIconToLobby();
+
+
 
         Debug.Log(collision.name + "Exit");
     }

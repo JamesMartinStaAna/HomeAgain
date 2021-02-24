@@ -9,12 +9,34 @@ public class Tutorial : MonoBehaviour
     Collider collision;
     public GameObject Movement;
     public GameObject Interact;
+    public GameObject inventory;
     float alphaLevel;
     SpriteRenderer sprite;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+    }
+    void Update()
+    {
+        if (GameObject.Find("crumpledpaper_small").transform.position == GameObject.Find("Deposit").transform.position && GameObject.Find("crumpledpaper_notif") == null)
+        {
+            inventory.SetActive(true);
+        }
+
+
+        if (inventory.activeSelf && Input.GetKeyDown(KeyCode.Tab))
+        {
+            Destroy(inventory);
+            Destroy(gameObject);
+        }
+
+        if (Interact.activeSelf && Input.GetKeyDown(KeyCode.E))
+        {
+            Interact.SetActive(false);
+            Destroy(GameObject.Find("_Interact"));
+        }
+
     }
 
     public void Reset()
@@ -25,8 +47,10 @@ public class Tutorial : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player") && gameObject.tag == "view")
-        
-            Interact.SetActive(true); 
+        {
+            Interact.SetActive(true);
+        }
+
     }
 
     private void OnTriggerExit(Collider collision)
@@ -39,9 +63,10 @@ public class Tutorial : MonoBehaviour
 
         if (collision.CompareTag("Player") && gameObject.tag == "view")
         {
-            Destroy(Interact);
+            Interact.SetActive(false);
             Destroy(gameObject);
         }
+
 
         Debug.Log(collision.name + "Exit Tutorial");
     }
