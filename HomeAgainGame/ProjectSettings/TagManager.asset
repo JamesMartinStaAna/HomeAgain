@@ -16,6 +16,14 @@ TagManager:
   - stairs
   - Mom
   - grab_object
+  - living_room_light
+  - footstool
+  - reminder
+  - footstool_receiver
+  - key
+  - key_receiver
+  - spoon
+  - spoon_receiver
   layers:
   - Default
   - TransparentFX
@@ -25,7 +33,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Inventory_objects
   - 
   - 
   - 
