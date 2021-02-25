@@ -39,6 +39,13 @@ TagManager:
   - plate
   - plate_receiver
   - trigger
+  - triggerFootStool
+  - triggerKey
+  - triggerDadmug
+  - triggerMommug
+  - triggerMaymug
+  - triggerSpoon
+  - triggerPlate
   layers:
   - Default
   - TransparentFX

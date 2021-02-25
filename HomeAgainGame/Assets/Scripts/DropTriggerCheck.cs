@@ -19,27 +19,27 @@ public class DropTriggerCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("footstool") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerFootStool") && GameObject.FindWithTag("footstool") != null)
         {
             activateFootstoolDrop.SetActive(true);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("key") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerKey") && GameObject.FindWithTag("key") != null)
         {
             activateKeyDrop.SetActive(true);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("dadmug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerDadmug") && GameObject.FindWithTag("dadmug") != null)
         {
             activateDadMugDrop.SetActive(true);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("mommug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerMommug") && GameObject.FindWithTag("mommug") != null)
         {
             activateMomMugDrop.SetActive(true);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("maymug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerMaymug") && GameObject.FindWithTag("maymug") != null)
         {
             activateMayMugDrop.SetActive(true);
         }
@@ -47,27 +47,27 @@ public class DropTriggerCheck : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("footstool") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerFootStool") && GameObject.FindWithTag("footstool") != null)
         {
             activateFootstoolDrop.SetActive(false);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("key") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerKey") && GameObject.FindWithTag("key") != null)
         {
             activateKeyDrop.SetActive(false);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("dadmug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerDadmug") && GameObject.FindWithTag("dadmug") != null)
         {
             activateDadMugDrop.SetActive(false);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("mommug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerMommug") && GameObject.FindWithTag("mommug") != null)
         {
             activateMomMugDrop.SetActive(false);
         }
 
-        if ((collision.CompareTag("Player") && gameObject.tag == "trigger") && GameObject.FindWithTag("maymug") != null)
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerMaymug") && GameObject.FindWithTag("maymug") != null)
         {
             activateMayMugDrop.SetActive(false);
         }

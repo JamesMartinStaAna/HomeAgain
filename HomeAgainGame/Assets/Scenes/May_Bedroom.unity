@@ -5880,7 +5880,7 @@ GameObject:
   - component: {fileID: 415542133}
   m_Layer: 0
   m_Name: spoon_trigger
-  m_TagString: trigger
+  m_TagString: triggerSpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7512,7 +7512,7 @@ GameObject:
   - component: {fileID: 525758597}
   m_Layer: 0
   m_Name: plate_trigger
-  m_TagString: trigger
+  m_TagString: triggerPlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15270,7 +15270,7 @@ GameObject:
   - component: {fileID: 765096275}
   m_Layer: 0
   m_Name: Mom_mug_trigger
-  m_TagString: trigger
+  m_TagString: triggerMommug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19454,7 +19454,7 @@ GameObject:
   - component: {fileID: 1002631570}
   m_Layer: 0
   m_Name: May_mug_trigger
-  m_TagString: trigger
+  m_TagString: triggerMaymug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48022,7 +48022,7 @@ GameObject:
   - component: {fileID: 1543853498}
   m_Layer: 0
   m_Name: key_rest_trigger
-  m_TagString: trigger
+  m_TagString: triggerKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51276,7 +51276,7 @@ GameObject:
   - component: {fileID: 1715316615}
   m_Layer: 0
   m_Name: foot_rest_trigger
-  m_TagString: trigger
+  m_TagString: triggerFootStool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60130,7 +60130,7 @@ GameObject:
   - component: {fileID: 1954384311}
   m_Layer: 0
   m_Name: Dad_mug_trigger
-  m_TagString: trigger
+  m_TagString: triggerDadmug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
