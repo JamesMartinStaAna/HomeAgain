@@ -32,6 +32,12 @@ TagManager:
   - crumpledpaper
   - crumpledpaper_receiver
   - inventorychecker
+  - mommug
+  - mommug_receiver
+  - maymug
+  - maymug_receiver
+  - plate
+  - plate_receiver
   layers:
   - Default
   - TransparentFX

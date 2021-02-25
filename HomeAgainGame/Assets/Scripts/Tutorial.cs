@@ -25,7 +25,7 @@ public class Tutorial : MonoBehaviour
         }
 
 
-        if (inventory.activeSelf && Input.GetKeyDown(KeyCode.Tab))
+        if (inventory.activeSelf && Input.GetMouseButtonDown(0))
         {
             Destroy(inventory);
             Destroy(gameObject);

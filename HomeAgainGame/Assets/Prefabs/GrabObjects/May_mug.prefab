@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: -8069909589896515151}
   m_Layer: 5
   m_Name: May_mug
-  m_TagString: Untagged
+  m_TagString: maymug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7012931761531947247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8c936b9110f206e4f8e46fa63954cf7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -8,15 +8,23 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 {
 
     public GameObject StoolActivate;
+    public GameObject KitchenCabinetActivate;
+    public GameObject DestroyObject_kitchenCabinet;
     public GameObject KitchenCounterActivate;
     public GameObject DestroyObject_kitchen;
     public GameObject BinActivate;
+    public GameObject DadMugActivate;
+    public GameObject MomMugActivate;
+    public GameObject MayMugActivate;
     public GameObject DestroyObject_bin;
     public GameObject deposit;
 
-    bool StoolCheck;
+    bool StoolCheck;    
     bool KeyCheck;
     bool trashCheck;
+    bool dadmugCheck;
+    bool mommugCheck;
+    bool maymugCheck;
 
     private void Start()
     {
@@ -84,7 +92,39 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    KeyCheck = true;
+                    dadmugCheck = true;
+                    Destroy(gameObject);
+
+
+
+                }
+            }
+
+        if (gameObject.tag == "mommug_receiver")
+            if (invPanel.CompareTag("mommug"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    mommugCheck = true;
+                    Destroy(gameObject);
+
+
+
+                }
+            }
+
+        if (gameObject.tag == "maymug_receiver")
+            if (invPanel.CompareTag("maymug"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    maymugCheck = true;
                     Destroy(gameObject);
 
 
@@ -117,6 +157,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("footstool_receiver") == null && StoolCheck == true)
         {
             StoolActivate.SetActive(true);
+            KitchenCabinetActivate.SetActive(true);
+            DestroyObject_kitchenCabinet.transform.position = deposit.transform.position;
             Debug.Log("Destroyed Footstool");
 
         }
@@ -133,6 +175,22 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
             BinActivate.SetActive(true);
             Destroy(DestroyObject_bin);
             Debug.Log("Destroyed trash");
+        }
+
+
+        if (GameObject.FindWithTag("dadmug_receiver") == null && dadmugCheck == true)
+        {
+            DadMugActivate.SetActive(true);
+        }
+
+        if (GameObject.FindWithTag("mommug_receiver") == null && mommugCheck == true)
+        {
+            MomMugActivate.SetActive(true);
+        }
+
+        if (GameObject.FindWithTag("maymug_receiver") == null && maymugCheck == true)
+        {
+            MayMugActivate.SetActive(true);
         }
 
     }
