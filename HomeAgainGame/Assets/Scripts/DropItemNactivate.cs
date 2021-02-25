@@ -9,14 +9,16 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 
     public GameObject StoolActivate;
     public GameObject KitchenCabinetActivate;
-    public GameObject DestroyObject_kitchenCabinet;
     public GameObject KitchenCounterActivate;
-    public GameObject DestroyObject_kitchen;
     public GameObject BinActivate;
     public GameObject DadMugActivate;
     public GameObject MomMugActivate;
     public GameObject MayMugActivate;
+    public GameObject spoonActivate;
+    public GameObject plateActivate;
     public GameObject DestroyObject_bin;
+    public GameObject DestroyObject_kitchen;
+    public GameObject DestroyObject_kitchenCabinet;
     public GameObject deposit;
 
     bool StoolCheck;    
@@ -25,6 +27,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     bool dadmugCheck;
     bool mommugCheck;
     bool maymugCheck;
+    bool spoonCheck;
+    bool plateCheck;
 
     private void Start()
     {
@@ -75,7 +79,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    KeyCheck = true;
+                    spoonCheck = true;
                     Destroy(gameObject);
 
 
@@ -83,6 +87,21 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                 }
             }
 
+        if (gameObject.tag == "plate_receiver")
+            if (invPanel.CompareTag("plate"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    plateCheck = true;
+                    Destroy(gameObject);
+
+
+
+                }
+            }
 
         if (gameObject.tag == "dadmug_receiver")
             if (invPanel.CompareTag("dadmug"))
@@ -191,6 +210,18 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("maymug_receiver") == null && maymugCheck == true)
         {
             MayMugActivate.SetActive(true);
+        }
+
+
+        if (GameObject.FindWithTag("spoon_receiver") == null && spoonCheck == true)
+        {
+            spoonActivate.SetActive(true);
+        }
+
+
+        if (GameObject.FindWithTag("plate_receiver") == null && plateCheck == true)
+        {
+            plateActivate.SetActive(true);
         }
 
     }
