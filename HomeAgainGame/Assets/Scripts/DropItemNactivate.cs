@@ -30,6 +30,11 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     bool spoonCheck;
     bool plateCheck;
 
+
+    public GameObject FootstoolObject;
+    public GameObject kitchenCabinetObject;
+
+
     private void Start()
     {
 
@@ -215,7 +220,11 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 
         if (GameObject.FindWithTag("spoon_receiver") == null && spoonCheck == true)
         {
+ 
+
             spoonActivate.SetActive(true);
+            FootstoolObject.GetComponent<Collider>().enabled = true;
+            kitchenCabinetObject.GetComponent<Collider>().enabled = true;
         }
 
 
