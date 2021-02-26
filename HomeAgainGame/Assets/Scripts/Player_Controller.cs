@@ -6,10 +6,10 @@ public class Player_Controller : MonoBehaviour
 {
     public float MovementSpeed = 1;
     public Animator animator;
-
+    Rigidbody rb;
     private void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
 
@@ -31,7 +31,7 @@ public class Player_Controller : MonoBehaviour
 
         // Character Animation 
         animator.SetFloat("speed", Mathf.Abs(movement));
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
 
 
     }

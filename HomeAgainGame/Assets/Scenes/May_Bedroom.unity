@@ -2484,7 +2484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154249081}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.12}
+  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.11}
   m_LocalScale: {x: 0.76, y: 8.29, z: 0.33333325}
   m_Children: []
   m_Father: {fileID: 794726917}
@@ -3859,7 +3859,7 @@ GameObject:
   - component: {fileID: 289013857}
   - component: {fileID: 289013858}
   m_Layer: 0
-  m_Name: Dad_Mug_smol
+  m_Name: Dad_Mug_pickup
   m_TagString: grab_object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3938,7 +3938,7 @@ BoxCollider:
   m_GameObject: {fileID: 289013853}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.11196464, y: 0.5749253, z: 0.7190158}
   m_Center: {x: -0.0070103365, y: 0.02252837, z: -0.25949943}
@@ -7323,7 +7323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517606977}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.12}
+  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.11}
   m_LocalScale: {x: 0.76, y: 8.29, z: 0.33333325}
   m_Children: []
   m_Father: {fileID: 794726917}
@@ -7338,7 +7338,7 @@ BoxCollider:
   m_GameObject: {fileID: 517606977}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.07882545, y: 0.5295259, z: 2.405187}
   m_Center: {x: 0.6154102, y: -0.16736688, z: -1.1025934}
@@ -7432,6 +7432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525758596}
   - component: {fileID: 525758597}
+  - component: {fileID: 525758598}
   m_Layer: 0
   m_Name: plate_trigger
   m_TagString: triggerPlate
@@ -7466,6 +7467,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.238388, y: 4.372911, z: 3.4435272}
   m_Center: {x: 2.8959274, y: 1.5962665, z: -1.2217636}
+--- !u!114 &525758598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525758595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateFootstoolDrop: {fileID: 0}
+  activateKeyDrop: {fileID: 0}
+  activateDadMugDrop: {fileID: 0}
+  activateMomMugDrop: {fileID: 0}
+  activateMayMugDrop: {fileID: 0}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 2048862701}
 --- !u!1 &528377690
 GameObject:
   m_ObjectHideFlags: 0
@@ -8595,7 +8615,7 @@ GameObject:
   - component: {fileID: 589269178}
   - component: {fileID: 589269177}
   m_Layer: 0
-  m_Name: May_Mug_smol
+  m_Name: May_Mug_pickup
   m_TagString: grab_object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8641,7 +8661,7 @@ BoxCollider:
   m_GameObject: {fileID: 589269175}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.108224794, y: 0.7056152, z: 2.801662}
   m_Center: {x: 0.16085947, y: 0.28883085, z: -1.3828962}
@@ -10123,6 +10143,7 @@ Transform:
   - {fileID: 1002631568}
   - {fileID: 415542132}
   - {fileID: 525758596}
+  - {fileID: 1263665086}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15276,6 +15297,8 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 0}
   activateMomMugDrop: {fileID: 18795439}
   activateMayMugDrop: {fileID: 0}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 0}
 --- !u!1 &765786248
 GameObject:
   m_ObjectHideFlags: 0
@@ -16094,7 +16117,7 @@ GameObject:
   - component: {fileID: 806881610}
   - component: {fileID: 806881609}
   m_Layer: 0
-  m_Name: Mom_Mug_smol
+  m_Name: Mom_Mug_pickup
   m_TagString: grab_object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16190,7 +16213,7 @@ BoxCollider:
   m_GameObject: {fileID: 806881606}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.25253806, y: 0.8611301, z: 2.7359335}
   m_Center: {x: -0.053871155, y: -0.28943515, z: 0.2800982}
@@ -19155,7 +19178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &990166307
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19172,8 +19195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9901, y: -60.342964}
-  m_SizeDelta: {x: 5.0616455, y: 0.6866796}
+  m_AnchoredPosition: {x: -10.205, y: -60.516}
+  m_SizeDelta: {x: 4.777691, y: 0.4752941}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990166308
 MonoBehaviour:
@@ -19386,6 +19409,8 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 0}
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 1053387821}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 0}
 --- !u!1 &1010734342
 GameObject:
   m_ObjectHideFlags: 0
@@ -19411,7 +19436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010734342}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.12}
+  m_LocalPosition: {x: -1.0197037, y: 0.52, z: -1.11}
   m_LocalScale: {x: 0.76, y: 8.29, z: 0.33333325}
   m_Children: []
   m_Father: {fileID: 794726917}
@@ -38165,6 +38190,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258674016}
   m_CullTransparentMesh: 0
+--- !u!1 &1263665085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263665086}
+  - component: {fileID: 1263665087}
+  - component: {fileID: 1263665088}
+  m_Layer: 0
+  m_Name: activator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263665086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263665085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.5, y: 0, z: -16.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 720637986}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1263665087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263665085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.24744, y: 4.3295403, z: 2.0208402}
+  m_Center: {x: 1.0682269, y: -0.1942234, z: -0.5104201}
+--- !u!114 &1263665088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263665085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef6e7139e5428840bb42724f4d3c645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MayMugObject: {fileID: 589269175}
+  DadMugObject: {fileID: 289013853}
+  MomMugObject: {fileID: 806881606}
+  mugholderObject: {fileID: 1464150093}
+  spoonObject: {fileID: 517606977}
+  plateObject: {fileID: 1378915619}
+  keyObject: {fileID: 1925672479}
+  footstoolObject: {fileID: 1557406898}
 --- !u!1 &1264052349
 GameObject:
   m_ObjectHideFlags: 0
@@ -38587,8 +38677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 562159182}
   sentences:
-  - Weird, its locked. This is where the untensils are stored.
-  - I would ask mom where the key is but she looks busy
+  - 'May, sweetie, can you help me prepare the kitchen table? Breakfast is almost
+    ready. '
+  - Made your favorite chocolate chip pancakes.
   typingSpeed: 0.02
   continueButton: {fileID: 466020363}
 --- !u!224 &1292336896
@@ -40724,7 +40815,7 @@ BoxCollider:
   m_GameObject: {fileID: 1378915619}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.3191433, y: 1.1974083, z: 2.5397666}
   m_Center: {x: -1.4074202, y: -0.0063839657, z: -1.1698829}
@@ -46903,7 +46994,7 @@ BoxCollider:
   m_GameObject: {fileID: 1464150093}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.104219995, y: 1.44, z: 2.0370255}
   m_Center: {x: -0.18187082, y: 0, z: -0.9185127}
@@ -48340,6 +48431,8 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 0}
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 0}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 0}
 --- !u!1 &1552293748
 GameObject:
   m_ObjectHideFlags: 0
@@ -48869,7 +48962,7 @@ BoxCollider:
   m_GameObject: {fileID: 1557406898}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.19, y: 0.5973979, z: 2.2523758}
   m_Center: {x: 0, y: 0.24369895, z: 0.32520008}
@@ -51594,6 +51687,8 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 0}
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 0}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 0}
 --- !u!1 &1720482941
 GameObject:
   m_ObjectHideFlags: 0
@@ -59927,7 +60022,7 @@ BoxCollider:
   m_GameObject: {fileID: 1925672479}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.124941826, y: 0.66, z: 2.0017998}
   m_Center: {x: 0.22074175, y: 0, z: -0.9008999}
@@ -60374,6 +60469,8 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 1471446715}
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 0}
+  activateSpoonDrop: {fileID: 0}
+  activatePlateDrop: {fileID: 0}
 --- !u!1 &1960935311
 GameObject:
   m_ObjectHideFlags: 0
@@ -61560,7 +61657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2048862702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61569,7 +61666,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048862701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.91}
+  m_LocalPosition: {x: 0, y: 0, z: -0.76}
   m_LocalScale: {x: 1.5123152, y: 1.6799896, z: 5.029}
   m_Children: []
   m_Father: {fileID: 896364549}
@@ -61577,8 +61674,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9901, y: -60.42}
-  m_SizeDelta: {x: 5.0616455, y: 0.6866796}
+  m_AnchoredPosition: {x: -10.23, y: -59.723}
+  m_SizeDelta: {x: 4.745041, y: 1.5168581}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2048862703
 MonoBehaviour:
@@ -61612,13 +61709,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048862701}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.48593804, b: 0.6317332, a: 0.27058825}
+  m_Color: {r: 0.9811321, g: 0.48593804, b: 0.6317332, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 0
   m_OnCullStateChanged:

@@ -13,7 +13,7 @@ public class muggone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Dad_Mug_smol").transform.position == GameObject.Find("Deposit").transform.position)
+        if (GameObject.Find("Dad_Mug_pickup").transform.position == GameObject.Find("Deposit").transform.position)
         {
             Destroy(gameObject);
             Debug.Log("Mug BG Destroyed");

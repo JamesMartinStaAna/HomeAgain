@@ -11,6 +11,8 @@ public class DropTriggerCheck : MonoBehaviour
     public GameObject activateDadMugDrop;
     public GameObject activateMomMugDrop;
     public GameObject activateMayMugDrop;
+    public GameObject activateSpoonDrop;
+    public GameObject activatePlateDrop;
     public void Reset()
     {
         GetComponent<BoxCollider>().isTrigger = true;
@@ -43,6 +45,11 @@ public class DropTriggerCheck : MonoBehaviour
         {
             activateMayMugDrop.SetActive(true);
         }
+
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerPlate") && GameObject.FindWithTag("plate") != null)
+        {
+            activatePlateDrop.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider collision)
@@ -70,6 +77,11 @@ public class DropTriggerCheck : MonoBehaviour
         if ((collision.CompareTag("Player") && gameObject.tag == "triggerMaymug") && GameObject.FindWithTag("maymug") != null)
         {
             activateMayMugDrop.SetActive(false);
+        }
+
+        if ((collision.CompareTag("Player") && gameObject.tag == "triggerPlate") && GameObject.FindWithTag("plate") != null)
+        {
+            activatePlateDrop.SetActive(false);
         }
     }
 }
