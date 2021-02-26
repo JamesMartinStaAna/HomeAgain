@@ -377,6 +377,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &18795442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20717,6 +20719,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 0}
+  FootstoolObject: {fileID: 1378915619}
+  kitchenCabinetObject: {fileID: 1557406898}
 --- !u!114 &990166309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26844,6 +26848,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &1053387824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40171,7 +40177,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263665085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35284c898e58da24590282d1aff8c630, type: 3}
   m_Name: 
@@ -41057,6 +41063,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 517606977}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &1299393124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49311,6 +49319,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &1471446718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52159,6 +52169,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &1610355717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56867,6 +56879,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 1378915619}
   deposit: {fileID: 1562941645}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!1 &1873465121
 GameObject:
   m_ObjectHideFlags: 0
@@ -64361,6 +64375,8 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 0}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
 --- !u!114 &2048862704
 MonoBehaviour:
   m_ObjectHideFlags: 0

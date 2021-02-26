@@ -84,6 +84,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
+                    FootstoolObject.GetComponent<Collider>().enabled = true;
+                    kitchenCabinetObject.GetComponent<Collider>().enabled = true;
                     spoonCheck = true;
                     Destroy(gameObject);
 
@@ -220,11 +222,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 
         if (GameObject.FindWithTag("spoon_receiver") == null && spoonCheck == true)
         {
- 
-
             spoonActivate.SetActive(true);
-            FootstoolObject.GetComponent<Collider>().enabled = true;
-            kitchenCabinetObject.GetComponent<Collider>().enabled = true;
         }
 
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class May_control_script : MonoBehaviour
 {
     //Movement Elements
-    private float MovementSpeed = 10;
+    private float MovementSpeed = 4;
     Rigidbody rb;
 
     //Icon Notifs
@@ -87,7 +87,7 @@ public class May_control_script : MonoBehaviour
         }
         else
         {
-            MovementSpeed = 10;
+            MovementSpeed = 4;
             animator.enabled = true;
             animateMove = true;
         }
