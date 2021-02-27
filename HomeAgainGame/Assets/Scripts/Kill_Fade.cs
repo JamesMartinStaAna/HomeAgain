@@ -26,7 +26,7 @@ public class Kill_Fade : MonoBehaviour
 
         if (GameObject.FindWithTag("transition") != null && currentTime == 0f)
         {
-            transition.SetActive(false);
+            Destroy(transition);
         }
     }
 

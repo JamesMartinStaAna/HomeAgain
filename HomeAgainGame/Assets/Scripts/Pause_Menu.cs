@@ -15,8 +15,8 @@ public class Pause_Menu : MonoBehaviour
     }
     public void quitGame()
     {
-        Application.Quit();
-        Debug.Log("quit");
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex - 1 ) ;
     }
 
 
