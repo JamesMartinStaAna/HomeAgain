@@ -16,6 +16,7 @@ public class Pickup_switch_object : Interactable
     }
     public override void Interact()
     {
+        SoundManager.PlaySound("popUp");
 
         if (inventory.CompareTag("Player") && gameObject.tag == "grab_object")
         {
@@ -29,6 +30,7 @@ public class Pickup_switch_object : Interactable
                     transform.position = deposit.transform.position;
                     pickUpNotif.SetActive(true);
                     gameActivate.SetActive(true);
+                    
                     break;
 
                 }

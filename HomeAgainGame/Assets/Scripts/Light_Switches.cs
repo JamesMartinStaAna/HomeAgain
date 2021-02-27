@@ -23,11 +23,13 @@ public class Light_Switches : Interactable
 
         if (isActive)
         {
+            SoundManager.PlaySound("lightSwitch");
             Llight.SetActive(true);
             isActive = true;
         }
         else
         {
+            SoundManager.PlaySound("lightSwitch");
             Llight.SetActive(false);
             isActive = false;
         }

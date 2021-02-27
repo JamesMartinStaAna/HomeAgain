@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DropItemNactivate : MonoBehaviour, IDropHandler
 {
@@ -87,6 +88,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     FootstoolObject.GetComponent<Collider>().enabled = true;
                     kitchenCabinetObject.GetComponent<Collider>().enabled = true;
                     spoonCheck = true;
+                    SoundManager.PlaySound("spoon");
                     Destroy(gameObject);
 
 
@@ -103,6 +105,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     plateCheck = true;
+                    SoundManager.PlaySound("mug");
                     Destroy(gameObject);
 
 
@@ -119,6 +122,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     dadmugCheck = true;
+                    SoundManager.PlaySound("mug");
                     Destroy(gameObject);
 
 
@@ -135,6 +139,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     mommugCheck = true;
+                    SoundManager.PlaySound("mug");
                     Destroy(gameObject);
 
 
@@ -151,6 +156,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     maymugCheck = true;
+                    SoundManager.PlaySound("mug");
                     Destroy(gameObject);
 
 
@@ -168,6 +174,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     trashCheck = true;
+                    SoundManager.PlaySound("trash");
                     Destroy(gameObject);
 
 
@@ -207,28 +214,34 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("dadmug_receiver") == null && dadmugCheck == true)
         {
             DadMugActivate.SetActive(true);
+            Debug.Log("Spawn dadmug");
         }
 
         if (GameObject.FindWithTag("mommug_receiver") == null && mommugCheck == true)
         {
             MomMugActivate.SetActive(true);
+            Debug.Log("Spawn mommug");
         }
 
         if (GameObject.FindWithTag("maymug_receiver") == null && maymugCheck == true)
         {
             MayMugActivate.SetActive(true);
+            Debug.Log("Spawn maymug");
         }
 
 
         if (GameObject.FindWithTag("spoon_receiver") == null && spoonCheck == true)
         {
             spoonActivate.SetActive(true);
+            Debug.Log("Spawn spoon");
         }
 
 
         if (GameObject.FindWithTag("plate_receiver") == null && plateCheck == true)
         {
             plateActivate.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Debug.Log("Spawn plate");
         }
 
     }

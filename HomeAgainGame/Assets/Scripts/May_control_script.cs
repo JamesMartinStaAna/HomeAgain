@@ -7,6 +7,8 @@ public class May_control_script : MonoBehaviour
     //Movement Elements
     private float MovementSpeed = 4;
     Rigidbody rb;
+    AudioSource audioSrc;
+    bool isMoving = false;
 
     //Icon Notifs
     public GameObject interactIcon;
@@ -16,6 +18,7 @@ public class May_control_script : MonoBehaviour
     public GameObject interactIcon_GrabObject;
     public GameObject interactIcon_To_Lobby;
     public GameObject interactIcon_To_LivingRoom;
+    public GameObject interactIcon_Task;
 
     //Animations
     private bool animateMove;
@@ -30,6 +33,7 @@ public class May_control_script : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSrc = GetComponent<AudioSource>();
    
     }
 
@@ -54,9 +58,9 @@ public class May_control_script : MonoBehaviour
 
         if(animateMove == true)
         {
-
             if (Input.GetAxis("Horizontal") < 0)
             {
+           
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
             if (Input.GetAxis("Horizontal") > 0)
@@ -68,11 +72,24 @@ public class May_control_script : MonoBehaviour
 
 
         // Character Animation                                          
-
         animator.SetFloat("speed", Mathf.Abs(movement));
         rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
 
+        // Character walk sound 
+        if (rb.velocity.x != 0)
+            isMoving = true;
+        else
+            isMoving = false;
 
+        if (isMoving)
+        {
+            if (!audioSrc.isPlaying)
+                audioSrc.Play();
+        }
+        else
+        {
+            audioSrc.Stop();
+        }
 
 
     }
@@ -197,6 +214,20 @@ public class May_control_script : MonoBehaviour
 
     {
         interactIcon_GrabObject.SetActive(false);
+
+    }
+
+
+    public void OpenInteractableIconTask()
+    {
+        interactIcon_Task.SetActive(true);
+
+    }
+
+    public void CloseInteractableIconTask()
+
+    {
+        interactIcon_Task.SetActive(false);
 
     }
 

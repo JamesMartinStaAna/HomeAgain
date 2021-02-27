@@ -48,6 +48,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        SoundManager.PlaySound("click");
         Debug.Log("click Check");
     }
 

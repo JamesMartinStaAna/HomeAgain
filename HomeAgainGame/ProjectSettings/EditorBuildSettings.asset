@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/May_Bedroom.unity
     guid: 84781ff8f1d1ebc4ea6b3cb49d130e77
+  - enabled: 1
+    path: Assets/Scenes/Funeral.unity
+    guid: cbf1820db869aec4f9260183f87f5fda
   m_configObjects: {}

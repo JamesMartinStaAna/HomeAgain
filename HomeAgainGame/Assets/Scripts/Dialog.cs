@@ -28,6 +28,7 @@ public class Dialog : MonoBehaviour
     {
         foreach(char letter in sentences[index].ToCharArray()){
             textDisplay.text += letter;
+            SoundManager.PlaySound("lightSwitch");
             yield return new WaitForSeconds(typingSpeed);
         }
       

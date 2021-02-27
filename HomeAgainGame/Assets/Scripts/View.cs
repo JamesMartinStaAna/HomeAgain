@@ -16,6 +16,7 @@ public class View : Interactable
 
         if (isActive)
         {
+            SoundManager.PlaySound("popUp");
             objView.SetActive(true);
             isActive = true;
             

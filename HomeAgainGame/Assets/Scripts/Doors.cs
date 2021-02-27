@@ -10,6 +10,7 @@ public class Doors : Interactable
     public override void Interact()
     {
         Scene_Control.TransitionPlayer(target.transform.position);
+        SoundManager.PlaySound("doorOpen");
     }
 
 }

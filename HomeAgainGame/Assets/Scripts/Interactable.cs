@@ -36,6 +36,9 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "To_lobby")
             collision.GetComponent<May_control_script>().OpenInteractableIconToLobby();
 
+        if (collision.CompareTag("Player") && gameObject.tag == "Mom")
+            collision.GetComponent<May_control_script>().OpenInteractableIconTask();
+
 
 
 
@@ -65,7 +68,8 @@ public abstract class Interactable : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "To_lobby")
             collision.GetComponent<May_control_script>().CloseInteractableIconToLobby();
 
-
+        if (collision.CompareTag("Player") && gameObject.tag == "Mom")
+            collision.GetComponent<May_control_script>().CloseInteractableIconTask();
 
         Debug.Log(collision.name + "Exit");
     }
