@@ -10,5 +10,9 @@ public class Main_Menu : MonoBehaviour
     {
         SceneManager.LoadScene("May_Bedroom");
     }
-
+    public void quitGame()
+    {
+        Application.Quit();
+        Debug.Log("quit");
+    }
 }

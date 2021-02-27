@@ -29,4 +29,9 @@ public class Kill_Fade : MonoBehaviour
             transition.SetActive(false);
         }
     }
+
+    public void OnEnable()
+    {
+        startTime = 1f;
+    }
 }

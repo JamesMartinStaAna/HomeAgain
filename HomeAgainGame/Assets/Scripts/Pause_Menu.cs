@@ -13,6 +13,12 @@ public class Pause_Menu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
+    public void quitGame()
+    {
+        Application.Quit();
+        Debug.Log("quit");
+    }
+
 
     void Update()
     {
