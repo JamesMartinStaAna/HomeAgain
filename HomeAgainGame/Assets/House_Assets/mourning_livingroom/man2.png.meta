@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 7f32b9563d45a024180c67c8c4eac58f
+guid: 8bf517d29c31ec84e8fdd8c228216242
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7709688681058168235
+    second: man2_0
+  - first:
+      213: 1179145017729752491
+    second: man2_1
+  - first:
+      213: 7635336493284671850
+    second: man2_2
+  - first:
+      213: 2891512088110781726
+    second: man2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,7 +109,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: man2_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 29
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5529da40efea10590800000000000000
+      internalID: -7709688681058168235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man2_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 5
+        width: 29
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad1470752a2d5010800000000000000
+      internalID: 1179145017729752491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man2_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 5
+        width: 29
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a614fce361a26f960800000000000000
+      internalID: 7635336493284671850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man2_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 5
+        width: 29
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15579b9ce6b02820800000000000000
+      internalID: 2891512088110781726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
