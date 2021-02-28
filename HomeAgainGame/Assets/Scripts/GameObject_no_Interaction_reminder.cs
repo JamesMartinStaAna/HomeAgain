@@ -23,7 +23,7 @@ public class GameObject_no_Interaction_reminder : MonoBehaviour
             currentTime = 0;
         }
 
-        if (GameObject.FindWithTag("reminder") != null && currentTime == 0f)
+        if (this.gameObject != null && currentTime == 0f)
         {
             Destroy(gameObject);
             currentTime = 2f;

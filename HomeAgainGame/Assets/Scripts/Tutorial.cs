@@ -58,13 +58,12 @@ public class Tutorial : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(Movement);
-            Destroy(gameObject);
+  
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "view")
         {
             Interact.SetActive(false);
-            Destroy(gameObject);
         }
 
 
