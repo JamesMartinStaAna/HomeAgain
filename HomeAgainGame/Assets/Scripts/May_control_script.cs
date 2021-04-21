@@ -5,7 +5,7 @@ using UnityEngine;
 public class May_control_script : MonoBehaviour
 {
     //Movement Elements
-    private float MovementSpeed = 4;
+    private float MovementSpeed = 6;
     Rigidbody rb;
     AudioSource audioSrc;
     bool isMoving = false;
@@ -104,7 +104,7 @@ public class May_control_script : MonoBehaviour
         }
         else
         {
-            MovementSpeed = 4;
+            MovementSpeed = 6;
             animator.enabled = true;
             animateMove = true;
         }
