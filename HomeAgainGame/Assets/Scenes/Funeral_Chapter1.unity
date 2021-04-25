@@ -19484,8 +19484,6 @@ RectTransform:
   - {fileID: 1127897654}
   - {fileID: 812159439}
   - {fileID: 317205118}
-  - {fileID: 1656693045}
-  - {fileID: 698402676}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28680,108 +28678,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &698402672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 698402676}
-  - component: {fileID: 698402675}
-  - component: {fileID: 698402674}
-  - component: {fileID: 698402673}
-  m_Layer: 5
-  m_Name: 'Plate_drop '
-  m_TagString: plate_receiver
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &698402673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698402672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StoolActivate: {fileID: 0}
-  KitchenCabinetActivate: {fileID: 0}
-  KitchenCounterActivate: {fileID: 0}
-  BinActivate: {fileID: 0}
-  DadMugActivate: {fileID: 0}
-  MomMugActivate: {fileID: 0}
-  MayMugActivate: {fileID: 0}
-  spoonActivate: {fileID: 0}
-  plateActivate: {fileID: 421468958}
-  DestroyObject_bin: {fileID: 0}
-  DestroyObject_kitchen: {fileID: 0}
-  DestroyObject_kitchenCabinet: {fileID: 0}
-  deposit: {fileID: 0}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
---- !u!114 &698402674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698402672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.48593804, b: 0.6317332, a: 0}
-  m_RaycastTarget: 1
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &698402675
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698402672}
-  m_CullTransparentMesh: 0
---- !u!224 &698402676
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698402672}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.76}
-  m_LocalScale: {x: 1.5123152, y: 1.6799896, z: 5.029}
-  m_Children: []
-  m_Father: {fileID: 482556435}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.23, y: -59.723}
-  m_SizeDelta: {x: 4.745041, y: 1.5168581}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &707057925
 GameObject:
   m_ObjectHideFlags: 0
@@ -38381,7 +38277,7 @@ MonoBehaviour:
   activateDadMugDrop: {fileID: 0}
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 0}
-  activateSpoonDrop: {fileID: 1656693044}
+  activateSpoonDrop: {fileID: 0}
   activatePlateDrop: {fileID: 0}
 --- !u!65 &1185007555
 BoxCollider:
@@ -57253,108 +57149,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1656693044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1656693045}
-  - component: {fileID: 1656693048}
-  - component: {fileID: 1656693047}
-  - component: {fileID: 1656693046}
-  m_Layer: 5
-  m_Name: 'Spoon_drop '
-  m_TagString: spoon_receiver
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1656693045
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656693044}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.91}
-  m_LocalScale: {x: 1.5123152, y: 2.6559405, z: 5.029}
-  m_Children: []
-  m_Father: {fileID: 482556435}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.205, y: -60.516}
-  m_SizeDelta: {x: 4.777691, y: 0.4752941}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1656693046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656693044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StoolActivate: {fileID: 0}
-  KitchenCabinetActivate: {fileID: 0}
-  KitchenCounterActivate: {fileID: 0}
-  BinActivate: {fileID: 0}
-  DadMugActivate: {fileID: 0}
-  MomMugActivate: {fileID: 0}
-  MayMugActivate: {fileID: 0}
-  spoonActivate: {fileID: 469357897}
-  plateActivate: {fileID: 0}
-  DestroyObject_bin: {fileID: 0}
-  DestroyObject_kitchen: {fileID: 0}
-  DestroyObject_kitchenCabinet: {fileID: 0}
-  deposit: {fileID: 0}
-  FootstoolObject: {fileID: 1044149054}
-  kitchenCabinetObject: {fileID: 0}
---- !u!114 &1656693047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656693044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1656693048
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656693044}
-  m_CullTransparentMesh: 0
 --- !u!1 &1658515024
 GameObject:
   m_ObjectHideFlags: 0
@@ -75750,7 +75544,7 @@ MonoBehaviour:
   activateMomMugDrop: {fileID: 0}
   activateMayMugDrop: {fileID: 0}
   activateSpoonDrop: {fileID: 0}
-  activatePlateDrop: {fileID: 698402672}
+  activatePlateDrop: {fileID: 0}
 --- !u!65 &2056974767
 BoxCollider:
   m_ObjectHideFlags: 0
