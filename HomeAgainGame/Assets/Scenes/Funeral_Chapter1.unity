@@ -21468,7 +21468,7 @@ GameObject:
   - component: {fileID: 553489185}
   m_Layer: 0
   m_Name: cardboard_box closed
-  m_TagString: Untagged
+  m_TagString: view
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21545,7 +21545,7 @@ Transform:
   m_GameObject: {fileID: 553489181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -51.82, y: -1.56, z: 0.05}
-  m_LocalScale: {x: 6, y: 6.000001, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
