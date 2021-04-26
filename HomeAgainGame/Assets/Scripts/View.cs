@@ -6,7 +6,7 @@ public class View : Interactable
 
     public GameObject objView;
     private bool isActive;
-    public Animator animator;
+    private Animator animator;
 
     public override void Interact()
     {

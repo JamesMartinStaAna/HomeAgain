@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1008,7 +1008,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 969057315}
-  animator: {fileID: 0}
 --- !u!65 &45639319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8219,7 +8218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1697181383}
-  animator: {fileID: 0}
 --- !u!65 &464002283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9071,7 +9069,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510987740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: 0.408, z: -0.946}
+  m_LocalPosition: {x: -0.018, y: 0.408, z: 0.018495707}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -9236,7 +9234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1474098432}
-  animator: {fileID: 0}
 --- !u!1 &523246044
 GameObject:
   m_ObjectHideFlags: 0
@@ -9730,7 +9727,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1493434833}
-  animator: {fileID: 0}
 --- !u!65 &535899061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11525,7 +11521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652332420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: -0.96449566}
+  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: 0.000000027939677}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -20711,7 +20707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893126798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: -0.96449566}
+  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: -0}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -23587,7 +23583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037366631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: -0.96449566}
+  m_LocalPosition: {x: -0.015714372, y: 0.40714282, z: 0.000000027939677}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -28975,7 +28971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 983320596}
-  animator: {fileID: 0}
 --- !u!65 &1058110379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41156,7 +41151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 126187955}
-  animator: {fileID: 0}
 --- !u!65 &1218816975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44532,7 +44526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1324417992}
-  animator: {fileID: 0}
 --- !u!65 &1363000208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44804,7 +44797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 337039596}
-  animator: {fileID: 0}
 --- !u!65 &1378915623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51234,7 +51226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1589665135}
-  animator: {fileID: 0}
 --- !u!65 &1464150097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53778,7 +53769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579066033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: 0.408, z: -0.946}
+  m_LocalPosition: {x: -0.018, y: 0.408, z: 0.018495707}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -53930,7 +53921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1097389540}
-  animator: {fileID: 0}
 --- !u!65 &1588015624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55047,7 +55037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 910810998}
-  animator: {fileID: 0}
 --- !u!65 &1646756984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55157,7 +55146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1264052349}
-  animator: {fileID: 0}
 --- !u!65 &1649253009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55629,7 +55617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 2080574440}
-  animator: {fileID: 0}
 --- !u!114 &1682320265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56790,7 +56777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740253310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: -0.946}
+  m_LocalPosition: {x: -0.018, y: -0.448, z: 0.018495707}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -56942,7 +56929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 904462698}
-  animator: {fileID: 0}
 --- !u!65 &1748254289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57490,7 +57476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 969057315}
-  animator: {fileID: 0}
 --- !u!65 &1775183682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58304,7 +58289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810054148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: -0.946}
+  m_LocalPosition: {x: -0.018, y: -0.448, z: 0.018495707}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -65360,7 +65345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 983320596}
-  animator: {fileID: 0}
 --- !u!114 &1918374145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68180,7 +68164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065052479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: 0.408, z: -0.946}
+  m_LocalPosition: {x: -0.018, y: 0.408, z: 0.018495707}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 161141107}
@@ -68332,7 +68316,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 832499588}
-  animator: {fileID: 0}
 --- !u!65 &2067056495
 BoxCollider:
   m_ObjectHideFlags: 0
