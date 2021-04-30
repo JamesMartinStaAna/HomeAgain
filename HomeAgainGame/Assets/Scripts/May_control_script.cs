@@ -56,7 +56,8 @@ public class May_control_script : MonoBehaviour
         // Character Movement:
         var movement = Input.GetAxis("Horizontal");
 
-        if(animateMove == true)
+        // Character Flip direction
+        if (animateMove == true)
         {
             if (Input.GetAxis("Horizontal") < 0)
             {
@@ -68,7 +69,9 @@ public class May_control_script : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
-
+     
+        
+        
 
 
         // Character Animation                                          
