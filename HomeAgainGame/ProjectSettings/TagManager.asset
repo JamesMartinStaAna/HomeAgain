@@ -47,6 +47,7 @@ TagManager:
   - triggerSpoon
   - triggerPlate
   - brokenDoll
+  - MB_room_light
   layers:
   - Default
   - TransparentFX
