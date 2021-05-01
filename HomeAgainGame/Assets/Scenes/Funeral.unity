@@ -8286,7 +8286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1074483879}
-  animator: {fileID: 0}
 --- !u!114 &177851962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9466,7 +9465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1820287595}
-  animator: {fileID: 0}
 --- !u!65 &230365102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11169,7 +11167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1820287595}
-  animator: {fileID: 0}
 --- !u!65 &320913377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20193,7 +20190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1327834996}
-  animator: {fileID: 0}
 --- !u!65 &524575940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21143,7 +21139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 30047899}
-  animator: {fileID: 0}
 --- !u!65 &562682636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27317,7 +27312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1951666240}
-  animator: {fileID: 0}
 --- !u!65 &641037452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34484,7 +34478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1566965953}
-  animator: {fileID: 0}
 --- !u!65 &1010045072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35473,7 +35466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1975838914}
-  animator: {fileID: 0}
 --- !u!65 &1044149057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37476,7 +37468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1566965953}
-  animator: {fileID: 0}
 --- !u!65 &1148801033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38119,7 +38110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1506507223}
-  animator: {fileID: 0}
 --- !u!65 &1181627851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40003,7 +39993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1483744650}
-  animator: {fileID: 0}
 --- !u!65 &1260622590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47297,7 +47286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 2032809622}
-  animator: {fileID: 0}
 --- !u!65 &1403173983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54902,7 +54890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 731241840}
-  animator: {fileID: 0}
 --- !u!65 &1530298990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54979,7 +54966,7 @@ GameObject:
   - component: {fileID: 1531422832}
   m_Layer: 0
   m_Name: light_stairway
-  m_TagString: Untagged
+  m_TagString: stairway_lightbulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55007,7 +54994,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531422830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0316554dd9f25a4c95ce67a806544e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5660843a57595354c94fd21b68d67b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   active: {fileID: 21300000, guid: 8eefbe2da0d322841b04e685235b6557, type: 3}
@@ -58721,7 +58708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1566965953}
-  animator: {fileID: 0}
 --- !u!65 &1716083750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65847,7 +65833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 902459905}
-  animator: {fileID: 0}
 --- !u!65 &1831331016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68104,7 +68089,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1804653848}
-  animator: {fileID: 0}
 --- !u!114 &1935084386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74265,7 +74249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1074483879}
-  animator: {fileID: 0}
 --- !u!65 &1990665334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74694,7 +74677,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1356101820}
-  animator: {fileID: 0}
 --- !u!65 &2007635641
 BoxCollider:
   m_ObjectHideFlags: 0

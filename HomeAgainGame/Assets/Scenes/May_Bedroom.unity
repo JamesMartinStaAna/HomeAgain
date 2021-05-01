@@ -11413,7 +11413,7 @@ GameObject:
   - component: {fileID: 638215393}
   m_Layer: 0
   m_Name: light (1)
-  m_TagString: Untagged
+  m_TagString: livingroom_lightbulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11441,7 +11441,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 638215391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36663270a90fe8468337be079e45d66, type: 3}
+  m_Script: {fileID: 11500000, guid: 5660843a57595354c94fd21b68d67b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   active: {fileID: 21300000, guid: 8eefbe2da0d322841b04e685235b6557, type: 3}
@@ -12161,7 +12161,7 @@ GameObject:
   - component: {fileID: 696105422}
   m_Layer: 0
   m_Name: light
-  m_TagString: Untagged
+  m_TagString: kitchen_lightbulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12175,7 +12175,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 696105421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0670452fee496e64b9696b221fafe7d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5660843a57595354c94fd21b68d67b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   active: {fileID: 21300000, guid: 8eefbe2da0d322841b04e685235b6557, type: 3}
@@ -23312,7 +23312,7 @@ GameObject:
   - component: {fileID: 1030089410}
   m_Layer: 0
   m_Name: light
-  m_TagString: Untagged
+  m_TagString: May_room_lightbulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40765,7 +40765,7 @@ GameObject:
   - component: {fileID: 1193263488}
   m_Layer: 0
   m_Name: light_stairway
-  m_TagString: Untagged
+  m_TagString: stairway_lightbulb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40793,7 +40793,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193263486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0316554dd9f25a4c95ce67a806544e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5660843a57595354c94fd21b68d67b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   active: {fileID: 21300000, guid: 8eefbe2da0d322841b04e685235b6557, type: 3}

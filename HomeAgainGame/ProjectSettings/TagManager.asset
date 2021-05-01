@@ -48,6 +48,11 @@ TagManager:
   - triggerPlate
   - brokenDoll
   - MB_room_light
+  - MB_room_lightbulb
+  - May_room_lightbulb
+  - kitchen_lightbulb
+  - livingroom_lightbulb
+  - stairway_lightbulb
   layers:
   - Default
   - TransparentFX
