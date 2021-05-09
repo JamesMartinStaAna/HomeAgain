@@ -35,12 +35,24 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     public GameObject FootstoolObject;
     public GameObject kitchenCabinetObject;
 
+
     //object highlights prologue
     public GameObject binHighlight;
+    public GameObject dadMugHighlight;
+    public GameObject momMugHighlight;
+    public GameObject mayMugHighlight;
+    public GameObject kitchenKeyHighlight;
 
     private void Start()
     {
-        binHighlight = GameObject.Find("testhigh");
+    
+        binHighlight = GameObject.Find("trashSparkle");
+        dadMugHighlight = GameObject.Find("dadMugSparkle");
+        momMugHighlight = GameObject.Find("momMugSparkle");
+        mayMugHighlight = GameObject.Find("mayMugSparkle");
+        kitchenKeyHighlight = GameObject.Find("kitchenKeySparkle");
+    
+        
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -202,6 +214,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         {
             KitchenCounterActivate.SetActive(true);
             DestroyObject_kitchen.transform.position = deposit.transform.position;
+            kitchenKeyHighlight.transform.position = deposit.transform.position;
             Debug.Log("Destroyed key");
         }
 
@@ -209,7 +222,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         {
             BinActivate.SetActive(true);
             Destroy(DestroyObject_bin);
-            Destroy(binHighlight);
+            binHighlight.transform.position = deposit.transform.position;
             Debug.Log("Destroyed trash");
         }
 
@@ -217,18 +230,21 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("dadmug_receiver") == null && dadmugCheck == true)
         {
             DadMugActivate.SetActive(true);
+            dadMugHighlight.transform.position = deposit.transform.position;
             Debug.Log("Spawn dadmug");
         }
 
         if (GameObject.FindWithTag("mommug_receiver") == null && mommugCheck == true)
         {
             MomMugActivate.SetActive(true);
+            momMugHighlight.transform.position = deposit.transform.position;
             Debug.Log("Spawn mommug");
         }
 
         if (GameObject.FindWithTag("maymug_receiver") == null && maymugCheck == true)
         {
             MayMugActivate.SetActive(true);
+            mayMugHighlight.transform.position = deposit.transform.position;
             Debug.Log("Spawn maymug");
         }
 
