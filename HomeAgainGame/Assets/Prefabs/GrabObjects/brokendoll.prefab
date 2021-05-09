@@ -88,8 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630def5421a81c64396102794800d3af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  remind: {fileID: 5511789061278165943, guid: 78962b98517d44a4da1092e8a76f1afd, type: 3}
+  canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
+  remind: {fileID: 2460443653973598754, guid: f0be3cf2bedfb3b4aa4b6932cdceb166, type: 3}
 --- !u!225 &1502824948111430269
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
+  startTime: 2
 --- !u!1001 &6384484482455121075
 PrefabInstance:
   m_ObjectHideFlags: 0

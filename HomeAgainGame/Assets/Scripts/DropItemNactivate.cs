@@ -35,10 +35,12 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     public GameObject FootstoolObject;
     public GameObject kitchenCabinetObject;
 
+    //object highlights prologue
+    public GameObject binHighlight;
 
     private void Start()
     {
-
+        binHighlight = GameObject.Find("testhigh");
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -207,6 +209,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         {
             BinActivate.SetActive(true);
             Destroy(DestroyObject_bin);
+            Destroy(binHighlight);
             Debug.Log("Destroyed trash");
         }
 

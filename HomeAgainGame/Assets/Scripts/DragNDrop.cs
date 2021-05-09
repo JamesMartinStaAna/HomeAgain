@@ -11,11 +11,25 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     private Vector3 startPosition;
     public GameObject remind;
 
+  
+    private bool isDragging;
+    //Prologue Notif objects
+    public GameObject binHighlight;
+    public SpriteRenderer binHighlightsprite;
 
+
+    private void Start()
+    {
+        
+    }
     private void Awake()
     {
+        binHighlight = GameObject.Find("testhigh");
+        binHighlightsprite = binHighlight.GetComponent<SpriteRenderer>();
+
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -29,7 +43,13 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta;
-        Debug.Log("drag Check");
+
+        if(rectTransform.anchoredPosition == eventData.delta)
+        {
+            isDragging = true;
+        }
+   
+         
 
     }
 
@@ -41,6 +61,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
         {
             transform.localPosition = startPosition;
             canvasGroup.blocksRaycasts = true;
+            isDragging = false;
             Instantiate(remind);
         }
     }
@@ -50,6 +71,21 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     {
         SoundManager.PlaySound("click");
         Debug.Log("click Check");
+    }
+
+    private void Update()
+    {
+        if (gameObject.tag == "crumpledpaper" && isDragging)
+        {
+            binHighlightsprite.enabled = true;
+            Debug.Log("is dragging paper");
+
+        }
+        else
+        {
+            binHighlightsprite.enabled = false;
+        }
+
     }
 
 }

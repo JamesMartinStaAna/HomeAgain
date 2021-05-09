@@ -53,6 +53,8 @@ TagManager:
   - kitchen_lightbulb
   - livingroom_lightbulb
   - stairway_lightbulb
+  - lockNkey
+  - binHighlight
   layers:
   - Default
   - TransparentFX

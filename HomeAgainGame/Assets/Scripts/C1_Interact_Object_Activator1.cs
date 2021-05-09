@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact_Object_Activator2 : MonoBehaviour
+public class C1_Interact_Object_Activator1 : MonoBehaviour
 {
     Collider key_Collider;
-    Collider spoon_Collider;
 
 
     public GameObject keyObject;
-    public GameObject spoonObject;
 
 
     // Start is called before the first frame update
@@ -21,13 +19,13 @@ public class Interact_Object_Activator2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Maymug_drop") == null && GameObject.Find("Dadmug_drop") == null && GameObject.Find("Mommug_drop") == null)
+        if (GameObject.FindWithTag("brokenDoll") != null)
         {
             key_Collider = keyObject.GetComponent<Collider>();
-            spoon_Collider = spoonObject.GetComponent<Collider>();
+
 
             key_Collider.enabled = true;
-            spoon_Collider.enabled = true;
+
         }
     }
-} 
+}
