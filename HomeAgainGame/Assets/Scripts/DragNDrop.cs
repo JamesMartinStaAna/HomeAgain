@@ -22,6 +22,12 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     public SpriteRenderer momMugHighlightsprite;
     public GameObject mayMugHighlight;
     public SpriteRenderer mayMugHighlightsprite;
+    public GameObject spoonHighlight;
+    public SpriteRenderer spoonHighlightsprite;
+    public GameObject stoolHighlight;
+    public SpriteRenderer stoolHighlightsprite;
+    public GameObject plateHighlight;
+    public SpriteRenderer plateHighlightsprite;
     public GameObject kitchenKeyHighlight;
     public SpriteRenderer kitchenKeyHighlightsprite;
 
@@ -53,6 +59,18 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
         //kitchenkey
         kitchenKeyHighlight = GameObject.Find("kitchenKeySparkle");
         kitchenKeyHighlightsprite = kitchenKeyHighlight.GetComponent<SpriteRenderer>();
+
+        //spoon
+        spoonHighlight = GameObject.Find("spoonSparkle");
+        spoonHighlightsprite = spoonHighlight.GetComponent<SpriteRenderer>();
+
+        //stool
+        stoolHighlight = GameObject.Find("stoolSparkle");
+        stoolHighlightsprite = stoolHighlight.GetComponent<SpriteRenderer>();
+
+        //plate
+        plateHighlight = GameObject.Find("plateSparkle");
+        plateHighlightsprite = plateHighlight.GetComponent<SpriteRenderer>();
 
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -102,35 +120,94 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
     private void Update()
     {
-        if (gameObject.tag == "crumpledpaper" && isDragging)
+        if (isDragging)
         {
-            binHighlightsprite.enabled = true;
-            Debug.Log("is dragging paper");
+            if (gameObject.tag == "crumpledpaper")
+            {
+                binHighlightsprite.enabled = true;
+                Debug.Log("is dragging paper");
 
+            }
+            if (gameObject.tag == "dadmug")
+            {
+                dadMugHighlightsprite.enabled = true;
+                Debug.Log("is dragging dadmug");
+            }
+            if (gameObject.tag == "mommug")
+            {
+                momMugHighlightsprite.enabled = true;
+                Debug.Log("is dragging mommug");
+            }
+            if (gameObject.tag == "maymug")
+            {
+                mayMugHighlightsprite.enabled = true;
+                Debug.Log("is dragging maymug");
+            }
+            if (gameObject.tag == "key")
+            {
+                kitchenKeyHighlightsprite.enabled = true;
+                Debug.Log("is dragging key");
+            }
+            if (gameObject.tag == "spoon")
+            {
+                spoonHighlightsprite.enabled = true;
+                Debug.Log("is dragging spoon");
+            }
+            if (gameObject.tag == "footstool")
+            {
+                stoolHighlightsprite.enabled = true;
+                Debug.Log("is dragging footstool");
+            }
+            if (gameObject.tag == "plate")
+            {
+                plateHighlightsprite.enabled = true;
+                Debug.Log("is dragging plate");
+            }
         }
-        else if (gameObject.tag == "dadmug" && isDragging)
+        
+        if (!isDragging)
         {
-            dadMugHighlightsprite.enabled = true;
-            Debug.Log("is dragging dadmug");
-        }
-        else if (gameObject.tag == "mommug" && isDragging)
-        {
-            momMugHighlightsprite.enabled = true;
-            Debug.Log("is dragging mommug");
-        }
-        else if (gameObject.tag == "maymug" && isDragging)
-        {
-            mayMugHighlightsprite.enabled = true;
-            Debug.Log("is dragging maymug");
-        }
-        else if (gameObject.tag == "key" && isDragging)
-        {
-            kitchenKeyHighlightsprite.enabled = true;
-            Debug.Log("is dragging key");
-        }
-        else
-        {
-            binHighlightsprite.enabled = false;
+            if (gameObject.tag == "crumpledpaper")
+            {
+                binHighlightsprite.enabled = false;
+
+
+            }
+            if (gameObject.tag == "dadmug")
+            {
+                dadMugHighlightsprite.enabled = false;
+          
+            }
+            if (gameObject.tag == "mommug")
+            {
+                momMugHighlightsprite.enabled = false;
+         
+            }
+            if (gameObject.tag == "maymug")
+            {
+                mayMugHighlightsprite.enabled = false;
+       
+            }
+            if (gameObject.tag == "key")
+            {
+                kitchenKeyHighlightsprite.enabled = false;
+     
+            }
+            if (gameObject.tag == "spoon")
+            {
+                spoonHighlightsprite.enabled = false;
+     
+            }
+            if (gameObject.tag == "footstool")
+            {
+                stoolHighlightsprite.enabled = false;
+    
+            }
+            if (gameObject.tag == "plate")
+            {
+                plateHighlightsprite.enabled = false;
+                
+            }
         }
 
     }

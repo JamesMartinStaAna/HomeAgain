@@ -41,6 +41,9 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     public GameObject dadMugHighlight;
     public GameObject momMugHighlight;
     public GameObject mayMugHighlight;
+    public GameObject spoonHighlight;
+    public GameObject stoolHighlight;
+    public GameObject plateHighlight;
     public GameObject kitchenKeyHighlight;
 
     private void Start()
@@ -51,6 +54,10 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         momMugHighlight = GameObject.Find("momMugSparkle");
         mayMugHighlight = GameObject.Find("mayMugSparkle");
         kitchenKeyHighlight = GameObject.Find("kitchenKeySparkle");
+        spoonHighlight = GameObject.Find("spoonSparkle");
+        stoolHighlight = GameObject.Find("stoolSparkle");
+        plateHighlight = GameObject.Find("plateSparkle");
+
     
         
     }
@@ -205,6 +212,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         {
             StoolActivate.SetActive(true);
             KitchenCabinetActivate.SetActive(true);
+            stoolHighlight.transform.position = deposit.transform.position;
             DestroyObject_kitchenCabinet.transform.position = deposit.transform.position;
             Debug.Log("Destroyed Footstool");
 
@@ -252,6 +260,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("spoon_receiver") == null && spoonCheck == true)
         {
             spoonActivate.SetActive(true);
+            spoonHighlight.transform.position = deposit.transform.position;
             Debug.Log("Spawn spoon");
         }
 
@@ -259,6 +268,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("plate_receiver") == null && plateCheck == true)
         {
             plateActivate.SetActive(true);
+            plateHighlight.transform.position = deposit.transform.position;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("Spawn plate");
         }
