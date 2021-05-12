@@ -2180,7 +2180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94114073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.341, y: -0.077, z: 0}
+  m_LocalPosition: {x: 31.341, y: -0.077, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 85556095}
@@ -13314,7 +13314,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742944457}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -23245,7 +23245,7 @@ MonoBehaviour:
   DestroyObject_bin: {fileID: 0}
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
-  deposit: {fileID: 0}
+  deposit: {fileID: 1562941645}
   FootstoolObject: {fileID: 1378915619}
   kitchenCabinetObject: {fileID: 1557406898}
   binHighlight: {fileID: 0}
@@ -54147,7 +54147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 6807967007891580621, guid: 5e277368c248df243907cbdaba311b12,
+  itemButton: {fileID: 6686060163830405738, guid: f52876970559baa45b4e2251dc70757e,
     type: 3}
   deposit: {fileID: 1562941645}
   gameActivate: {fileID: 0}

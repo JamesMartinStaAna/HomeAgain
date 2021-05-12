@@ -268,7 +268,6 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("plate_receiver") == null && plateCheck == true)
         {
             plateActivate.SetActive(true);
-            plateHighlight.transform.position = deposit.transform.position;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("Spawn plate");
         }
