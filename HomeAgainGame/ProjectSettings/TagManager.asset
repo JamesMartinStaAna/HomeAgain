@@ -55,6 +55,14 @@ TagManager:
   - stairway_lightbulb
   - lockNkey
   - binHighlight
+  - boxItem
+  - lockNkey_receiver
+  - box_receiver
+  - triggerBox
+  - triggerLock
+  - blackMoon
+  - whiteMoon
+  - fullMoon
   layers:
   - Default
   - TransparentFX

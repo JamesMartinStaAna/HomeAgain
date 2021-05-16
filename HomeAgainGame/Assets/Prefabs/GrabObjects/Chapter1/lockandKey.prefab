@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5108980190633864401}
   - component: {fileID: 5108980190633864400}
   - component: {fileID: -6910200267818792110}
-  - component: {fileID: 4497776153869137911}
+  - component: {fileID: 4106422360547738458}
   m_Layer: 5
   m_Name: lockandKey
   m_TagString: lockNkey
@@ -88,7 +88,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &4497776153869137911
+--- !u!114 &4106422360547738458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +97,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108980190633864406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 630def5421a81c64396102794800d3af, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a767f3ca22ec2246be1446c688d6215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  remind: {fileID: 5511789061278165943, guid: 78962b98517d44a4da1092e8a76f1afd, type: 3}
-  binHighlight: {fileID: 0}
-  binHighlightsprite: {fileID: 0}
-  kitchenKeyHighlight: {fileID: 0}
-  kitchenKeyHighlightsprite: {fileID: 0}
+  remind: {fileID: 5511789061278165943, guid: 08924686cae3ce64cbbec8985b2358b6, type: 3}
