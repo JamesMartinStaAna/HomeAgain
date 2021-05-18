@@ -8,6 +8,7 @@ public class DropTriggerCheck2 : MonoBehaviour
 
     public GameObject activateBoxDrop;
     public GameObject activateLockDrop;
+    public GameObject activateMoonDrop;
 
 
 
@@ -34,7 +35,11 @@ public class DropTriggerCheck2 : MonoBehaviour
             activateLockDrop.GetComponent<DropItemNactivate2>().enabled = true;
         }
 
-      
+        if (collision.CompareTag("Player") && gameObject.tag == "triggerMoon" && GameObject.FindWithTag("fullMoon") != null)
+        {
+            activateMoonDrop.GetComponent<DropItemNactivate2>().enabled = true;
+        }
+
 
     }
 
@@ -50,6 +55,11 @@ public class DropTriggerCheck2 : MonoBehaviour
         if (collision.CompareTag("Player") && gameObject.tag == "triggerLock" && GameObject.FindWithTag("lockNkey") != null)
         {
             activateLockDrop.GetComponent<DropItemNactivate2>().enabled = false;
+        }
+
+        if (collision.CompareTag("Player") && gameObject.tag == "triggerMoon" && GameObject.FindWithTag("fullMoon") != null)
+        {
+            activateMoonDrop.GetComponent<DropItemNactivate2>().enabled = false;
         }
 
     }

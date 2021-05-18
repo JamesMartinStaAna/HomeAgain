@@ -18,7 +18,8 @@ public class C1_Interact_Object_Activator1 : MonoBehaviour
     public GameObject deskObject;
 
 
-
+    // combine tutorial
+    public GameObject combine;
 
     // deposit 
     public GameObject deposit;
@@ -35,6 +36,7 @@ public class C1_Interact_Object_Activator1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // when doll is picked up activate lockNkey collider
         if (GameObject.FindWithTag("brokenDoll") != null)
         {
             key_Collider = keyObject.GetComponent<Collider>();
@@ -42,20 +44,26 @@ public class C1_Interact_Object_Activator1 : MonoBehaviour
 
         }
 
+        // when lockNkey is picked up activate cardboardbox collider
         if (GameObject.FindWithTag("lockNkey") != null)
         {
             box_Collider = boxObject.GetComponent<Collider>();
             box_Collider.enabled = true;
         }
 
+
+        // when lockNkey and cardboard box are stored activate rug and chest colliders and lockView
         if (GameObject.FindWithTag("lockNkey_receiver") == null && GameObject.FindWithTag("box_receiver") == null)
         {
             chest_Collider = chestObject.GetComponent<Collider>();
-            chest_Collider.enabled = true;
             rug_Collider = rugObject.GetComponent<Collider>();
+            chest_Collider.enabled = true;
             rug_Collider.enabled = true;
+
+
         }
 
+        // when regular rug is stored in deposit activate ingame blackmoon collider
         if (rugObject.transform.position == deposit.transform.position)
         {
             halfMoonObject.SetActive(true);
@@ -66,5 +74,19 @@ public class C1_Interact_Object_Activator1 : MonoBehaviour
             desk_Collider = deskObject.GetComponent<Collider>();
             desk_Collider.enabled = true;
         }
+
+        if (GameObject.FindGameObjectWithTag("blackMoon") != null && GameObject.FindGameObjectWithTag("whiteMoon") != null && GameObject.Find("desk open") != null)
+        {
+            combine.SetActive(true);
+        }
+
+        if (GameObject.FindGameObjectWithTag("fullMoon") != null && GameObject.Find("desk open") != null)
+        {
+            combine.SetActive(false);
+
+        }
+
+
+
     }
 }

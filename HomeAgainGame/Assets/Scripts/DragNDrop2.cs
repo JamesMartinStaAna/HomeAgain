@@ -18,7 +18,9 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     public SpriteRenderer boxHighlightsprite;
     public GameObject lockHighlight;
     public SpriteRenderer lockHighlightsprite;
- 
+    public GameObject chestHighlight;
+    public SpriteRenderer chestHighlightsprite;
+
 
 
 
@@ -37,7 +39,9 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         lockHighlight = GameObject.Find("lockSparkle");
         lockHighlightsprite = lockHighlight.GetComponent<SpriteRenderer>();
 
- 
+        //Chest
+        chestHighlight = GameObject.Find("chestSparkle");
+        chestHighlightsprite = chestHighlight.GetComponent<SpriteRenderer>();
 
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -99,6 +103,11 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 Debug.Log("is dragging lockNkey");
             }
 
+            if (gameObject.tag == "fullMoon")
+            {
+                chestHighlightsprite.enabled = true;
+                Debug.Log("is dragging fullMoon");
+            }
 
         }
 
@@ -114,7 +123,12 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 lockHighlightsprite.enabled = false;
             }
 
-    
+            if (gameObject.tag == "fullMoon")
+            {
+                chestHighlightsprite.enabled = false;
+         
+            }
+
         }
 
     }

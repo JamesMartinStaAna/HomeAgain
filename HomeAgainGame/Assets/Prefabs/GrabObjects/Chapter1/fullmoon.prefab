@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1054304618380933087}
   m_Layer: 5
   m_Name: fullmoon
-  m_TagString: whiteMoon
+  m_TagString: fullMoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameObject_no_Interaction_reminder : MonoBehaviour
+public class GameObject_no_Interaction_reminder_destroy : MonoBehaviour
 {
 
     public float currentTime = 0f;
@@ -25,7 +25,7 @@ public class GameObject_no_Interaction_reminder : MonoBehaviour
 
         if (this.gameObject != null && currentTime == 0f)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
             currentTime = 2f;
 
         }

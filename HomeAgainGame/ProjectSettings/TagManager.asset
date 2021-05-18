@@ -63,6 +63,8 @@ TagManager:
   - blackMoon
   - whiteMoon
   - fullMoon
+  - triggerMoon
+  - fullMoon_receiver
   layers:
   - Default
   - TransparentFX

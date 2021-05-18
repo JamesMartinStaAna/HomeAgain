@@ -10,6 +10,8 @@ public class Tutorial : MonoBehaviour
     public GameObject Movement;
     public GameObject Interact;
     public GameObject inventory;
+    public GameObject combine;
+
     float alphaLevel;
     SpriteRenderer sprite;
 
@@ -65,6 +67,7 @@ public class Tutorial : MonoBehaviour
         {
             Interact.SetActive(false);
         }
+
 
 
         Debug.Log(collision.name + "Exit Tutorial");
