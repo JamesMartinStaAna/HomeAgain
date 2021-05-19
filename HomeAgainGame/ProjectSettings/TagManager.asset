@@ -65,6 +65,12 @@ TagManager:
   - fullMoon
   - triggerMoon
   - fullMoon_receiver
+  - brokenDollArm
+  - silverBox
+  - fixedDoll
+  - doll_receiver
+  - doll
+  - silverKey
   layers:
   - Default
   - TransparentFX

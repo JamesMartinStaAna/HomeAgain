@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 1506020914385240754}
   - component: {fileID: 1502824948111430269}
   - component: {fileID: -7675487426256159467}
-  - component: {fileID: 7303991037117261229}
+  - component: {fileID: 1476405977268890527}
   m_Layer: 5
-  m_Name: brokendoll
-  m_TagString: brokenDoll
+  m_Name: brokendollarm
+  m_TagString: brokenDollArm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 580e92067d3964648b2083aa5a9623c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7492d2c8d35d944a8e22c69152d6d6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -109,7 +109,7 @@ MonoBehaviour:
   lockHighlightsprite: {fileID: 0}
   chestHighlight: {fileID: 0}
   chestHighlightsprite: {fileID: 0}
---- !u!114 &7303991037117261229
+--- !u!114 &1476405977268890527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

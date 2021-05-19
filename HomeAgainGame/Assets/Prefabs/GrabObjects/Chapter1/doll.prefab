@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1506020914385240754}
   - component: {fileID: 1502824948111430269}
   - component: {fileID: -7675487426256159467}
-  - component: {fileID: 7303991037117261229}
   m_Layer: 5
-  m_Name: brokendoll
-  m_TagString: brokenDoll
+  m_Name: doll
+  m_TagString: fixedDoll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 580e92067d3964648b2083aa5a9623c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96345a0a089dc5647ac043383410b6b7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -109,21 +108,5 @@ MonoBehaviour:
   lockHighlightsprite: {fileID: 0}
   chestHighlight: {fileID: 0}
   chestHighlightsprite: {fileID: 0}
---- !u!114 &7303991037117261229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016485763761544068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ab0bdc03e73ae45b73a598d9ac9a6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 4016485763761544068, guid: 899ccdca05c7f5c42836177cd3e1f33b,
-    type: 3}
-  deposit: {fileID: 0}
-  boxHighlight: {fileID: 0}
-  lockHighlight: {fileID: 0}
-  chestHighlight: {fileID: 0}
+  dollHighlight: {fileID: 0}
+  dollHighlightsprite: {fileID: 0}

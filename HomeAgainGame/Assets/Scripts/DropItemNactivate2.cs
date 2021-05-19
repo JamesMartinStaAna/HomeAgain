@@ -28,6 +28,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
 
 
 
+
     //object highlights prologue
     public GameObject boxHighlight;
     public GameObject lockHighlight;
@@ -40,6 +41,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
         boxHighlight = GameObject.Find("boxSparkle");
         lockHighlight = GameObject.Find("lockSparkle");
         chestHighlight = GameObject.Find("chestSparkle");
+
 
 
 
@@ -120,6 +122,9 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
 
                 }
             }
+
+
+
     }
 
 
@@ -147,6 +152,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
             Debug.Log("Destroyed moon");
         }
 
+
         if (GameObject.FindWithTag("blackMoon") == null && GameObject.FindWithTag("whiteMoon") == null && GameObject.Find("desk open") != null)
         {
             SoundManager.PlaySound("popUp");
@@ -166,6 +172,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
 
 
         }
+
 
     }
 

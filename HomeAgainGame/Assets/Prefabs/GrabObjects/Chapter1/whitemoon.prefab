@@ -107,6 +107,8 @@ MonoBehaviour:
   boxHighlightsprite: {fileID: 0}
   lockHighlight: {fileID: 0}
   lockHighlightsprite: {fileID: 0}
+  chestHighlight: {fileID: 0}
+  chestHighlightsprite: {fileID: 0}
 --- !u!114 &1054304618380933087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +124,9 @@ MonoBehaviour:
   itemButton: {fileID: 5108980190633864406, guid: 607065cf75a0ef54fb7c1a72c61b1ada,
     type: 3}
   lockActive: {fileID: 0}
+  chestActive: {fileID: 0}
+  chestInactive: {fileID: 0}
   deposit: {fileID: 0}
   boxHighlight: {fileID: 0}
   lockHighlight: {fileID: 0}
+  chestHighlight: {fileID: 0}

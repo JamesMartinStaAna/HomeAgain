@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5108980190633864400}
   - component: {fileID: -6910200267818792110}
   - component: {fileID: 4106422360547738458}
-  - component: {fileID: 1054304618380933087}
   m_Layer: 5
   m_Name: fullmoon
   m_TagString: fullMoon
@@ -107,20 +106,5 @@ MonoBehaviour:
   boxHighlightsprite: {fileID: 0}
   lockHighlight: {fileID: 0}
   lockHighlightsprite: {fileID: 0}
---- !u!114 &1054304618380933087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108980190633864406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc14e251f385d94e929fab158dc0a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 0}
-  lockActive: {fileID: 0}
-  deposit: {fileID: 0}
-  boxHighlight: {fileID: 0}
-  lockHighlight: {fileID: 0}
+  chestHighlight: {fileID: 0}
+  chestHighlightsprite: {fileID: 0}
