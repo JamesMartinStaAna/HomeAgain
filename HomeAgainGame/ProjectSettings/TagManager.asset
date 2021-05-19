@@ -71,6 +71,8 @@ TagManager:
   - doll_receiver
   - doll
   - silverKey
+  - letter
+  - letter_receiver
   layers:
   - Default
   - TransparentFX

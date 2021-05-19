@@ -22,7 +22,8 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     public SpriteRenderer chestHighlightsprite;
     public GameObject dollHighlight;
     public SpriteRenderer dollHighlightsprite;
-
+    public GameObject letterHighlight;
+    public SpriteRenderer letterHighlightsprite;
 
 
 
@@ -48,6 +49,11 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         //doll on May
         dollHighlight = GameObject.Find("dollSparkle");
         dollHighlightsprite = dollHighlight.GetComponent<SpriteRenderer>();
+
+        //lettr on May
+        letterHighlight = GameObject.Find("letterSparkle");
+        letterHighlightsprite = letterHighlight.GetComponent<SpriteRenderer>();
+
 
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -120,6 +126,12 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 dollHighlightsprite.enabled = true;
                 Debug.Log("is dragging doll");
             }
+
+            if (gameObject.tag == "letter")
+            {
+                letterHighlightsprite.enabled = true;
+                Debug.Log("is dragging letter");
+            }
         }
 
         if (!isDragging)
@@ -143,6 +155,12 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
             if (gameObject.tag == "fixedDoll")
             {
                 dollHighlightsprite.enabled = false;
+
+            }
+
+            if (gameObject.tag == "letter")
+            {
+                letterHighlightsprite.enabled = false;
 
             }
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class DropItemNactivate2b : MonoBehaviour, IDropHandler
+public class DropItemNactivate2c : MonoBehaviour, IDropHandler
 {
     private Inventory inventory;
     public GameObject itemButton;
@@ -13,16 +13,17 @@ public class DropItemNactivate2b : MonoBehaviour, IDropHandler
     //Deposit objects 
     public GameObject deposit;
 
+    public GameObject letterHighlight;
+    public GameObject end;
+    bool letterCheck;
 
-    public GameObject dollHighlight;
-    public GameObject silverKeyView;
-    public GameObject letterdrop;
 
-    bool dollCheck;
+
+
 
     private void Start()
     {
-        dollHighlight = GameObject.Find("dollSparkle");
+        letterHighlight = GameObject.Find("dollSparkle");
 
 
     }
@@ -40,18 +41,31 @@ public class DropItemNactivate2b : MonoBehaviour, IDropHandler
         RectTransform invPanel = eventData.pointerDrag.GetComponent<RectTransform>();
 
 
-
-
-        if (gameObject.tag == "doll_receiver")
-            if (invPanel.CompareTag("fixedDoll"))
+        if (gameObject.tag == "letter_receiver")
+            if (invPanel.CompareTag("letter"))
             {
                 if (eventData.pointerDrag != null)
                 {
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    dollCheck = true;
-                    silverKeyView.SetActive(true);
+                    letterCheck = true;
+                    letterHighlight.transform.position = deposit.transform.position;
+                    Destroy(gameObject);
+
+
+
+                }
+            }
+
+        if (gameObject.tag == "silverBox" || gameObject.tag == "silverKey")
+            if (invPanel.CompareTag("silverBox") || invPanel.CompareTag("silverKey"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
                     Destroy(gameObject);
 
 
@@ -64,13 +78,17 @@ public class DropItemNactivate2b : MonoBehaviour, IDropHandler
     private void OnDestroy()
     {
 
+        if (GameObject.FindWithTag("letter") == null && letterCheck == true)
+        {
+            end.SetActive(true);
+            Debug.Log("Spawn plate");
+        }
 
 
-        if (GameObject.FindWithTag("doll_receiver") == null && dollCheck == true)
+        if (GameObject.FindWithTag("silverBox") == null && GameObject.FindWithTag("silverKey") == null && GameObject.Find("Tresure Chest open") != null)
         {
             SoundManager.PlaySound("popUp");
-            dollHighlight.transform.position = deposit.transform.position;
-            letterdrop.SetActive(true);
+
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false)
@@ -82,9 +100,6 @@ public class DropItemNactivate2b : MonoBehaviour, IDropHandler
 
                 }
             }
-
-
-
         }
     }
 

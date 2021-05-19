@@ -64,7 +64,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.8890089, b: 0.5613208, a: 1}
+    m_Value: {r: 1, g: 0.8174938, b: 0.56078434, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: -0.011355655}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.016297698}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.064592086}
   gain:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.89519805, z: 0.88456327, w: 0.15280138}
