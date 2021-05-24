@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip popUpSound, pickUpSound, drawerOpenSound, cabinentOpenSound, ShowerSound, doorOpenSound, lightSwitchSound, typeSound, mugSound, trashSound, spoonSound, clickSound;
+    public static AudioClip popUpSound, pickUpSound, drawerOpenSound, cabinentOpenSound, ShowerSound, doorOpenSound, lightSwitchSound, typeSound, mugSound, trashSound, spoonSound, clickSound, lockSound, cabinetSound, dollSound;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -22,6 +22,9 @@ public class SoundManager : MonoBehaviour
         trashSound = Resources.Load<AudioClip>("trash");
         spoonSound = Resources.Load<AudioClip>("spoon");
         clickSound = Resources.Load<AudioClip>("click");
+        lockSound = Resources.Load<AudioClip>("locksound");
+        cabinetSound = Resources.Load<AudioClip>("cabinetsound");
+        dollSound = Resources.Load<AudioClip>("dollcombine");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -67,6 +70,18 @@ public class SoundManager : MonoBehaviour
 
             case "click":
                 audioSrc.PlayOneShot(clickSound);
+                break;
+
+            case "locksound":
+                audioSrc.PlayOneShot(lockSound);
+                break;
+
+            case "cabinetsound":
+                audioSrc.PlayOneShot(cabinetSound);
+                break;
+
+            case "dollcombine":
+                audioSrc.PlayOneShot(dollSound);
                 break;
         }
     }

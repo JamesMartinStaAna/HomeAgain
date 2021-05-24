@@ -66,6 +66,7 @@ public class DropItemNactivate2c : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
+                    SoundManager.PlaySound("locksound");
                     Destroy(gameObject);
 
 
@@ -85,7 +86,7 @@ public class DropItemNactivate2c : MonoBehaviour, IDropHandler
         }
 
 
-        if (GameObject.FindWithTag("silverBox") == null && GameObject.FindWithTag("silverKey") == null && GameObject.Find("Tresure Chest open") != null)
+        if ((GameObject.FindWithTag("silverBox") == null || GameObject.FindWithTag("silverKey") == null) && GameObject.Find("Tresure Chest open") != null)
         {
             SoundManager.PlaySound("popUp");
 

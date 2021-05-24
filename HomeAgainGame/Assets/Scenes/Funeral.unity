@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -22174,7 +22174,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434540111}
+      - m_Target: {fileID: 0}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -30515,7 +30515,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 958721787340b0443ba7d25faf0d9190, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ffce416325241845a80aec68ecb6978, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -30766,7 +30766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803635028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: 0}
+  m_LocalPosition: {x: -0.018, y: -0.528, z: 0}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 2031181116}
@@ -33195,8 +33195,8 @@ GameObject:
   - component: {fileID: 927824172}
   - component: {fileID: 927824171}
   - component: {fileID: 927824170}
-  - component: {fileID: 927824169}
   - component: {fileID: 927824178}
+  - component: {fileID: 927824169}
   m_Layer: 5
   m_Name: Prologue_end
   m_TagString: Untagged
@@ -33213,11 +33213,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 927824168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d70c5002a92c7544a237d03247aaad3, type: 3}
+  m_Script: {fileID: 11500000, guid: 03d11dcd59ceeac4daacd77766e6874a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startTime: 9
+  startTime: 10
 --- !u!95 &927824170
 Animator:
   serializedVersion: 3
@@ -46114,7 +46114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1300954265
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48506,15 +48506,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434540110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1793dde8b904735448d145c12827448f, type: 3}
+  m_Script: {fileID: 11500000, guid: 973e97beae31fcb439256886f9709343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 2010631796}
+  textDisplay: {fileID: 0}
   sentences:
-  - Weird, its locked. This is where the untensils are stored.
-  - I would ask mom where the key is but she looks busy
-  typingSpeed: 0.05
-  continueButton: {fileID: 622018002}
+  - Weird, its locked. This is where the untensils are stored. I would ask mom where
+    the key is but she looks busy
+  typingSpeed: 0.03
 --- !u!224 &1434540112
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48909,7 +48908,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 918f10973b51b5e48b868ca09fb16958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 185e3d2426763334996a8f3b11bf1877, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -56158,7 +56157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555117662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: 0}
+  m_LocalPosition: {x: -0.018, y: -0.528, z: 0}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 2031181116}
@@ -59210,7 +59209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1695933605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69891,7 +69890,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 179}
+  m_AnchoredPosition: {x: 0, y: -65.000046}
   m_SizeDelta: {x: 1573.4614, y: 393.36536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967643521
@@ -78385,7 +78384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 328}
+  m_AnchoredPosition: {x: 0, y: 84}
   m_SizeDelta: {x: 1573.4614, y: 393.36536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118637145

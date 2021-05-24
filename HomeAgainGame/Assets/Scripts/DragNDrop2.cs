@@ -109,7 +109,7 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 Debug.Log("is dragging box");
             }
 
-            if (gameObject.tag == "lockNkey")
+            if (gameObject.tag == "lockNkey" && GameObject.Find("lock_Drop") != null)
             {
                 lockHighlightsprite.enabled = true;
                 Debug.Log("is dragging lockNkey");
@@ -141,7 +141,7 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
                 boxHighlightsprite.enabled = false;
             }
 
-            if (gameObject.tag == "lockNkey")
+            if (gameObject.tag == "lockNkey" && GameObject.Find("lock_Drop") != null)
             {
                 lockHighlightsprite.enabled = false;
             }

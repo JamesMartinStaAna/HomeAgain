@@ -109,6 +109,10 @@ MonoBehaviour:
   lockHighlightsprite: {fileID: 0}
   chestHighlight: {fileID: 0}
   chestHighlightsprite: {fileID: 0}
+  dollHighlight: {fileID: 0}
+  dollHighlightsprite: {fileID: 0}
+  letterHighlight: {fileID: 0}
+  letterHighlightsprite: {fileID: 0}
 --- !u!114 &1476405977268890527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,9 +125,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ab0bdc03e73ae45b73a598d9ac9a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4016485763761544068, guid: 899ccdca05c7f5c42836177cd3e1f33b,
-    type: 3}
+  itemButton: {fileID: 0}
   deposit: {fileID: 0}
-  boxHighlight: {fileID: 0}
-  lockHighlight: {fileID: 0}
-  chestHighlight: {fileID: 0}

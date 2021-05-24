@@ -68,6 +68,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     boxCheck = true;
+                    SoundManager.PlaySound("cabinetsound");
                     Destroy(gameObject);
 
                 }
@@ -83,6 +84,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
                     lockCheck = true;
+                    SoundManager.PlaySound("locksound");
                     Destroy(gameObject);
 
 
@@ -116,6 +118,7 @@ public class DropItemNactivate2 : MonoBehaviour, IDropHandler
                     moonCheck = true;
                     chestActive.SetActive(true);
                     chestInactive.transform.position = deposit.transform.position;
+                    SoundManager.PlaySound("locksound");
                     Destroy(gameObject);
 
 

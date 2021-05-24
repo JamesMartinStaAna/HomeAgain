@@ -46,6 +46,7 @@ public class DropItemNactivate2a : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
+                    SoundManager.PlaySound("dollcombine");
                     Destroy(gameObject);
 
 
@@ -57,7 +58,7 @@ public class DropItemNactivate2a : MonoBehaviour, IDropHandler
 
     private void OnDestroy()
     {
-        if (GameObject.FindWithTag("brokenDoll") == null && GameObject.FindWithTag("brokenDollArm") == null && GameObject.Find("Tresure Chest open") != null)
+        if ((GameObject.FindWithTag("brokenDoll") == null || GameObject.FindWithTag("brokenDollArm") == null) && GameObject.Find("Tresure Chest open grab") != null)
         {
             SoundManager.PlaySound("popUp");
 

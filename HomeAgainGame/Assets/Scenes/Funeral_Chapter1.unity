@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -9148,7 +9148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9701ea9880b57da4687368b06c05d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objView: {fileID: 1074483879}
+  objView: {fileID: 1566965953}
 --- !u!114 &177851962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9449,7 +9449,7 @@ SpriteRenderer:
   m_SortingOrder: 20
   m_Sprite: {fileID: -2059823583270753353, guid: f47cce32e7748f648b6572fb05b58f1f,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.13725491}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12680,6 +12680,131 @@ Transform:
   m_Father: {fileID: 29260524}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &309465059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 581728554}
+    m_Modifications:
+    - target: {fileID: 4504914833641759804, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_Name
+      value: MayFace
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a827799a68dd9848a5f9c9cf4d5805d, type: 3}
+--- !u!224 &309465060 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4504914833641759805, guid: 5a827799a68dd9848a5f9c9cf4d5805d,
+    type: 3}
+  m_PrefabInstance: {fileID: 309465059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &314432398
 GameObject:
   m_ObjectHideFlags: 0
@@ -14136,7 +14261,7 @@ SpriteRenderer:
   m_SortingOrder: 20
   m_Sprite: {fileID: -2059823583270753353, guid: f47cce32e7748f648b6572fb05b58f1f,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.13725491}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15685,7 +15810,7 @@ SpriteRenderer:
   m_SortingOrder: 9
   m_Sprite: {fileID: -2059823583270753353, guid: f47cce32e7748f648b6572fb05b58f1f,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.13725491}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16479,8 +16604,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1677663875}
   sentences:
-  - "There\u2019s a lock and key inside. I can use this keep valuable items safe."
-  typingSpeed: 0.05
+  - "There\u2019s a lock and key inside. I can use this keep mom's box of valuable
+    items safe."
+  typingSpeed: 0.03
 --- !u!1 &444538117
 GameObject:
   m_ObjectHideFlags: 0
@@ -24117,7 +24243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539823918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.234, y: -0.2532222, z: 1.49}
+  m_LocalPosition: {x: 1.002, y: -0.2532222, z: 1.49}
   m_LocalScale: {x: 0.66666675, y: 0.66666675, z: 1}
   m_Children: []
   m_Father: {fileID: 29260524}
@@ -24974,7 +25100,7 @@ RectTransform:
   - {fileID: 492429214}
   - {fileID: 1266290254}
   - {fileID: 1956640236}
-  - {fileID: 1268003791}
+  - {fileID: 309465060}
   m_Father: {fileID: 629722703}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35877,7 +36003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803635028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: 0}
+  m_LocalPosition: {x: -0.018, y: -0.528, z: 0}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 2031181116}
@@ -44782,7 +44908,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 2008470537}
   sentences:
-  - Looks like it's missing the other half. Hmmmm this looks familiar.
+  - Looks like it's missing the other half. Hmmmm this looks familiar. Looks like
+    something I have kept in my room.
   typingSpeed: 0.03
 --- !u!1 &1125848665
 GameObject:
@@ -45555,9 +45682,9 @@ GameObject:
   - component: {fileID: 1154153417}
   - component: {fileID: 1154153416}
   - component: {fileID: 1154153415}
-  - component: {fileID: 1154153414}
   - component: {fileID: 1154153413}
   - component: {fileID: 1154153420}
+  - component: {fileID: 1154153414}
   m_Layer: 5
   m_Name: end
   m_TagString: open_image
@@ -45587,11 +45714,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1154153412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f96c4d79db0092439816ae8bda866a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 03d11dcd59ceeac4daacd77766e6874a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startTime: 40
+  startTime: 38
 --- !u!95 &1154153415
 Animator:
   serializedVersion: 3
@@ -48025,7 +48152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1673115482}
   sentences:
-  - It's the missing half. I knew it I did see it before.
+  - Looks like something to open locked treasures
   typingSpeed: 0.03
 --- !u!1 &1225334542
 GameObject:
@@ -49341,145 +49468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1956640237}
   sentences:
-  - "May, sweetie, we\u2019ll have to sort out some of your Mom\u2019s things. Do
-    you want to take a look before we decide which to give away?"
+  - "May, sweetie, I have packed some of your Mom\u2019s things. Do you want to take
+    a look before we decide which to give away?"
   typingSpeed: 0.03
---- !u!1001 &1268003790
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 581728554}
-    m_Modifications:
-    - target: {fileID: 8869160543603263532, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_Name
-      value: 'MayFace '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263532, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -295
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -388
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869160543603263534, guid: c14dab0eadc605241a98042f6067464e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7f32b9563d45a024180c67c8c4eac58f,
-        type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c14dab0eadc605241a98042f6067464e, type: 3}
---- !u!224 &1268003791 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1268003790}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270933916
 GameObject:
   m_ObjectHideFlags: 0
@@ -57658,7 +57649,7 @@ SpriteRenderer:
   m_SortingOrder: 9
   m_Sprite: {fileID: -2059823583270753353, guid: f47cce32e7748f648b6572fb05b58f1f,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.13725491}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -57800,7 +57791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9701ea9880b57da4687368b06c05d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objView: {fileID: 2032809622}
+  objView: {fileID: 1566965953}
 --- !u!65 &1403173983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58750,7 +58741,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 918f10973b51b5e48b868ca09fb16958, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 185e3d2426763334996a8f3b11bf1877, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -64032,7 +64023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 2121931474}
   sentences:
-  - This should do it.
+  - This should do it. I should also check the playroom there might be something
+    important to keep.
   typingSpeed: 0.03
 --- !u!1 &1479399262
 GameObject:
@@ -66607,7 +66599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555117662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: -0.448, z: 0}
+  m_LocalPosition: {x: -0.018, y: -0.528, z: 0}
   m_LocalScale: {x: 0.4285714, y: 0.4285714, z: 1}
   m_Children: []
   m_Father: {fileID: 2031181116}
@@ -66982,7 +66974,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1889582237}
   sentences:
   - "I remember this, Mom told me she\u2019ll give it to me when I\u2019m old enough.
-    It\u2019s missing a few parts."
+    Hmmm It\u2019s missing a part."
   typingSpeed: 0.03
 --- !u!1 &1574368058
 GameObject:
@@ -68738,7 +68730,7 @@ SpriteRenderer:
   m_SortingOrder: 9
   m_Sprite: {fileID: -2059823583270753353, guid: f47cce32e7748f648b6572fb05b58f1f,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.13725491}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -68935,7 +68927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startTime: 5
+  startTime: 6
 --- !u!95 &1650937741
 Animator:
   serializedVersion: 3
@@ -69906,7 +69898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 401789350}
   sentences:
-  - I should secure this  box, I wouldn't want it to be accidently given away.
+  - I should secure this box in my room, I wouldn't want it to be accidently given
+    away.
   typingSpeed: 0.03
 --- !u!1 &1685483158
 GameObject:
@@ -80792,9 +80785,9 @@ GameObject:
   - component: {fileID: 1896531576}
   - component: {fileID: 1896531575}
   - component: {fileID: 1896531574}
-  - component: {fileID: 1896531573}
   - component: {fileID: 1896531579}
   - component: {fileID: 1896531580}
+  - component: {fileID: 1896531573}
   m_Layer: 5
   m_Name: Intro
   m_TagString: open_image
@@ -80811,7 +80804,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896531572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f96c4d79db0092439816ae8bda866a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 03d11dcd59ceeac4daacd77766e6874a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
@@ -89209,7 +89202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9701ea9880b57da4687368b06c05d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objView: {fileID: 1074483879}
+  objView: {fileID: 1566965953}
 --- !u!65 &1990665334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91866,7 +91859,7 @@ PrefabInstance:
     - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
         type: 3}
@@ -93762,7 +93755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startTime: 60
+  startTime: 25
 --- !u!95 &2144317587
 Animator:
   serializedVersion: 3
