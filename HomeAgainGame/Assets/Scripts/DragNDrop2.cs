@@ -9,7 +9,7 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector3 startPosition;
-    public GameObject remind;
+    //public GameObject remind;
 
   
     private bool isDragging;
@@ -88,7 +88,7 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
             transform.localPosition = startPosition;
             canvasGroup.blocksRaycasts = true;
             isDragging = false;
-            Instantiate(remind);
+            //Instantiate(remind);
         }
     }
 

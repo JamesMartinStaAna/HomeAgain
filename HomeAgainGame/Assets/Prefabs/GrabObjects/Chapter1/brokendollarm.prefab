@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1506020914385240754}
   - component: {fileID: 1502824948111430269}
   - component: {fileID: -7675487426256159467}
-  - component: {fileID: 1476405977268890527}
+  - component: {fileID: 958693636975483228}
   m_Layer: 5
   m_Name: brokendollarm
   m_TagString: brokenDollArm
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  remind: {fileID: 5511789061278165943, guid: 08924686cae3ce64cbbec8985b2358b6, type: 3}
   boxHighlight: {fileID: 0}
   boxHighlightsprite: {fileID: 0}
   lockHighlight: {fileID: 0}
@@ -113,7 +112,7 @@ MonoBehaviour:
   dollHighlightsprite: {fileID: 0}
   letterHighlight: {fileID: 0}
   letterHighlightsprite: {fileID: 0}
---- !u!114 &1476405977268890527
+--- !u!114 &958693636975483228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,5 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ab0bdc03e73ae45b73a598d9ac9a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 0}
+  itemButton: {fileID: 4016485763761544068, guid: 899ccdca05c7f5c42836177cd3e1f33b,
+    type: 3}
   deposit: {fileID: 0}

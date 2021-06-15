@@ -20,12 +20,13 @@ public class Dialog_no_button : MonoBehaviour
 
     }
 
+
     IEnumerator Type()
     {
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
-            SoundManager.PlaySound("lightSwitch");
+            SoundManager.PlaySound("type");
             yield return new WaitForSeconds(typingSpeed);
         }
 

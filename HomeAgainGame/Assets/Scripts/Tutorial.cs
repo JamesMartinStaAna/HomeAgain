@@ -48,7 +48,7 @@ public class Tutorial : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Player") && gameObject.tag == "view")
+        if (collision.CompareTag("Player") && gameObject.tag == "view" && GameObject.Find("Inventory Function")==null)
         {
             Interact.SetActive(true);
         }
@@ -63,7 +63,7 @@ public class Tutorial : MonoBehaviour
   
         }
 
-        if (collision.CompareTag("Player") && gameObject.tag == "view")
+        if (collision.CompareTag("Player") && gameObject.tag == "view" && GameObject.Find("Inventory Function") == null)
         {
             Interact.SetActive(false);
         }

@@ -44,11 +44,11 @@ public class May_control_script : MonoBehaviour
     
 
         // Character Interact:
-        if (Input.GetKeyDown(KeyCode.E) && rb.velocity.magnitude == 0 )
+        if (Input.GetKeyDown(KeyCode.E) && rb.velocity.magnitude == 0 && GameObject.FindWithTag("open_image") == null)
         {
             CheckInteraction();
         }
-
+        
         ViewStop();
         
 

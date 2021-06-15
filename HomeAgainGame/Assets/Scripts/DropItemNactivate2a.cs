@@ -67,8 +67,8 @@ public class DropItemNactivate2a : MonoBehaviour, IDropHandler
                 if (inventory.isFull[i] == false)
                 {
                     //item can be added to inventory
-                    inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
+                    inventory.isFull[i] = true;
                     break;
 
                 }

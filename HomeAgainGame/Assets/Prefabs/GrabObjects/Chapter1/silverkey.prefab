@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  remind: {fileID: 5511789061278165943, guid: 08924686cae3ce64cbbec8985b2358b6, type: 3}
   boxHighlight: {fileID: 0}
   boxHighlightsprite: {fileID: 0}
   lockHighlight: {fileID: 0}
@@ -111,6 +110,8 @@ MonoBehaviour:
   chestHighlightsprite: {fileID: 0}
   dollHighlight: {fileID: 0}
   dollHighlightsprite: {fileID: 0}
+  letterHighlight: {fileID: 0}
+  letterHighlightsprite: {fileID: 0}
 --- !u!114 &-664582714119960830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,3 +127,5 @@ MonoBehaviour:
   itemButton: {fileID: 5108980190633864406, guid: 54c353f1a3dc3f8449ce493b454bd46c,
     type: 3}
   deposit: {fileID: 0}
+  letterHighlight: {fileID: 0}
+  end: {fileID: 0}
