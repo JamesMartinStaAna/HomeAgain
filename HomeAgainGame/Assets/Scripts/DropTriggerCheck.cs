@@ -6,13 +6,8 @@ using UnityEngine;
 public class DropTriggerCheck : MonoBehaviour
 {
 
-    public GameObject activateFootstoolDrop;
-    public GameObject activateKeyDrop;
-    public GameObject activateDadMugDrop;
-    public GameObject activateMomMugDrop;
-    public GameObject activateMayMugDrop;
-    public GameObject activateSpoonDrop;
-    public GameObject activatePlateDrop;
+    public GameObject activateDrop;
+ 
 
 
     public void Reset()
@@ -26,41 +21,44 @@ public class DropTriggerCheck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-
+        if (collision.CompareTag("Player") && gameObject.tag == "triggerTrash" && GameObject.FindWithTag("crumpledpaper") != null)
+        {
+            activateDrop.GetComponent<Item_Receiver>().enabled = true;
+        }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerFootStool" && GameObject.FindWithTag("footstool") != null)
         {
-            activateFootstoolDrop.GetComponent<DropItemNactivate>().enabled = true;
+            activateDrop.GetComponent<Item_Receiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerKey" && GameObject.FindWithTag("key") != null)
         {
-            activateKeyDrop.GetComponent<DropItemNactivate>().enabled = true;
+            activateDrop.GetComponent<Item_Receiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerDadmug" && GameObject.FindWithTag("dadmug") != null)
         {
-            activateDadMugDrop.GetComponent<DropItemNactivate>().enabled = true;
+            activateDrop.GetComponent<Item_Receiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMommug" && GameObject.FindWithTag("mommug") != null)
         {
-            activateMomMugDrop.GetComponent<DropItemNactivate>().enabled = true; 
+            activateDrop.GetComponent<Item_Receiver>().enabled = true; 
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMaymug" && GameObject.FindWithTag("maymug") != null)
         {
-            activateMayMugDrop.GetComponent<DropItemNactivate>().enabled = true;
+            activateDrop.GetComponent<Item_Receiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerSpoon" && GameObject.FindWithTag("spoon") != null)
         {
-            activateSpoonDrop.SetActive(true);
+            activateDrop.SetActive(true);
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerPlate" && GameObject.FindWithTag("plate") != null)
         {
-            activatePlateDrop.SetActive(true);
+            activateDrop.SetActive(true);
         }
 
 
@@ -68,41 +66,44 @@ public class DropTriggerCheck : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-
+        if (collision.CompareTag("Player") && gameObject.tag == "triggerTrash" && GameObject.FindWithTag("crumpledpaper") != null)
+        {
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
+        }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerFootStool" && GameObject.FindWithTag("footstool") != null)
         {
-            activateFootstoolDrop.GetComponent<DropItemNactivate>().enabled = false;
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerKey" && GameObject.FindWithTag("key") != null)
         {
-            activateKeyDrop.GetComponent<DropItemNactivate>().enabled = false;
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerDadmug" && GameObject.FindWithTag("dadmug") != null)
         {
-            activateDadMugDrop.GetComponent<DropItemNactivate>().enabled = false;
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMommug" && GameObject.FindWithTag("mommug") != null)
         {
-            activateMomMugDrop.GetComponent<DropItemNactivate>().enabled = false;
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMaymug" && GameObject.FindWithTag("maymug") != null)
         {
-            activateMayMugDrop.GetComponent<DropItemNactivate>().enabled = false;
+            activateDrop.GetComponent<Item_Receiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerSpoon" && GameObject.FindWithTag("spoon") != null)
         {
-            activateSpoonDrop.SetActive(false);
+            activateDrop.SetActive(false);
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerPlate" && GameObject.FindWithTag("plate") != null)
         {
-            activatePlateDrop.SetActive(false);
+            activateDrop.SetActive(false);
         }
     }
 }

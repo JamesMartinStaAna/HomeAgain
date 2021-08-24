@@ -73,6 +73,7 @@ TagManager:
   - silverKey
   - letter
   - letter_receiver
+  - triggerTrash
   layers:
   - Default
   - TransparentFX

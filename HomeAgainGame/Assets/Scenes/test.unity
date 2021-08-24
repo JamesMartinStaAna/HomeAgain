@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1078,6 +1078,56 @@ MonoBehaviour:
   sentences:
   - I don't need to use the bathroom right now.
   typingSpeed: 0.02
+--- !u!1 &116576510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116576512}
+  - component: {fileID: 116576511}
+  m_Layer: 0
+  m_Name: TEST
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &116576511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116576510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e8d2f471264354c80e70ad37c120ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items:
+  - HighlightRemove: {fileID: 0}
+    WorldObjectToSwap: {fileID: 0}
+    Deposit: {fileID: 0}
+  - HighlightRemove: {fileID: 0}
+    WorldObjectToSwap: {fileID: 0}
+    Deposit: {fileID: 0}
+--- !u!4 &116576512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116576510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.63514, y: -67.67344, z: 202.35439}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137448487
 GameObject:
   m_ObjectHideFlags: 0
@@ -12895,7 +12945,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1020731565}
-  animator: {fileID: 0}
 --- !u!65 &372549185
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14075,7 +14124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1436580091}
-  animator: {fileID: 0}
 --- !u!65 &470812668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15276,7 +15324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1657486813}
-  animator: {fileID: 0}
 --- !u!65 &562398029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15793,7 +15840,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActivate: {fileID: 0}
+  StoolActivate: {fileID: 0}
+  KitchenCabinetActivate: {fileID: 0}
+  KitchenCounterActivate: {fileID: 0}
+  BinActivate: {fileID: 0}
+  DadMugActivate: {fileID: 0}
+  MomMugActivate: {fileID: 0}
+  MayMugActivate: {fileID: 0}
+  spoonActivate: {fileID: 0}
+  plateActivate: {fileID: 0}
+  DestroyObject_bin: {fileID: 0}
+  DestroyObject_kitchen: {fileID: 0}
+  DestroyObject_kitchenCabinet: {fileID: 0}
+  deposit: {fileID: 0}
+  FootstoolObject: {fileID: 0}
+  kitchenCabinetObject: {fileID: 0}
+  binHighlight: {fileID: 0}
+  dadMugHighlight: {fileID: 0}
+  momMugHighlight: {fileID: 0}
+  mayMugHighlight: {fileID: 0}
+  spoonHighlight: {fileID: 0}
+  stoolHighlight: {fileID: 0}
+  plateHighlight: {fileID: 0}
+  kitchenKeyHighlight: {fileID: 0}
 --- !u!114 &632338014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15997,7 +16066,11 @@ MonoBehaviour:
   interactIcon_Door: {fileID: 1089411434}
   interactIcon_Stairs: {fileID: 1161462207}
   interactIcon_GrabObject: {fileID: 724379696}
+  interactIcon_To_Lobby: {fileID: 0}
+  interactIcon_To_LivingRoom: {fileID: 0}
+  interactIcon_Task: {fileID: 0}
   animator: {fileID: 653154704}
+  Invenanimator: {fileID: 0}
 --- !u!95 &653154704
 Animator:
   serializedVersion: 3
@@ -16363,6 +16436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 218475706}
   Interact: {fileID: 189926237}
+  inventory: {fileID: 0}
+  combine: {fileID: 0}
 --- !u!65 &712567309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17374,7 +17449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1553818298}
-  animator: {fileID: 0}
 --- !u!114 &790089328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30159,7 +30233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1026968729}
-  animator: {fileID: 0}
 --- !u!65 &1142089305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30891,7 +30964,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1436580091}
-  animator: {fileID: 0}
 --- !u!65 &1179566593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32364,7 +32436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 2060373275}
-  animator: {fileID: 0}
 --- !u!65 &1321851318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32608,7 +32679,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1553818298}
-  animator: {fileID: 0}
 --- !u!65 &1325855391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38750,7 +38820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1521770904}
-  animator: {fileID: 0}
 --- !u!65 &1429772313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40465,7 +40534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 2060373275}
-  animator: {fileID: 0}
 --- !u!65 &1564136916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41461,6 +41529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 218475706}
   Interact: {fileID: 189926237}
+  inventory: {fileID: 0}
+  combine: {fileID: 0}
 --- !u!65 &1625865310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43758,7 +43828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objView: {fileID: 1495038151}
-  animator: {fileID: 0}
 --- !u!65 &1860800216
 BoxCollider:
   m_ObjectHideFlags: 0
