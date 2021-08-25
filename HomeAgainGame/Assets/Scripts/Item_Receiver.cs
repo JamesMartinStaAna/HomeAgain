@@ -180,7 +180,7 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
         if (GameObject.FindWithTag("crumpledpaper_receiver") == null && trashCheck == true)
         {
             WorldObjectToSwap.SetActive(true);
-            Destroy(WorldObjectToRemove);
+            WorldObjectToRemove.transform.position = deposit.transform.position;
             HighlightRemove.transform.position = deposit.transform.position;
             Debug.Log("Destroyed trash");
         }
@@ -209,9 +209,9 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
 
         if (GameObject.FindWithTag("key_receiver") == null && KeyCheck == true)
         {
-            KitchenCounterActivate.SetActive(true);
-            DestroyObject_kitchen.transform.position = deposit.transform.position;
-            kitchenKeyHighlight.transform.position = deposit.transform.position;
+            WorldObjectToSwap.SetActive(true);
+            WorldObjectToRemove.transform.position = deposit.transform.position;
+            HighlightRemove.transform.position = deposit.transform.position;
             Debug.Log("Destroyed key");
         }
 
@@ -225,10 +225,11 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
 
         if (GameObject.FindWithTag("footstool_receiver") == null && StoolCheck == true)
         {
-            StoolActivate.SetActive(true);
-            KitchenCabinetActivate.SetActive(true);
-            stoolHighlight.transform.position = deposit.transform.position;
-            DestroyObject_kitchenCabinet.transform.position = deposit.transform.position;
+            WorldObjectToSwap.SetActive(true);
+            HighlightRemove.transform.position = deposit.transform.position;
+
+            //KitchenCabinetActivate.SetActive(true);
+            //DestroyObject_kitchenCabinet.transform.position = deposit.transform.position;
             Debug.Log("Destroyed Footstool");
 
         }
