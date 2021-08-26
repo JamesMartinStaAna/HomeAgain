@@ -29457,7 +29457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e8d2f471264354c80e70ad37c120ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Items: []
 --- !u!4 &1045052055
 Transform:
   m_ObjectHideFlags: 0
@@ -51691,14 +51690,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1471446715}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
+  m_Script: {fileID: 11500000, guid: efba4819d8c293d41b98e135a3ee15c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Dad Mug
-  HighlightRemove: {fileID: 1777695277}
-  WorldObjectToRemove: {fileID: 0}
-  WorldObjectToSwap: {fileID: 249442770}
-  deposit: {fileID: 1562941645}
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 249442770}
+  WorldObjectsToDeposit:
+  - {fileID: 1777695277}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1471446718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55011,7 +55013,7 @@ GameObject:
   - component: {fileID: 1610355715}
   - component: {fileID: 1610355718}
   - component: {fileID: 1610355717}
-  - component: {fileID: 1610355720}
+  - component: {fileID: 1610355716}
   m_Layer: 5
   m_Name: trash_Drop
   m_TagString: crumpledpaper_receiver
@@ -55038,6 +55040,27 @@ RectTransform:
   m_AnchoredPosition: {x: -208.7233, y: -62.68692}
   m_SizeDelta: {x: 0.87292004, y: 0.963621}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1610355716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610355714}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efba4819d8c293d41b98e135a3ee15c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 1135712674}
+  WorldObjectsToDeposit:
+  - {fileID: 610474960}
+  - {fileID: 1428441377}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1610355717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55053,7 +55076,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -55075,23 +55098,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610355714}
   m_CullTransparentMesh: 0
---- !u!114 &1610355720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610355714}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Trash Receiver
-  HighlightRemove: {fileID: 610474960}
-  WorldObjectToRemove: {fileID: 1428441377}
-  WorldObjectToSwap: {fileID: 1135712674}
-  deposit: {fileID: 1562941645}
 --- !u!1 &1617762012
 GameObject:
   m_ObjectHideFlags: 0

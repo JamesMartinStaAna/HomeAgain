@@ -23,7 +23,7 @@ public class DropTriggerCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player") && gameObject.tag == "triggerTrash" && GameObject.FindWithTag("crumpledpaper") != null)
         {
-            activateDrop.GetComponent<Item_Receiver>().enabled = true;
+            activateDrop.GetComponent<ItemCanvasReceiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerFootStool" && GameObject.FindWithTag("footstool") != null)
@@ -38,7 +38,7 @@ public class DropTriggerCheck : MonoBehaviour
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerDadmug" && GameObject.FindWithTag("dadmug") != null)
         {
-            activateDrop.GetComponent<Item_Receiver>().enabled = true;
+            activateDrop.GetComponent<ItemCanvasReceiver>().enabled = true;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMommug" && GameObject.FindWithTag("mommug") != null)
@@ -68,7 +68,7 @@ public class DropTriggerCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player") && gameObject.tag == "triggerTrash" && GameObject.FindWithTag("crumpledpaper") != null)
         {
-            activateDrop.GetComponent<Item_Receiver>().enabled = false;
+            activateDrop.GetComponent<ItemCanvasReceiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerFootStool" && GameObject.FindWithTag("footstool") != null)
@@ -83,7 +83,7 @@ public class DropTriggerCheck : MonoBehaviour
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerDadmug" && GameObject.FindWithTag("dadmug") != null)
         {
-            activateDrop.GetComponent<Item_Receiver>().enabled = false;
+            activateDrop.GetComponent<ItemCanvasReceiver>().enabled = false;
         }
 
         if (collision.CompareTag("Player") && gameObject.tag == "triggerMommug" && GameObject.FindWithTag("mommug") != null)

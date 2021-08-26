@@ -29,7 +29,10 @@ public class Pickup_switch_object : Interactable
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     transform.position = deposit.transform.position;
                     pickUpNotif.SetActive(true);
-                    gameActivate.SetActive(true);
+                    if (gameActivate != null)
+                    {
+                        gameActivate.SetActive(true);
+                    }
                     
                     break;
 
