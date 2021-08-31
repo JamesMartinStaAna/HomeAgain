@@ -9,10 +9,8 @@ public class Tutorial : MonoBehaviour
     Collider collision;
     public GameObject Movement;
     public GameObject Interact;
-    public GameObject inventory;
-    public GameObject combine;
+    public GameObject Inventory;
 
-    float alphaLevel;
     SpriteRenderer sprite;
 
     void Start()
@@ -23,13 +21,13 @@ public class Tutorial : MonoBehaviour
     {
         if (GameObject.Find("crumpledpaper_small").transform.position == GameObject.Find("Deposit").transform.position && GameObject.Find("crumpledpaper_notif") == null)
         {
-            inventory.SetActive(true);
+            Inventory.SetActive(true);
         }
 
 
-        if (inventory.activeSelf && Input.GetMouseButtonDown(0))
+        if (Inventory.activeSelf && Input.GetMouseButtonDown(0))
         {
-            Destroy(inventory);
+            Destroy(Inventory);
             Destroy(gameObject);
         }
 

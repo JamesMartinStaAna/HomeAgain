@@ -11,14 +11,8 @@ public class May_control_script : MonoBehaviour
     bool isMoving = false;
 
     //Icon Notifs
-    public GameObject interactIcon;
-    public GameObject interactIcon_Light;
-    public GameObject interactIcon_Door;
-    public GameObject interactIcon_Stairs;
-    public GameObject interactIcon_GrabObject;
-    public GameObject interactIcon_To_Lobby;
-    public GameObject interactIcon_To_LivingRoom;
-    public GameObject interactIcon_Task;
+    public List <GameObject> InteractIcon;
+ 
 
     //Animations
     private bool animateMove;
@@ -135,102 +129,102 @@ public class May_control_script : MonoBehaviour
 
     public void OpenInteractableIcon()
     {
-        interactIcon.SetActive(true);
+        InteractIcon[0].SetActive(true);
 
     }
 
     public void CloseInteractableIcon()
     {
-        interactIcon.SetActive(false);
+        InteractIcon[0].SetActive(false);
 
     }
 
     public void OpenInteractableIconlight()
     {
-        interactIcon_Light.SetActive(true);
+        InteractIcon[1].SetActive(true);
 
     }
 
     public void CloseInteractableIconlight()
     {
-        interactIcon_Light.SetActive(false);
+        InteractIcon[1].SetActive(false);
 
     }
 
     public void OpenInteractableIcondoor()
     {
-        interactIcon_Door.SetActive(true);
+        InteractIcon[2].SetActive(true);
 
     }
 
     public void CloseInteractableIcondoor()
     {
-        interactIcon_Door.SetActive(false);
+        InteractIcon[2].SetActive(false);
 
     }
 
     public void OpenInteractableIconstairs()
     {
-        interactIcon_Stairs.SetActive(true);
+        InteractIcon[3].SetActive(true);
 
     }
 
     public void CloseInteractableIconstairs()
     {
-        interactIcon_Stairs.SetActive(false);
+        InteractIcon[3].SetActive(false);
 
     }
 
     public void OpenInteractableIconToLobby()
     {
-        interactIcon_To_Lobby.SetActive(true);
+        InteractIcon[4].SetActive(true);
 
     }
 
     public void CloseInteractableIconToLobby()
     {
-        interactIcon_To_Lobby.SetActive(false);
+        InteractIcon[4].SetActive(false);
 
     }
 
     public void OpenInteractableIconToLivingRoom()
     {
-        interactIcon_To_LivingRoom.SetActive(true);
+        InteractIcon[5].SetActive(true);
 
     }
 
     public void CloseInteractableIconToLivingRoom()
 
     {
-        interactIcon_To_LivingRoom.SetActive(false);
+        InteractIcon[5].SetActive(false);
 
     }
 
 
     public void OpenInteractableIcongrab()
     {
-        interactIcon_GrabObject.SetActive(true);
+        InteractIcon[6].SetActive(true);
 
     }
 
     public void CloseInteractableIcongrab()
 
     {
-        interactIcon_GrabObject.SetActive(false);
+        InteractIcon[6].SetActive(false);
 
     }
 
 
     public void OpenInteractableIconTask()
     {
-        interactIcon_Task.SetActive(true);
+        InteractIcon[7].SetActive(true);
 
     }
 
     public void CloseInteractableIconTask()
 
     {
-        interactIcon_Task.SetActive(false);
+        InteractIcon[7].SetActive(false);
 
     }
 
