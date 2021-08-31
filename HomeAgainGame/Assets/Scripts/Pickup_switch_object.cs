@@ -4,41 +4,47 @@ using UnityEngine;
 
 public class Pickup_switch_object : Interactable
 {
-    private Inventory inventory;
+    private Inventory Inventory;
     public GameObject itemButton;
-    public GameObject deposit;
-    public GameObject gameActivate;
+    public GameObject Deposit;
+    public List<GameObject> gameActivate;
     public GameObject pickUpNotif;
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        Inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     public override void Interact()
     {
         SoundManager.PlaySound("popUp");
 
-        if (inventory.CompareTag("Player") && gameObject.tag == "grab_object")
-        {
-            for (int i = 0; i < inventory.slots.Length; i++)
-            {
-                if (inventory.isFull[i] == false)
-                {
-                    //item can be added to inventory
-                    inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
-                    transform.position = deposit.transform.position;
-                    pickUpNotif.SetActive(true);
-                    if (gameActivate != null)
-                    {
-                        gameActivate.SetActive(true);
-                    }
-                    
-                    break;
 
+        for (int i = 0; i < Inventory.slots.Length; i++)
+        {
+            if (Inventory.isFull[i] == false)
+            {
+                //item can be added to inventory
+                Inventory.isFull[i] = true;
+                Instantiate(itemButton, Inventory.slots[i].transform, false);
+                transform.position = Deposit.transform.position;
+
+                // Activates certain object dialog/notif
+                pickUpNotif.SetActive(true);
+
+
+                if (gameActivate != null)
+                {
+                    foreach (GameObject obj in gameActivate)
+                    {
+                        obj.SetActive(true);
+                    }
                 }
+
+                break;
+
             }
         }
+
     }
 
 }

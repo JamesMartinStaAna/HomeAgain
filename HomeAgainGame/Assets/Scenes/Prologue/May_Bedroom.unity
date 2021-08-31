@@ -3662,8 +3662,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 1010734342}
+  Deposit: {fileID: 1562941645}
+  gameActivate:
+  - {fileID: 1010734342}
   pickUpNotif: {fileID: 858845160}
 --- !u!65 &154249083
 BoxCollider:
@@ -5582,8 +5583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 6686060163830405738, guid: 34b28f6904c055943a1a9755a761842d,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 0}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 2055730179}
 --- !u!1 &289071837
 GameObject:
@@ -11080,8 +11081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 8472327171409102507, guid: 27704fae7433f584c96f341e4443d674,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 0}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 1141686605}
 --- !u!65 &589269178
 BoxCollider:
@@ -19895,8 +19896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 6926463590247415379, guid: 8b6297cf050101f46ba3e23b0442a52c,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 0}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 2001393794}
 --- !u!65 &806881610
 BoxCollider:
@@ -30673,8 +30674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 3300915879949329886, guid: 3f217c927b502a546a9b36317af37c92,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 0}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 1456301019}
 --- !u!65 &1098668445
 BoxCollider:
@@ -44386,8 +44387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 1021650857}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 140322434}
 --- !u!65 &1342390474
 BoxCollider:
@@ -53685,8 +53686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 6686060163830405738, guid: f52876970559baa45b4e2251dc70757e,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 0}
+  Deposit: {fileID: 1562941645}
+  gameActivate: []
   pickUpNotif: {fileID: 742944457}
 --- !u!65 &1557406902
 BoxCollider:
@@ -60657,7 +60658,6 @@ GameObject:
   - component: {fileID: 1872375648}
   - component: {fileID: 1872375647}
   - component: {fileID: 1872375649}
-  - component: {fileID: 1872375650}
   m_Layer: 5
   m_Name: FootStool_Drop
   m_TagString: footstool_receiver
@@ -60756,23 +60756,6 @@ MonoBehaviour:
   stoolHighlight: {fileID: 0}
   plateHighlight: {fileID: 0}
   kitchenKeyHighlight: {fileID: 0}
---- !u!114 &1872375650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872375645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 'Foot Stool '
-  HighlightRemove: {fileID: 94114073}
-  WorldObjectToRemove: {fileID: 1378915619}
-  WorldObjectToSwap: {fileID: 1342390471}
-  deposit: {fileID: 1562941645}
 --- !u!1 &1873465121
 GameObject:
   m_ObjectHideFlags: 0
@@ -66641,8 +66624,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2181742216930859216, guid: a5ca51b14a184f047944e5f582f35bac,
     type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 320237253}
+  Deposit: {fileID: 1562941645}
+  gameActivate:
+  - {fileID: 320237253}
   pickUpNotif: {fileID: 153842803}
 --- !u!1 &1927639515
 GameObject:
