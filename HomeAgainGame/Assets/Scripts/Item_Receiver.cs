@@ -38,30 +38,18 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
         Debug.Log("Drop");
         RectTransform invPanel = eventData.pointerDrag.GetComponent<RectTransform>();
 
-        if (gameObject.tag == "footstool_receiver")
-            if (invPanel.CompareTag("footstool"))
+
+
+        if (gameObject.tag == "crumpledpaper_receiver")
+            if (invPanel.CompareTag("crumpledpaper"))
             {
                 if (eventData.pointerDrag != null)
                 {
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    StoolCheck = true;
-                    Destroy(gameObject);
-
-                }
-            }
-
-
-        if (gameObject.tag == "key_receiver")
-            if (invPanel.CompareTag("key"))
-            {
-                if (eventData.pointerDrag != null)
-                {
-                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
-                    Rect.SetParent(transform, false);
-                    Rect.transform.position = transform.position;
-                    KeyCheck = true;
+                    trashCheck = true;
+                    SoundManager.PlaySound("trash");
                     Destroy(gameObject);
 
 
@@ -69,39 +57,6 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
                 }
             }
 
-        if (gameObject.tag == "spoon_receiver")
-            if (invPanel.CompareTag("spoon"))
-            {
-                if (eventData.pointerDrag != null)
-                {
-                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
-                    Rect.SetParent(transform, false);
-                    Rect.transform.position = transform.position;
-                    spoonCheck = true;
-                    SoundManager.PlaySound("spoon");
-                    Destroy(gameObject);
-
-
-
-                }
-            }
-
-        if (gameObject.tag == "plate_receiver")
-            if (invPanel.CompareTag("plate"))
-            {
-                if (eventData.pointerDrag != null)
-                {
-                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
-                    Rect.SetParent(transform, false);
-                    Rect.transform.position = transform.position;
-                    plateCheck = true;
-                    SoundManager.PlaySound("mug");
-                    Destroy(gameObject);
-
-
-
-                }
-            }
 
         if (gameObject.tag == "dadmug_receiver")
             if (invPanel.CompareTag("dadmug"))
@@ -154,23 +109,70 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
                 }
             }
 
-
-        if (gameObject.tag == "crumpledpaper_receiver")
-            if (invPanel.CompareTag("crumpledpaper"))
+        if (gameObject.tag == "key_receiver")
+            if (invPanel.CompareTag("key"))
             {
                 if (eventData.pointerDrag != null)
                 {
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    trashCheck = true;
-                    SoundManager.PlaySound("trash");
+                    KeyCheck = true;
                     Destroy(gameObject);
 
 
 
                 }
             }
+
+        if (gameObject.tag == "spoon_receiver")
+            if (invPanel.CompareTag("spoon"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    spoonCheck = true;
+                    SoundManager.PlaySound("spoon");
+                    Destroy(gameObject);
+
+
+
+                }
+            }
+
+        if (gameObject.tag == "footstool_receiver")
+            if (invPanel.CompareTag("footstool"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    StoolCheck = true;
+                    Destroy(gameObject);
+
+                }
+            }
+
+        if (gameObject.tag == "plate_receiver")
+            if (invPanel.CompareTag("plate"))
+            {
+                if (eventData.pointerDrag != null)
+                {
+                    RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
+                    Rect.SetParent(transform, false);
+                    Rect.transform.position = transform.position;
+                    plateCheck = true;
+                    SoundManager.PlaySound("mug");
+                    Destroy(gameObject);
+
+
+
+                }
+            }
+
     }
 
     private void OnDestroy()
@@ -228,8 +230,6 @@ public class Item_Receiver : MonoBehaviour, IDropHandler
             WorldObjectToSwap.SetActive(true);
             HighlightRemove.transform.position = deposit.transform.position;
 
-            //KitchenCabinetActivate.SetActive(true);
-            //DestroyObject_kitchenCabinet.transform.position = deposit.transform.position;
             Debug.Log("Destroyed Footstool");
 
         }

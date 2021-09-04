@@ -32,8 +32,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     bool plateCheck;
 
 
-    public GameObject FootstoolObject;
-    public GameObject kitchenCabinetObject;
+    //public GameObject FootstoolObject;
+    //public GameObject kitchenCabinetObject;
 
 
     //object highlights prologue
@@ -106,8 +106,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
-                    FootstoolObject.GetComponent<Collider>().enabled = true;
-                    kitchenCabinetObject.GetComponent<Collider>().enabled = true;
+                    //FootstoolObject.GetComponent<Collider>().enabled = true;
+                    //kitchenCabinetObject.GetComponent<Collider>().enabled = true;
                     spoonCheck = true;
                     SoundManager.PlaySound("spoon");
                     Destroy(gameObject);

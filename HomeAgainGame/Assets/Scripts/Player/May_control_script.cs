@@ -6,16 +6,16 @@ public class May_control_script : MonoBehaviour
 {
     //Movement Elements
     private float MovementSpeed = 6;
-    Rigidbody rb;
-    AudioSource audioSrc;
-    bool isMoving = false;
+    Rigidbody Rb;
+    AudioSource AudioSrc;
+    bool IsMoving = false;
 
     //Icon Notifs
     public List <GameObject> InteractIcon;
  
 
     //Animations
-    private bool animateMove;
+    private bool AnimateMove;
     public Animator animator;
 
     //Inventory
@@ -26,8 +26,8 @@ public class May_control_script : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        audioSrc = GetComponent<AudioSource>();
+        Rb = GetComponent<Rigidbody>();
+        AudioSrc = GetComponent<AudioSource>();
    
     }
 
@@ -38,7 +38,7 @@ public class May_control_script : MonoBehaviour
     
 
         // Character Interact:
-        if (Input.GetKeyDown(KeyCode.E) && rb.velocity.magnitude == 0 && GameObject.FindWithTag("open_image") == null)
+        if (Input.GetKeyDown(KeyCode.E) && Rb.velocity.magnitude == 0 && GameObject.FindWithTag("open_image") == null)
         {
             CheckInteraction();
         }
@@ -51,11 +51,10 @@ public class May_control_script : MonoBehaviour
         var movement = Input.GetAxis("Horizontal");
 
         // Character Flip direction
-        if (animateMove == true)
+        if (AnimateMove == true)
         {
             if (Input.GetAxis("Horizontal") < 0)
             {
-           
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
             if (Input.GetAxis("Horizontal") > 0)
@@ -70,22 +69,22 @@ public class May_control_script : MonoBehaviour
 
         // Character Animation                                          
         animator.SetFloat("speed", Mathf.Abs(movement));
-        rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
+        Rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
 
         // Character walk sound 
-        if (rb.velocity.x != 0)
-            isMoving = true;
+        if (Rb.velocity.x != 0)
+            IsMoving = true;
         else
-            isMoving = false;
+            IsMoving = false;
 
-        if (isMoving)
+        if (IsMoving)
         {
-            if (!audioSrc.isPlaying)
-                audioSrc.Play();
+            if (!AudioSrc.isPlaying)
+                AudioSrc.Play();
         }
         else
         {
-            audioSrc.Stop();
+            AudioSrc.Stop();
         }
 
 
@@ -97,13 +96,13 @@ public class May_control_script : MonoBehaviour
         {
             MovementSpeed = 0;
             animator.enabled = false;
-            animateMove = false;
+            AnimateMove = false;
         }
         else
         {
             MovementSpeed = 6;
             animator.enabled = true;
-            animateMove = true;
+            AnimateMove = true;
         }
     }
     // for checking boxcast 

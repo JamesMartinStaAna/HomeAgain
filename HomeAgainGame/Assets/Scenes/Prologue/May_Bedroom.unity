@@ -23540,8 +23540,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1562941645}
-  FootstoolObject: {fileID: 1378915619}
-  kitchenCabinetObject: {fileID: 1557406898}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -23594,7 +23592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990166306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
   m_Name: 
@@ -43046,7 +43044,6 @@ GameObject:
   - component: {fileID: 1263665086}
   - component: {fileID: 1263665087}
   - component: {fileID: 1263665088}
-  - component: {fileID: 1263665089}
   - component: {fileID: 1263665090}
   m_Layer: 0
   m_Name: activator
@@ -43098,20 +43095,10 @@ MonoBehaviour:
   DadMugObject: {fileID: 289013853}
   MomMugObject: {fileID: 806881606}
   mugholderObject: {fileID: 1464150093}
---- !u!114 &1263665089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263665085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1926a930e98c6842a70091cc05a2fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   keyObject: {fileID: 517606977}
   spoonObject: {fileID: 1925672479}
+  FootstoolObject: {fileID: 1378915619}
+  KitchenCabinetObject: {fileID: 1557406898}
 --- !u!114 &1263665090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44401,7 +44388,8 @@ MonoBehaviour:
   itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
+  gameActivate:
+  - {fileID: 1021650857}
   pickUpNotif: {fileID: 140322434}
 --- !u!65 &1342390474
 BoxCollider:
@@ -60740,7 +60728,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872375645}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
   m_Name: 
@@ -60758,8 +60746,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 1378915619}
   deposit: {fileID: 1562941645}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -68223,8 +68209,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 0}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
