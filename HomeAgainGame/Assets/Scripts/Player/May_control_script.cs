@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class May_control_script : MonoBehaviour
 {
-    //Movement Elements
-    private float MovementSpeed = 6;
+    //Movement Elements 
+    private float movementspeed = 6;
     Rigidbody Rb;
     AudioSource AudioSrc;
     bool IsMoving = false;
 
-    //Icon Notifs
+    //Icons
+    [Header("Player Icons")]
     public List <GameObject> InteractIcon;
  
 
@@ -45,8 +46,6 @@ public class May_control_script : MonoBehaviour
         
         ViewStop();
         
-
-
         // Character Movement:
         var movement = Input.GetAxis("Horizontal");
 
@@ -62,14 +61,11 @@ public class May_control_script : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
-     
-        
-        
 
 
         // Character Animation                                          
         animator.SetFloat("speed", Mathf.Abs(movement));
-        Rb.velocity = new Vector3(movement, 0, 0) * MovementSpeed;
+        Rb.velocity = new Vector3(movement, 0, 0) * movementspeed;
 
         // Character walk sound 
         if (Rb.velocity.x != 0)
@@ -94,37 +90,17 @@ public class May_control_script : MonoBehaviour
 
         if (GameObject.FindWithTag("open_image") != null || GameObject.FindWithTag("reminder") != null)
         {
-            MovementSpeed = 0;
+            movementspeed = 0;
             animator.enabled = false;
             AnimateMove = false;
         }
         else
         {
-            MovementSpeed = 6;
+            movementspeed = 6;
             animator.enabled = true;
             AnimateMove = true;
         }
     }
-    // for checking boxcast 
-    //void OnDrawGizmos()
-    //{
-    //    float maxDistance = 1f;
-    //    RaycastHit hit;
-
-    //    bool isHit = Physics.BoxCast(transform.position, transform.lossyScale, transform.forward, out hit,
-    //        transform.rotation, maxDistance);
-    //    if (isHit)
-    //    {
-    //        Gizmos.color = Color.red;
-    //        Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
-    //        Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
-    //    }
-    //    else
-    //    {
-    //        Gizmos.color = Color.green;
-    //        Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
-    //    }
-    //}
 
     public void OpenInteractableIcon()
     {

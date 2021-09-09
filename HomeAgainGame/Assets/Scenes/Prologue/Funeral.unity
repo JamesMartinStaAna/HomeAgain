@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7934,8 +7934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2181742216930859216, guid: a5ca51b14a184f047944e5f582f35bac,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 23153894}
+  Deposit: {fileID: 0}
+  gameActivate:
+  - {fileID: 0}
   pickUpNotif: {fileID: 0}
 --- !u!65 &190633920
 BoxCollider:
@@ -8346,8 +8347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 2121976361}
+  Deposit: {fileID: 0}
+  gameActivate:
+  - {fileID: 0}
   pickUpNotif: {fileID: 0}
 --- !u!65 &225925812
 BoxCollider:
@@ -9158,8 +9160,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 1530298987}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -10036,8 +10036,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -10576,8 +10574,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -12009,8 +12005,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 1044149054}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -25503,8 +25497,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 0}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -26603,8 +26595,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -32107,8 +32097,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 1757398117}
-  FootstoolObject: {fileID: 0}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -33590,8 +33578,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 1913927322}
+  Deposit: {fileID: 0}
+  gameActivate:
+  - {fileID: 0}
   pickUpNotif: {fileID: 0}
 --- !u!65 &1199159362
 BoxCollider:
@@ -50306,8 +50295,6 @@ MonoBehaviour:
   DestroyObject_kitchen: {fileID: 0}
   DestroyObject_kitchenCabinet: {fileID: 0}
   deposit: {fileID: 0}
-  FootstoolObject: {fileID: 1044149054}
-  kitchenCabinetObject: {fileID: 0}
   binHighlight: {fileID: 0}
   dadMugHighlight: {fileID: 0}
   momMugHighlight: {fileID: 0}
@@ -67108,14 +67095,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab47cc764750efe4a9d85c90bc0e9794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactIcon: {fileID: 791750266}
-  interactIcon_Light: {fileID: 1286298761}
-  interactIcon_Door: {fileID: 1448652161}
-  interactIcon_Stairs: {fileID: 1771816629}
-  interactIcon_GrabObject: {fileID: 1445787784}
-  interactIcon_To_Lobby: {fileID: 803635028}
-  interactIcon_To_LivingRoom: {fileID: 1555117662}
-  interactIcon_Task: {fileID: 773409485}
+  InteractIcon:
+  - {fileID: 791750266}
+  - {fileID: 1286298761}
+  - {fileID: 1448652161}
+  - {fileID: 1771816629}
+  - {fileID: 803635028}
+  - {fileID: 1555117662}
+  - {fileID: 1445787784}
+  - {fileID: 773409485}
   animator: {fileID: 2031181122}
   Invenanimator: {fileID: 1818906497}
 --- !u!95 &2031181122
