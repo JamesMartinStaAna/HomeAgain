@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 18795440}
   - component: {fileID: 18795443}
   - component: {fileID: 18795442}
-  - component: {fileID: 18795444}
+  - component: {fileID: 18795441}
   m_Layer: 5
   m_Name: Mommug_drop
   m_TagString: mommug_receiver
@@ -694,6 +694,28 @@ RectTransform:
   m_AnchoredPosition: {x: -10.369, y: -60.57}
   m_SizeDelta: {x: 7.2184563, y: 1.3697052}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &18795441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18795439}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - mommug
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 1834675726}
+  WorldObjectsToDeposit:
+  - {fileID: 1502147885}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &18795442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,23 +753,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18795439}
   m_CullTransparentMesh: 0
---- !u!114 &18795444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18795439}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Mom Mug
-  HighlightRemove: {fileID: 1502147885}
-  WorldObjectToRemove: {fileID: 0}
-  WorldObjectToSwap: {fileID: 1834675726}
-  deposit: {fileID: 1562941645}
 --- !u!1 &19862841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243a74689066ca442a88b9486ef4934e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactIcon: []
 --- !u!1 &187464018
 GameObject:
   m_ObjectHideFlags: 0
@@ -23487,8 +23491,8 @@ GameObject:
   - component: {fileID: 990166307}
   - component: {fileID: 990166310}
   - component: {fileID: 990166309}
+  - component: {fileID: 990166312}
   - component: {fileID: 990166308}
-  - component: {fileID: 990166311}
   m_Layer: 5
   m_Name: 'Spoon_drop '
   m_TagString: spoon_receiver
@@ -23524,30 +23528,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 990166306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a10abee3949dd04e9c53c528a0c0de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StoolActivate: {fileID: 0}
-  KitchenCabinetActivate: {fileID: 0}
-  KitchenCounterActivate: {fileID: 0}
-  BinActivate: {fileID: 0}
-  DadMugActivate: {fileID: 0}
-  MomMugActivate: {fileID: 0}
-  MayMugActivate: {fileID: 0}
-  spoonActivate: {fileID: 783700055}
-  plateActivate: {fileID: 0}
-  DestroyObject_bin: {fileID: 0}
-  DestroyObject_kitchen: {fileID: 0}
-  DestroyObject_kitchenCabinet: {fileID: 0}
-  deposit: {fileID: 1562941645}
-  binHighlight: {fileID: 0}
-  dadMugHighlight: {fileID: 0}
-  momMugHighlight: {fileID: 0}
-  mayMugHighlight: {fileID: 0}
-  spoonHighlight: {fileID: 0}
-  stoolHighlight: {fileID: 0}
-  plateHighlight: {fileID: 0}
-  kitchenKeyHighlight: {fileID: 0}
+  FootstoolObject: {fileID: 1378915619}
+  KitchenCabinetObject: {fileID: 1557406898}
 --- !u!114 &990166309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23585,23 +23570,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990166306}
   m_CullTransparentMesh: 0
---- !u!114 &990166311
+--- !u!114 &990166312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990166306}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 'Spoon '
-  HighlightRemove: {fileID: 1577400541}
-  WorldObjectToRemove: {fileID: 0}
-  WorldObjectToSwap: {fileID: 783700055}
-  deposit: {fileID: 1562941645}
+  ReceivableItems:
+  - spoon
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 783700055}
+  WorldObjectsToDeposit:
+  - {fileID: 1577400541}
+  Callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 990166308}
+        m_MethodName: OnSpoonDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &997994550
 GameObject:
   m_ObjectHideFlags: 0
@@ -29494,7 +29495,7 @@ GameObject:
   - component: {fileID: 1053387822}
   - component: {fileID: 1053387825}
   - component: {fileID: 1053387824}
-  - component: {fileID: 1053387823}
+  - component: {fileID: 1053387826}
   m_Layer: 5
   m_Name: Maymug_drop
   m_TagString: maymug_receiver
@@ -29521,23 +29522,6 @@ RectTransform:
   m_AnchoredPosition: {x: -12.86, y: -60.57}
   m_SizeDelta: {x: 7.2184563, y: 1.3697052}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1053387823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053387821}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: May mug
-  HighlightRemove: {fileID: 228548268}
-  WorldObjectToRemove: {fileID: 0}
-  WorldObjectToSwap: {fileID: 403903535}
-  deposit: {fileID: 1562941645}
 --- !u!114 &1053387824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29575,6 +29559,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053387821}
   m_CullTransparentMesh: 0
+--- !u!114 &1053387826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053387821}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - maymug
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 403903535}
+  WorldObjectsToDeposit:
+  - {fileID: 228548268}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1054175775
 GameObject:
   m_ObjectHideFlags: 0
@@ -43111,8 +43117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35284c898e58da24590282d1aff8c630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootstoolObject: {fileID: 1378915619}
-  kitchenCabinetObject: {fileID: 1557406898}
 --- !u!1 &1264052349
 GameObject:
   m_ObjectHideFlags: 0
@@ -43751,7 +43755,7 @@ GameObject:
   - component: {fileID: 1299393122}
   - component: {fileID: 1299393125}
   - component: {fileID: 1299393124}
-  - component: {fileID: 1299393126}
+  - component: {fileID: 1299393123}
   m_Layer: 5
   m_Name: key_drop
   m_TagString: key_receiver
@@ -43778,6 +43782,29 @@ RectTransform:
   m_AnchoredPosition: {x: -4.83, y: -60.57}
   m_SizeDelta: {x: 5.0616455, y: 1.3697052}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1299393123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299393121}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - key
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 154249081}
+  WorldObjectsToDeposit:
+  - {fileID: 406636682}
+  - {fileID: 517606977}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1299393124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43815,23 +43842,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299393121}
   m_CullTransparentMesh: 0
---- !u!114 &1299393126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299393121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bcfaa40a001f546983fc4ae8f5ee5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Key Receiver
-  HighlightRemove: {fileID: 406636682}
-  WorldObjectToRemove: {fileID: 517606977}
-  WorldObjectToSwap: {fileID: 154249081}
-  deposit: {fileID: 1562941645}
 --- !u!1 &1303053427
 GameObject:
   m_ObjectHideFlags: 0
@@ -51692,9 +51702,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1471446715}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efba4819d8c293d41b98e135a3ee15c6, type: 3}
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ReceivableItems:
+  - dadmug
   Deposit: {fileID: 1562941645}
   WorldObjectsToActivate:
   - {fileID: 249442770}
@@ -55051,9 +55063,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1610355714}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efba4819d8c293d41b98e135a3ee15c6, type: 3}
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ReceivableItems:
+  - crumpledpaper
   Deposit: {fileID: 1562941645}
   WorldObjectsToActivate:
   - {fileID: 1135712674}
@@ -60657,7 +60671,7 @@ GameObject:
   - component: {fileID: 1872375646}
   - component: {fileID: 1872375648}
   - component: {fileID: 1872375647}
-  - component: {fileID: 1872375649}
+  - component: {fileID: 1872375650}
   m_Layer: 5
   m_Name: FootStool_Drop
   m_TagString: footstool_receiver
@@ -60721,7 +60735,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872375645}
   m_CullTransparentMesh: 0
---- !u!114 &1872375649
+--- !u!114 &1872375650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60730,30 +60744,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1872375645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StoolActivate: {fileID: 1590284952}
-  KitchenCabinetActivate: {fileID: 1342390471}
-  KitchenCounterActivate: {fileID: 0}
-  BinActivate: {fileID: 0}
-  DadMugActivate: {fileID: 0}
-  MomMugActivate: {fileID: 0}
-  MayMugActivate: {fileID: 0}
-  spoonActivate: {fileID: 0}
-  plateActivate: {fileID: 0}
-  DestroyObject_bin: {fileID: 0}
-  DestroyObject_kitchen: {fileID: 0}
-  DestroyObject_kitchenCabinet: {fileID: 1378915619}
-  deposit: {fileID: 1562941645}
-  binHighlight: {fileID: 0}
-  dadMugHighlight: {fileID: 0}
-  momMugHighlight: {fileID: 0}
-  mayMugHighlight: {fileID: 0}
-  spoonHighlight: {fileID: 0}
-  stoolHighlight: {fileID: 0}
-  plateHighlight: {fileID: 0}
-  kitchenKeyHighlight: {fileID: 0}
+  ReceivableItems:
+  - footstool
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 1590284952}
+  - {fileID: 1342390471}
+  WorldObjectsToDeposit:
+  - {fileID: 1378915619}
+  - {fileID: 94114073}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1873465121
 GameObject:
   m_ObjectHideFlags: 0
@@ -68158,6 +68163,7 @@ GameObject:
   - component: {fileID: 2048862705}
   - component: {fileID: 2048862704}
   - component: {fileID: 2048862703}
+  - component: {fileID: 2048862706}
   m_Layer: 5
   m_Name: 'Plate_drop '
   m_TagString: plate_receiver
@@ -68193,30 +68199,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 2048862701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247c94797de5f0c488907a2de9d2fb0f, type: 3}
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StoolActivate: {fileID: 0}
-  KitchenCabinetActivate: {fileID: 0}
-  KitchenCounterActivate: {fileID: 0}
-  BinActivate: {fileID: 0}
-  DadMugActivate: {fileID: 0}
-  MomMugActivate: {fileID: 0}
-  MayMugActivate: {fileID: 0}
-  spoonActivate: {fileID: 0}
-  plateActivate: {fileID: 93520915}
-  DestroyObject_bin: {fileID: 0}
-  DestroyObject_kitchen: {fileID: 0}
-  DestroyObject_kitchenCabinet: {fileID: 0}
-  deposit: {fileID: 0}
-  binHighlight: {fileID: 0}
-  dadMugHighlight: {fileID: 0}
-  momMugHighlight: {fileID: 0}
-  mayMugHighlight: {fileID: 0}
-  spoonHighlight: {fileID: 0}
-  stoolHighlight: {fileID: 0}
-  plateHighlight: {fileID: 0}
-  kitchenKeyHighlight: {fileID: 0}
+  ReceivableItems:
+  - plate
+  Deposit: {fileID: 1562941645}
+  WorldObjectsToActivate:
+  - {fileID: 93520915}
+  WorldObjectsToDeposit:
+  - {fileID: 670338175}
+  Callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2048862706}
+        m_MethodName: OnPlateDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2048862704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68254,6 +68260,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048862701}
   m_CullTransparentMesh: 0
+--- !u!114 &2048862706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048862701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc574ea8b1ae2c47a0591fa67b93fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2051153336
 GameObject:
   m_ObjectHideFlags: 0

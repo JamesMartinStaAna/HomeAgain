@@ -9,7 +9,6 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector3 startPosition;
-    //public GameObject remind;
 
   
     private bool isDragging;
@@ -81,15 +80,9 @@ public class DragNDrop2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        // check if the card has been placed in a slot
-        DropItemNactivate slot = GetComponentInParent<DropItemNactivate>();
-        if (!slot)
-        {
             transform.localPosition = startPosition;
             canvasGroup.blocksRaycasts = true;
             isDragging = false;
-            //Instantiate(remind);
-        }
     }
 
 

@@ -22,7 +22,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
     public GameObject DestroyObject_kitchenCabinet;
     public GameObject deposit;
 
-    bool StoolCheck;    
+    bool StoolCheck;
     bool KeyCheck;
     bool trashCheck;
     bool dadmugCheck;
@@ -48,7 +48,7 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 
     private void Start()
     {
-    
+
         binHighlight = GameObject.Find("trashSparkle");
         dadMugHighlight = GameObject.Find("dadMugSparkle");
         momMugHighlight = GameObject.Find("momMugSparkle");
@@ -58,8 +58,8 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
         stoolHighlight = GameObject.Find("stoolSparkle");
         plateHighlight = GameObject.Find("plateSparkle");
 
-    
-        
+
+
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -276,4 +276,3 @@ public class DropItemNactivate : MonoBehaviour, IDropHandler
 
 
 }
-    

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 460067472410181993}
   - component: {fileID: 8389688156159307659}
   - component: {fileID: 2971470995285026408}
+  - component: {fileID: -1525972199301748430}
   - component: {fileID: 754941742229658759}
   m_Layer: 5
   m_Name: Key
@@ -89,7 +90,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  remind: {fileID: 5511789061278165943, guid: 78962b98517d44a4da1092e8a76f1afd, type: 3}
+  ObjectHighlightName: kitchenKeySparkle
+--- !u!114 &-1525972199301748430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181742216930859216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54d4b5b926c8c4c91211f09a7675ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: key
 --- !u!225 &754941742229658759
 CanvasGroup:
   m_ObjectHideFlags: 0
