@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup_switch_object : Interactable
+public class PickupObject : Interactable
 {
     private Inventory Inventory;
-    public GameObject itemButton;
+    public GameObject ItemButton;
     public GameObject Deposit;
-    public List<GameObject> gameActivate;
-    public GameObject pickUpNotif;
+    public List<GameObject> ObjectsToActivate;
+    public List<GameObject> ObjectsToDeposit;
+    public GameObject PickUpNotif;
 
     private void Start()
     {
@@ -25,18 +26,26 @@ public class Pickup_switch_object : Interactable
             {
                 //item can be added to inventory
                 Inventory.isFull[i] = true;
-                Instantiate(itemButton, Inventory.slots[i].transform, false);
+                Instantiate(ItemButton, Inventory.slots[i].transform, false);
                 transform.position = Deposit.transform.position;
 
                 // Activates certain object dialog/notif
-                pickUpNotif.SetActive(true);
+                PickUpNotif.SetActive(true);
 
 
-                if (gameActivate != null)
+                if (ObjectsToActivate != null)
                 {
-                    foreach (GameObject obj in gameActivate)
+                    foreach (GameObject obj in ObjectsToActivate)
                     {
                         obj.SetActive(true);
+                    }
+                }
+
+                if (ObjectsToDeposit != null)
+                {
+                    foreach (GameObject obj in ObjectsToDeposit)
+                    {
+                        obj.transform.position = Deposit.transform.position;
                     }
                 }
 

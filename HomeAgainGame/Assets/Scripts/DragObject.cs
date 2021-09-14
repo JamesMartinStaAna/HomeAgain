@@ -18,7 +18,7 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     private GameObject objectHighlight;
     private SpriteRenderer objectHighlightSprite;
 
-    //Draggable Object Id
+    //Draggable Dragged Object Id
     public string ObjectId;
 
 

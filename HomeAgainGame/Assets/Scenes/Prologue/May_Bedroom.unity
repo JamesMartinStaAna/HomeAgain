@@ -3665,12 +3665,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
+  ItemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate:
+  ObjectsToActivate:
   - {fileID: 1010734342}
-  pickUpNotif: {fileID: 858845160}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 858845160}
 --- !u!65 &154249083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5600,11 +5601,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 6686060163830405738, guid: 34b28f6904c055943a1a9755a761842d,
+  ItemButton: {fileID: 6686060163830405738, guid: 34b28f6904c055943a1a9755a761842d,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
-  pickUpNotif: {fileID: 2055730179}
+  ObjectsToActivate: []
+  ObjectsToDeposit:
+  - {fileID: 362632584}
+  PickUpNotif: {fileID: 2055730179}
 --- !u!1 &289071837
 GameObject:
   m_ObjectHideFlags: 0
@@ -6787,7 +6790,6 @@ GameObject:
   m_Component:
   - component: {fileID: 362632585}
   - component: {fileID: 362632586}
-  - component: {fileID: 362632587}
   m_Layer: 0
   m_Name: Dad_Mug_smol bg
   m_TagString: grab_object
@@ -6859,18 +6861,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &362632587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362632584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97696e069d77f3b4f976361b588f882c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &363698897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11098,11 +11088,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 8472327171409102507, guid: 27704fae7433f584c96f341e4443d674,
+  ItemButton: {fileID: 8472327171409102507, guid: 27704fae7433f584c96f341e4443d674,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
-  pickUpNotif: {fileID: 1141686605}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1141686605}
 --- !u!65 &589269178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19912,11 +19903,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 6926463590247415379, guid: 8b6297cf050101f46ba3e23b0442a52c,
+  ItemButton: {fileID: 6926463590247415379, guid: 8b6297cf050101f46ba3e23b0442a52c,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
-  pickUpNotif: {fileID: 2001393794}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 2001393794}
 --- !u!65 &806881610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30689,11 +30681,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 3300915879949329886, guid: 3f217c927b502a546a9b36317af37c92,
+  ItemButton: {fileID: 3300915879949329886, guid: 3f217c927b502a546a9b36317af37c92,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
-  pickUpNotif: {fileID: 1456301019}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1456301019}
 --- !u!65 &1098668445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44395,12 +44388,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
+  ItemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate:
+  ObjectsToActivate:
   - {fileID: 1021650857}
-  pickUpNotif: {fileID: 140322434}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 140322434}
 --- !u!65 &1342390474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53697,11 +53691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 6686060163830405738, guid: f52876970559baa45b4e2251dc70757e,
+  ItemButton: {fileID: 6686060163830405738, guid: f52876970559baa45b4e2251dc70757e,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate: []
-  pickUpNotif: {fileID: 742944457}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 742944457}
 --- !u!65 &1557406902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66625,12 +66620,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 2181742216930859216, guid: a5ca51b14a184f047944e5f582f35bac,
+  ItemButton: {fileID: 2181742216930859216, guid: a5ca51b14a184f047944e5f582f35bac,
     type: 3}
   Deposit: {fileID: 1562941645}
-  gameActivate:
+  ObjectsToActivate:
   - {fileID: 320237253}
-  pickUpNotif: {fileID: 153842803}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 153842803}
 --- !u!1 &1927639515
 GameObject:
   m_ObjectHideFlags: 0
