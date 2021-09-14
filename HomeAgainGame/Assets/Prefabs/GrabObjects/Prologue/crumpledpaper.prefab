@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1261396148610015145}
   - component: {fileID: 2477637423695086544}
   - component: {fileID: 4055345808868516792}
-  - component: {fileID: 4121306971607509986}
   m_Layer: 5
   m_Name: crumpledpaper
   m_TagString: crumpledpaper
@@ -103,33 +102,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
   ObjectHighlightName: trashSparkle
-  ObjectHighlight: {fileID: 0}
-  binHighlight: {fileID: 0}
-  binHighlightsprite: {fileID: 0}
-  dadMugHighlight: {fileID: 0}
-  dadMugHighlightsprite: {fileID: 0}
-  momMugHighlight: {fileID: 0}
-  momMugHighlightsprite: {fileID: 0}
-  mayMugHighlight: {fileID: 0}
-  mayMugHighlightsprite: {fileID: 0}
-  spoonHighlight: {fileID: 0}
-  spoonHighlightsprite: {fileID: 0}
-  stoolHighlight: {fileID: 0}
-  stoolHighlightsprite: {fileID: 0}
-  plateHighlight: {fileID: 0}
-  plateHighlightsprite: {fileID: 0}
-  kitchenKeyHighlight: {fileID: 0}
-  kitchenKeyHighlightsprite: {fileID: 0}
---- !u!114 &4121306971607509986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300915879949329886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d54d4b5b926c8c4c91211f09a7675ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   ObjectId: crumpledpaper

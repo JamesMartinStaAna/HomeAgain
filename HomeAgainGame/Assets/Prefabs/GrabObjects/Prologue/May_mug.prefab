@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3114416737344371197}
   - component: {fileID: 391677763610892625}
   - component: {fileID: -8069909589896515151}
-  - component: {fileID: 473569769065317149}
   m_Layer: 5
   m_Name: May_mug
   m_TagString: maymug
@@ -103,16 +102,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
   ObjectHighlightName: mayMugSparkle
---- !u!114 &473569769065317149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8472327171409102507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d54d4b5b926c8c4c91211f09a7675ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   ObjectId: maymug

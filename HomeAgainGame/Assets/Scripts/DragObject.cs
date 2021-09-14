@@ -13,13 +13,13 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
   
     private bool isDragging;
-    //Prologue highlight objects
-
+    //Highlights of objects
     public string ObjectHighlightName;
     private GameObject objectHighlight;
     private SpriteRenderer objectHighlightSprite;
 
-
+    //Draggable Object Id
+    public string ObjectId;
 
 
     private void Start()
