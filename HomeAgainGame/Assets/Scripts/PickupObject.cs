@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupObject : Interactable
 {
-    private Inventory Inventory;
+    private Inventory inventory;
     public GameObject ItemButton;
     public GameObject Deposit;
     public List<GameObject> ObjectsToActivate;
@@ -13,20 +13,20 @@ public class PickupObject : Interactable
 
     private void Start()
     {
-        Inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     public override void Interact()
     {
         SoundManager.PlaySound("popUp");
 
 
-        for (int i = 0; i < Inventory.slots.Length; i++)
+        for (int i = 0; i < inventory.slots.Length; i++)
         {
-            if (Inventory.isFull[i] == false)
+            if (inventory.isFull[i] == false)
             {
                 //item can be added to inventory
-                Inventory.isFull[i] = true;
-                Instantiate(ItemButton, Inventory.slots[i].transform, false);
+                inventory.isFull[i] = true;
+                Instantiate(ItemButton, inventory.slots[i].transform, false);
                 transform.position = Deposit.transform.position;
 
                 // Activates certain object dialog/notif
