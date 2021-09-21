@@ -16,11 +16,13 @@ public class May_control_script : MonoBehaviour
  
 
     //Animations
-    private bool AnimateMove;
+    private bool isMoving;
+    [HideInInspector]
     public Animator animator;
 
     //Inventory
-    private bool InvenisActive;
+    private bool inventoryIsActive;
+    [HideInInspector]
     public Animator Invenanimator;
 
     private Vector3 boxSize = new Vector3(0.1f, 1f, 1f);
@@ -36,7 +38,6 @@ public class May_control_script : MonoBehaviour
     private void Update()
     {
         
-    
 
         // Character Interact:
         if (Input.GetKeyDown(KeyCode.E) && Rb.velocity.magnitude == 0 && GameObject.FindWithTag("open_image") == null)
@@ -50,7 +51,7 @@ public class May_control_script : MonoBehaviour
         var movement = Input.GetAxis("Horizontal");
 
         // Character Flip direction
-        if (AnimateMove == true)
+        if (isMoving == true)
         {
             if (Input.GetAxis("Horizontal") < 0)
             {
@@ -67,14 +68,15 @@ public class May_control_script : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(movement));
         Rb.velocity = new Vector3(movement, 0, 0) * movementspeed;
 
-        // Character walk sound 
+     
         if (Rb.velocity.x != 0)
             IsMoving = true;
         else
             IsMoving = false;
 
         if (IsMoving)
-        {
+        {   
+            // Character walk sound 
             if (!AudioSrc.isPlaying)
                 AudioSrc.Play();
         }
@@ -92,13 +94,13 @@ public class May_control_script : MonoBehaviour
         {
             movementspeed = 0;
             animator.enabled = false;
-            AnimateMove = false;
+            isMoving = false;
         }
         else
         {
             movementspeed = 6;
             animator.enabled = true;
-            AnimateMove = true;
+            isMoving = true;
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnDestroyActivate : MonoBehaviour
 {
-    public GameObject gameActive;
+    public GameObject ObjectsToActivate;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,10 @@ public class OnDestroyActivate : MonoBehaviour
 
     public void OnDestroy()
     {
-        gameActive.SetActive(true);
+        if (ObjectsToActivate != null)
+        {
+            ObjectsToActivate.SetActive(true);
+        }
+                
     }
 }
