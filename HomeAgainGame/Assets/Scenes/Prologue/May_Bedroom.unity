@@ -7975,7 +7975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 990166306}
+  ActivateDrop: {fileID: 990166306}
+  DraggedObjectId: spoon
 --- !u!1 &416445015
 GameObject:
   m_ObjectHideFlags: 0
@@ -9992,7 +9993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 2048862701}
+  ActivateDrop: {fileID: 2048862701}
+  DraggedObjectId: plate
 --- !u!1 &525807349
 GameObject:
   m_ObjectHideFlags: 0
@@ -18889,7 +18891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 18795439}
+  ActivateDrop: {fileID: 18795439}
+  DraggedObjectId: mommug
 --- !u!1 &770155352
 GameObject:
   m_ObjectHideFlags: 0
@@ -23807,7 +23810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 1053387821}
+  ActivateDrop: {fileID: 1053387821}
+  DraggedObjectId: maymug
 --- !u!1 &1010734342
 GameObject:
   m_ObjectHideFlags: 0
@@ -53236,7 +53240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 1299393121}
+  ActivateDrop: {fileID: 1299393121}
+  DraggedObjectId: key
 --- !u!1 &1552293748
 GameObject:
   m_ObjectHideFlags: 0
@@ -56917,7 +56922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 1872375645}
+  ActivateDrop: {fileID: 1872375645}
+  DraggedObjectId: footstool
 --- !u!1 &1720482941
 GameObject:
   m_ObjectHideFlags: 0
@@ -66827,7 +66833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 1471446715}
+  ActivateDrop: {fileID: 1471446715}
+  DraggedObjectId: dadmug
 --- !u!1 &1960935311
 GameObject:
   m_ObjectHideFlags: 0
@@ -67480,7 +67487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activateDrop: {fileID: 1610355714}
+  ActivateDrop: {fileID: 1610355714}
+  DraggedObjectId: crumpledpaper
 --- !u!65 &2000429364
 BoxCollider:
   m_ObjectHideFlags: 0
