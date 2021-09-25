@@ -26,18 +26,19 @@ public class C1_Interact_Object_Activator2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         // when cardboard box is stored activate boxview
         if (GameObject.FindWithTag("lockNkey_receiver") != null)
         {
-            boxView.SetActive(true);
+            if (boxView != null) { boxView.SetActive(true); }
+              
         }
 
         // when lockNkey and cardboard box are stored activate rug and chest colliders and lockView
         if (GameObject.FindWithTag("lockNkey_receiver") == null && GameObject.FindWithTag("box_receiver") == null)
         {
 
-            lockView.SetActive(true);
+            if (lockView != null) { lockView.SetActive(true); }
 
         }
 

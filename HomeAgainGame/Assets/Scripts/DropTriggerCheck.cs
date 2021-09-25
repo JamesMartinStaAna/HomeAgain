@@ -27,6 +27,7 @@ public class DropTriggerCheck : MonoBehaviour
             // checks if player is withing certain trigger holding their matching objects]
             if (collision.CompareTag("Player") && GameObject.FindWithTag(DraggedObjectId) != null)
             {
+                //ActivateDrop.SetActive(true);
                 ActivateDrop.GetComponent<ItemCanvasReceiver>().enabled = true;
             }
 
@@ -43,10 +44,12 @@ public class DropTriggerCheck : MonoBehaviour
 
             if (collision.CompareTag("Player") && GameObject.FindWithTag(DraggedObjectId) != null)
             {
+                //ActivateDrop.SetActive(false);
                 ActivateDrop.GetComponent<ItemCanvasReceiver>().enabled = false;
             }
 
             
         }
+       
     }
 }

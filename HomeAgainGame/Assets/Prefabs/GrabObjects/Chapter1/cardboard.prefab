@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2881961230449353932}
   - component: {fileID: 1261396148610015145}
   - component: {fileID: 2477637423695086544}
-  - component: {fileID: 52817192863691491}
+  - component: {fileID: -8527055874468330797}
   m_Layer: 5
   m_Name: cardboard
   m_TagString: boxItem
@@ -88,7 +88,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &52817192863691491
+--- !u!114 &-8527055874468330797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +97,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3300915879949329886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a767f3ca22ec2246be1446c688d6215, type: 3}
+  m_Script: {fileID: 11500000, guid: 630def5421a81c64396102794800d3af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  remind: {fileID: 5511789061278165943, guid: 08924686cae3ce64cbbec8985b2358b6, type: 3}
-  boxHighlight: {fileID: 0}
-  boxHighlightsprite: {fileID: 0}
-  lockHighlight: {fileID: 0}
-  lockHighlightsprite: {fileID: 0}
+  ObjectHighlightName: boxSparkle
+  ObjectId: cardboard

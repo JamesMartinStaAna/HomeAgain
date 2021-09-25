@@ -19,8 +19,10 @@ public class Tutorial : MonoBehaviour
     }
     void Update()
     {
+        
         if (GameObject.Find("crumpledpaper_small").transform.position == GameObject.Find("Deposit").transform.position && GameObject.Find("crumpledpaper_notif") == null)
         {
+            
             Inventory.SetActive(true);
         }
 

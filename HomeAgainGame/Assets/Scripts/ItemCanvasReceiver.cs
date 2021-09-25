@@ -11,7 +11,8 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
     public List<GameObject> WorldObjectsToActivate;
     public List<GameObject> WorldObjectsToDeposit;
     public UnityEvent Callback;
-    
+    public AudioSource SoundClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,11 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
                     RectTransform Rect = eventData.pointerDrag.GetComponent<RectTransform>();
                     Rect.SetParent(transform, false);
                     Rect.transform.position = transform.position;
+                    if (SoundClip != null)
+                    {
+                        SoundClip.Play();
+                    }
+
 
                     // Activate world objects
                     foreach (GameObject obj in WorldObjectsToActivate)
@@ -67,5 +73,6 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
         }
 
     }
+
 
 }

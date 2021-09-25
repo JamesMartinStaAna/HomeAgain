@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -686,7 +686,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 6
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &23153896
 SpriteRenderer:
@@ -1360,7 +1360,7 @@ Transform:
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &44990803
 SpriteRenderer:
@@ -2392,9 +2392,6 @@ GameObject:
   m_Component:
   - component: {fileID: 92844627}
   - component: {fileID: 92844631}
-  - component: {fileID: 92844630}
-  - component: {fileID: 92844629}
-  - component: {fileID: 92844628}
   - component: {fileID: 92844632}
   - component: {fileID: 92844633}
   - component: {fileID: 92844634}
@@ -2421,50 +2418,6 @@ Transform:
   m_Father: {fileID: 21956213}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &92844628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92844626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35284c898e58da24590282d1aff8c630, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FootstoolObject: {fileID: 1044149054}
-  kitchenCabinetObject: {fileID: 0}
---- !u!114 &92844629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92844626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1926a930e98c6842a70091cc05a2fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyObject: {fileID: 1530298987}
-  spoonObject: {fileID: 0}
---- !u!114 &92844630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92844626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ef6e7139e5428840bb42724f4d3c645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MayMugObject: {fileID: 0}
-  DadMugObject: {fileID: 0}
-  MomMugObject: {fileID: 0}
-  mugholderObject: {fileID: 0}
 --- !u!65 &92844631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8998,7 +8951,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &178450273
 SpriteRenderer:
@@ -9231,11 +9184,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5108980190633864406, guid: fddba351082a959478e840986d34e76f,
+  ItemButton: {fileID: 5108980190633864406, guid: fddba351082a959478e840986d34e76f,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 23153894}
-  pickUpNotif: {fileID: 421343023}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate:
+  - {fileID: 23153894}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 421343023}
 --- !u!65 &190633920
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9775,7 +9730,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &221070075
 SpriteRenderer:
@@ -9872,11 +9827,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
-    type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 2121976361}
-  pickUpNotif: {fileID: 0}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!65 &225925812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10073,7 +10028,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &230365100
 SpriteRenderer:
@@ -10356,7 +10311,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &239188334
 SpriteRenderer:
@@ -11912,7 +11867,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &292764199
 Animator:
@@ -12676,7 +12631,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 8.5781355, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &319202327
 SpriteRenderer:
@@ -12740,11 +12695,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5108980190633864406, guid: 53317da8727c5264a8402dc7f324975d,
+  ItemButton: {fileID: 5108980190633864406, guid: 53317da8727c5264a8402dc7f324975d,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 0}
-  pickUpNotif: {fileID: 1650937738}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1650937738}
 --- !u!65 &319202329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12870,7 +12826,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &320913375
 SpriteRenderer:
@@ -13400,7 +13356,7 @@ GameObject:
   - component: {fileID: 334741657}
   - component: {fileID: 334741660}
   - component: {fileID: 334741659}
-  - component: {fileID: 334741658}
+  - component: {fileID: 334741661}
   m_Layer: 5
   m_Name: box_Drop
   m_TagString: box_receiver
@@ -13427,26 +13383,6 @@ RectTransform:
   m_AnchoredPosition: {x: -189.8, y: -57.98}
   m_SizeDelta: {x: 1.93, y: 6.56}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &334741658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334741656}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc14e251f385d94e929fab158dc0a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 0}
-  lockActive: {fileID: 1117065803}
-  chestActive: {fileID: 0}
-  chestInactive: {fileID: 0}
-  deposit: {fileID: 1757398117}
-  boxHighlight: {fileID: 410355376}
-  lockHighlight: {fileID: 1645872976}
-  chestHighlight: {fileID: 0}
 --- !u!114 &334741659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13484,6 +13420,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334741656}
   m_CullTransparentMesh: 0
+--- !u!114 &334741661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334741656}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - cardboard
+  Deposit: {fileID: 1757398117}
+  WorldObjectsToActivate:
+  - {fileID: 1117065803}
+  WorldObjectsToDeposit:
+  - {fileID: 410355376}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &338070388
 GameObject:
   m_ObjectHideFlags: 0
@@ -13936,7 +13894,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &346173634
 SpriteRenderer:
@@ -14222,7 +14180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 2041836177}
+  ObjectsToActivate: {fileID: 0}
 --- !u!114 &352114788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15423,7 +15381,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &405803442
 MonoBehaviour:
@@ -15437,11 +15395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4016485763761544068, guid: b6a8c98943295cc41b5abe73c0a99bea,
+  ItemButton: {fileID: 4016485763761544068, guid: f3e11ebb9c4e82a40b21793b496fe316,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 1418547909}
-  pickUpNotif: {fileID: 1953125368}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate:
+  - {fileID: 1418547909}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1225973880}
 --- !u!65 &405803443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15534,7 +15494,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &409680252
 SpriteRenderer:
@@ -23917,7 +23877,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &547314462
 SpriteRenderer:
@@ -24389,7 +24349,6 @@ GameObject:
   - component: {fileID: 581728557}
   - component: {fileID: 581728556}
   - component: {fileID: 581728555}
-  - component: {fileID: 581728558}
   - component: {fileID: 581728559}
   - component: {fileID: 581728560}
   m_Layer: 5
@@ -24478,20 +24437,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581728553}
   m_CullTransparentMesh: 0
---- !u!114 &581728558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581728553}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f96c4d79db0092439816ae8bda866a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTime: 0
-  startTime: 7
 --- !u!114 &581728559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24520,7 +24465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 2041836177}
+  ObjectsToActivate: {fileID: 2041836177}
 --- !u!1 &581774721
 GameObject:
   m_ObjectHideFlags: 0
@@ -31171,7 +31116,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &665081008
 MonoBehaviour:
@@ -31278,7 +31223,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &666502117
 SpriteRenderer:
@@ -32429,7 +32374,7 @@ Transform:
   - {fileID: 1917146955}
   - {fileID: 1891227007}
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &717641312
 PrefabInstance:
@@ -33112,7 +33057,7 @@ Transform:
   m_LocalScale: {x: 9, y: 12.500001, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &733261390
 SpriteRenderer:
@@ -33548,11 +33493,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4016485763761544068, guid: 59597627eea6ec444a4bce5b6c3b83d8,
+  ItemButton: {fileID: 4016485763761544068, guid: 59597627eea6ec444a4bce5b6c3b83d8,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 813171325}
-  pickUpNotif: {fileID: 1500357281}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate:
+  - {fileID: 813171325}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1500357281}
 --- !u!65 &763343985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33775,7 +33722,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 8.5781355, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &777615768
 SpriteRenderer:
@@ -34619,11 +34566,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 3300915879949329886, guid: 44d4357e67e0f5e488360fd13d942b47,
+  ItemButton: {fileID: 3300915879949329886, guid: 44d4357e67e0f5e488360fd13d942b47,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 0}
-  pickUpNotif: {fileID: 1384999626}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1384999626}
 --- !u!65 &813171327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34942,7 +34890,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &822086766
 SpriteRenderer:
@@ -35095,7 +35043,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &823299866
 SpriteRenderer:
@@ -37288,7 +37236,7 @@ Transform:
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &955517252
 SpriteRenderer:
@@ -37450,7 +37398,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &965240799
 SpriteRenderer:
@@ -37737,7 +37685,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &971193719
 SpriteRenderer:
@@ -38271,7 +38219,7 @@ Transform:
   m_LocalScale: {x: 12.500001, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!212 &983163867
 SpriteRenderer:
@@ -39083,7 +39031,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1001647887
 SpriteRenderer:
@@ -39145,7 +39093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1007171802}
   - component: {fileID: 1007171804}
-  - component: {fileID: 1007171803}
+  - component: {fileID: 1007171805}
   m_Layer: 0
   m_Name: moon_trigger
   m_TagString: triggerMoon
@@ -39167,21 +39115,6 @@ Transform:
   m_Father: {fileID: 21956213}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007171803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007171801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87b51d0de9564645969c4be7bdd6355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateBoxDrop: {fileID: 334741656}
-  activateLockDrop: {fileID: 1117065803}
-  activateMoonDrop: {fileID: 1993568096}
 --- !u!65 &1007171804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39195,6 +39128,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.0213013, y: 5.938866, z: 3.4435272}
   m_Center: {x: 3.7322922, y: 2.8620799, z: -1.2217636}
+--- !u!114 &1007171805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007171801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDrop: {fileID: 1993568096}
+  DraggedObjectId: fullMoon
 --- !u!1 &1008379861
 GameObject:
   m_ObjectHideFlags: 0
@@ -39226,7 +39173,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1008379863
 SpriteRenderer:
@@ -39290,11 +39237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4016485763761544068, guid: f3e11ebb9c4e82a40b21793b496fe316,
+  ItemButton: {fileID: 4016485763761544068, guid: b6a8c98943295cc41b5abe73c0a99bea,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 405803440}
-  pickUpNotif: {fileID: 1225973880}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate:
+  - {fileID: 405803440}
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 1953125368}
 --- !u!65 &1008379865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39339,7 +39288,7 @@ Transform:
   m_LocalScale: {x: 6.46, y: 9.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 180, y: 90, z: 0}
 --- !u!114 &1010045071
 MonoBehaviour:
@@ -42618,7 +42567,7 @@ GameObject:
   - component: {fileID: 1117065804}
   - component: {fileID: 1117065807}
   - component: {fileID: 1117065806}
-  - component: {fileID: 1117065805}
+  - component: {fileID: 1117065808}
   m_Layer: 5
   m_Name: lock_Drop
   m_TagString: lockNkey_receiver
@@ -42645,26 +42594,6 @@ RectTransform:
   m_AnchoredPosition: {x: -189.8, y: -57.98}
   m_SizeDelta: {x: 1.93, y: 6.56}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1117065805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117065803}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc14e251f385d94e929fab158dc0a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 0}
-  lockActive: {fileID: 0}
-  chestActive: {fileID: 0}
-  chestInactive: {fileID: 0}
-  deposit: {fileID: 1757398117}
-  boxHighlight: {fileID: 410355376}
-  lockHighlight: {fileID: 1645872976}
-  chestHighlight: {fileID: 0}
 --- !u!114 &1117065806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42702,6 +42631,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117065803}
   m_CullTransparentMesh: 0
+--- !u!114 &1117065808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117065803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - LockandKey
+  Deposit: {fileID: 1757398117}
+  WorldObjectsToActivate: []
+  WorldObjectsToDeposit:
+  - {fileID: 1645872976}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1117596592
 GameObject:
   m_ObjectHideFlags: 0
@@ -43560,15 +43510,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149945208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3492e5d67b6df6d4bbd5d1b1498bde8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Movement: {fileID: 0}
   Interact: {fileID: 0}
-  inventory: {fileID: 332702930}
-  combine: {fileID: 0}
+  Inventory: {fileID: 0}
 --- !u!65 &1149945210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43881,7 +43830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 2144317585}
+  ObjectsToActivate: {fileID: 0}
 --- !u!1 &1160053554
 GameObject:
   m_ObjectHideFlags: 0
@@ -43911,7 +43860,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1160053556
 SpriteRenderer:
@@ -45176,11 +45125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
-    type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 1913927322}
-  pickUpNotif: {fileID: 0}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!65 &1199159362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45933,7 +45882,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1240144644
 SpriteRenderer:
@@ -46718,7 +46667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278131900}
   - component: {fileID: 1278131902}
-  - component: {fileID: 1278131901}
+  - component: {fileID: 1278131903}
   m_Layer: 0
   m_Name: lock_trigger
   m_TagString: triggerLock
@@ -46740,21 +46689,6 @@ Transform:
   m_Father: {fileID: 21956213}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1278131901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278131899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87b51d0de9564645969c4be7bdd6355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateBoxDrop: {fileID: 334741656}
-  activateLockDrop: {fileID: 1117065803}
-  activateMoonDrop: {fileID: 0}
 --- !u!65 &1278131902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46768,6 +46702,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0446863, y: 6.421702, z: 3.4435272}
   m_Center: {x: 3.5587707, y: 2.620662, z: -1.2217636}
+--- !u!114 &1278131903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278131899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDrop: {fileID: 1117065803}
+  DraggedObjectId: lockNkey
 --- !u!1 &1280853424
 GameObject:
   m_ObjectHideFlags: 0
@@ -51821,7 +51769,7 @@ Transform:
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1289281657
 SpriteRenderer:
@@ -51902,7 +51850,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1291687898
 SpriteRenderer:
@@ -51984,7 +51932,7 @@ Transform:
   - {fileID: 906106431}
   - {fileID: 1078126983}
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1301910846
 PrefabInstance:
@@ -52593,7 +52541,6 @@ Transform:
   - {fileID: 881822371}
   - {fileID: 21312740}
   - {fileID: 1926996330}
-  - {fileID: 1835851541}
   - {fileID: 1008379862}
   - {fileID: 405803441}
   - {fileID: 1418547910}
@@ -52611,6 +52558,7 @@ Transform:
   - {fileID: 1359685984}
   - {fileID: 319202326}
   - {fileID: 292764198}
+  - {fileID: 1835851541}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53112,7 +53060,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1353750339
 SpriteRenderer:
@@ -53719,7 +53667,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 8.5781355, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &1359685985
 SpriteRenderer:
@@ -55220,7 +55168,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1418547911
 SpriteRenderer:
@@ -60812,7 +60760,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1479399264
 SpriteRenderer:
@@ -65407,7 +65355,6 @@ Transform:
   - {fileID: 798817854}
   - {fileID: 1716083748}
   - {fileID: 190633918}
-  - {fileID: 23153895}
   - {fileID: 239188333}
   - {fileID: 1835135071}
   - {fileID: 221070074}
@@ -65438,6 +65385,7 @@ Transform:
   - {fileID: 547314461}
   - {fileID: 1160053555}
   - {fileID: 1353750338}
+  - {fileID: 23153895}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66955,7 +66903,7 @@ Transform:
   m_LocalScale: {x: 12.500001, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!212 &1752360784
 SpriteRenderer:
@@ -67036,7 +66984,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1752615141
 SpriteRenderer:
@@ -73824,7 +73772,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1829470802
 SpriteRenderer:
@@ -74017,7 +73965,7 @@ Transform:
   - {fileID: 2132942284}
   - {fileID: 1724009333}
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1832580492
 SpriteRenderer:
@@ -74159,7 +74107,7 @@ Transform:
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1835135072
 SpriteRenderer:
@@ -74242,7 +74190,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 7
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1835851542
 SpriteRenderer:
@@ -76736,7 +76684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 581728553}
+  ObjectsToActivate: {fileID: 581728553}
 --- !u!114 &1896531580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76779,7 +76727,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1906111236
 SpriteRenderer:
@@ -76860,7 +76808,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1907497156
 SpriteRenderer:
@@ -78199,7 +78147,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1935317607
 SpriteRenderer:
@@ -84871,6 +84819,7 @@ GameObject:
   - component: {fileID: 1993568100}
   - component: {fileID: 1993568099}
   - component: {fileID: 1993568098}
+  - component: {fileID: 1993568101}
   m_Layer: 5
   m_Name: moon_Drop
   m_TagString: fullMoon_receiver
@@ -84954,6 +84903,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993568096}
   m_CullTransparentMesh: 0
+--- !u!114 &1993568101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993568096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - fullmoon
+  Deposit: {fileID: 1757398117}
+  WorldObjectsToActivate:
+  - {fileID: 1008379861}
+  WorldObjectsToDeposit:
+  - {fileID: 1394381252}
+  - {fileID: 1835851540}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2000351380
 GameObject:
   m_ObjectHideFlags: 0
@@ -85571,7 +85543,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2007635640
 MonoBehaviour:
@@ -85873,7 +85845,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2013919206
 SpriteRenderer:
@@ -86473,14 +86445,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab47cc764750efe4a9d85c90bc0e9794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactIcon: {fileID: 791750266}
-  interactIcon_Light: {fileID: 1286298761}
-  interactIcon_Door: {fileID: 1448652161}
-  interactIcon_Stairs: {fileID: 1771816629}
-  interactIcon_GrabObject: {fileID: 1445787784}
-  interactIcon_To_Lobby: {fileID: 803635028}
-  interactIcon_To_LivingRoom: {fileID: 1555117662}
-  interactIcon_Task: {fileID: 773409485}
+  InteractIcon:
+  - {fileID: 791750266}
+  - {fileID: 1286298761}
+  - {fileID: 1448652161}
+  - {fileID: 1771816629}
+  - {fileID: 803635028}
+  - {fileID: 1555117662}
+  - {fileID: 1445787784}
+  - {fileID: 773409485}
   animator: {fileID: 2031181122}
   Invenanimator: {fileID: 0}
 --- !u!95 &2031181122
@@ -86839,7 +86812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 352114786}
+  ObjectsToActivate: {fileID: 352114786}
 --- !u!95 &2041836180
 Animator:
   serializedVersion: 3
@@ -87448,7 +87421,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 1664894722}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2056420865
 SpriteRenderer:
@@ -87510,7 +87483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056974765}
   - component: {fileID: 2056974767}
-  - component: {fileID: 2056974768}
+  - component: {fileID: 2056974766}
   m_Layer: 0
   m_Name: box_trigger
   m_TagString: triggerBox
@@ -87532,6 +87505,20 @@ Transform:
   m_Father: {fileID: 21956213}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056974766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056974764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4da01131c12594a80f0143d9b5c1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDrop: {fileID: 334741656}
+  DraggedObjectId: boxItem
 --- !u!65 &2056974767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87545,21 +87532,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0446863, y: 6.421702, z: 3.4435272}
   m_Center: {x: 3.5587707, y: 2.620662, z: -1.2217636}
---- !u!114 &2056974768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056974764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87b51d0de9564645969c4be7bdd6355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateBoxDrop: {fileID: 334741656}
-  activateLockDrop: {fileID: 1117065803}
-  activateMoonDrop: {fileID: 0}
 --- !u!1 &2061502271
 GameObject:
   m_ObjectHideFlags: 0
@@ -87751,7 +87723,7 @@ Transform:
   m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 1}
   m_Children: []
   m_Father: {fileID: 1327673543}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2093452880
 SpriteRenderer:
@@ -88132,11 +88104,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 5108980190633864406, guid: f796c3c49bde06d4f883db36cf2c1f57,
+  ItemButton: {fileID: 5108980190633864406, guid: f796c3c49bde06d4f883db36cf2c1f57,
     type: 3}
-  deposit: {fileID: 1757398117}
-  gameActivate: {fileID: 1665413673}
-  pickUpNotif: {fileID: 1499610719}
+  Deposit: {fileID: 1757398117}
+  ObjectsToActivate:
+  - {fileID: 1665413673}
+  ObjectsToDeposit:
+  - {fileID: 2128634283}
+  PickUpNotif: {fileID: 1499610719}
 --- !u!65 &2128634287
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -18,6 +18,12 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     private GameObject objectHighlight;
     private SpriteRenderer objectHighlightSprite;
 
+    //Other Object to check before showing Highlights
+    public string ObjectToBeChecked;
+    private GameObject objectCheck;
+    private bool hasObjectToCheck;
+
+
     //Draggable Dragged Object Id
     public string ObjectId;
 
@@ -28,8 +34,22 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     }
     private void Awake()
     {
-        objectHighlight = GameObject.Find(ObjectHighlightName);
-        objectHighlightSprite = objectHighlight.GetComponent<SpriteRenderer>();
+        //Find Highlight by Name
+        if (ObjectHighlightName != string.Empty)
+        {
+            objectHighlight = GameObject.Find(ObjectHighlightName);
+            objectHighlightSprite = objectHighlight.GetComponent<SpriteRenderer>();
+        }
+
+
+        //Find Objects to be Checked
+        if (ObjectToBeChecked != string.Empty)
+        {
+            objectCheck = GameObject.Find(ObjectToBeChecked);
+            hasObjectToCheck = true;
+        }
+
+
 
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -71,18 +91,53 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     private void Update()
     {
-        //Activate HighLight
-        if (isDragging)
+        
+        if (!hasObjectToCheck)
         {
-            objectHighlightSprite.enabled = true;
+            ToggleHighlight();
         }
 
-        //DeActivate HighLight
-        if (!isDragging)
+        if (hasObjectToCheck)
         {
-            objectHighlightSprite.enabled = false;
+            ToggleHighlightCheckObject();
         }
+
 
     }
 
+    private void ToggleHighlight()
+    {
+        if (objectHighlightSprite != null)
+        {
+            //Activate HighLight
+            if (isDragging)
+            {
+                objectHighlightSprite.enabled = true;
+            }
+
+            //DeActivate HighLight
+            if (!isDragging)
+            {
+                objectHighlightSprite.enabled = false;
+            }
+        }
+    }
+
+    private void ToggleHighlightCheckObject()
+    {
+        if (objectHighlightSprite != null)
+        {
+            //Activate HighLight
+            if (isDragging && objectCheck == null)
+            {
+                objectHighlightSprite.enabled = true;
+            }
+
+            //DeActivate HighLight
+            if (!isDragging && objectCheck == null)
+            {
+                objectHighlightSprite.enabled = false;
+            }
+        }
+    }
 }
