@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13442,6 +13442,7 @@ MonoBehaviour:
   Callback:
     m_PersistentCalls:
       m_Calls: []
+  SoundClip: {fileID: 0}
 --- !u!1 &338070388
 GameObject:
   m_ObjectHideFlags: 0
@@ -42652,6 +42653,7 @@ MonoBehaviour:
   Callback:
     m_PersistentCalls:
       m_Calls: []
+  SoundClip: {fileID: 0}
 --- !u!1 &1117596592
 GameObject:
   m_ObjectHideFlags: 0
@@ -43830,7 +43832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsToActivate: {fileID: 0}
+  ObjectsToActivate: {fileID: 2144317585}
 --- !u!1 &1160053554
 GameObject:
   m_ObjectHideFlags: 0
@@ -84926,6 +84928,7 @@ MonoBehaviour:
   Callback:
     m_PersistentCalls:
       m_Calls: []
+  SoundClip: {fileID: 0}
 --- !u!1 &2000351380
 GameObject:
   m_ObjectHideFlags: 0
