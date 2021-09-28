@@ -85517,7 +85517,6 @@ GameObject:
   - component: {fileID: 1993568097}
   - component: {fileID: 1993568100}
   - component: {fileID: 1993568099}
-  - component: {fileID: 1993568098}
   - component: {fileID: 1993568101}
   m_Layer: 5
   m_Name: moon_Drop
@@ -85545,26 +85544,6 @@ RectTransform:
   m_AnchoredPosition: {x: -310.199, y: -61.354}
   m_SizeDelta: {x: 4.202342, y: 3.603222}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1993568098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993568096}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc14e251f385d94e929fab158dc0a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 0}
-  lockActive: {fileID: 0}
-  chestActive: {fileID: 1008379861}
-  chestInactive: {fileID: 1835851540}
-  deposit: {fileID: 1757398117}
-  boxHighlight: {fileID: 0}
-  lockHighlight: {fileID: 0}
-  chestHighlight: {fileID: 1394381252}
 --- !u!114 &1993568099
 MonoBehaviour:
   m_ObjectHideFlags: 0
