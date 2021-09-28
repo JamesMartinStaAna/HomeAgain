@@ -2394,9 +2394,9 @@ GameObject:
   - component: {fileID: 92844631}
   - component: {fileID: 92844632}
   - component: {fileID: 92844633}
-  - component: {fileID: 92844634}
-  - component: {fileID: 92844635}
   - component: {fileID: 92844636}
+  - component: {fileID: 92844628}
+  - component: {fileID: 92844629}
   m_Layer: 0
   m_Name: activator
   m_TagString: Untagged
@@ -2418,6 +2418,36 @@ Transform:
   m_Father: {fileID: 21956213}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92844628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92844626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd7e2376b08dbc42aabb973ce33cb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateNotif: {fileID: 1775442612}
+  Deposit: {fileID: 1757398117}
+  ObjectToBeChecked: fixedDoll
+--- !u!114 &92844629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92844626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd7e2376b08dbc42aabb973ce33cb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateNotif: {fileID: 25739819}
+  Deposit: {fileID: 1757398117}
+  ObjectToBeChecked: fullMoon
 --- !u!65 &92844631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2466,34 +2496,6 @@ MonoBehaviour:
   boxView: {fileID: 1217043992}
   lockView: {fileID: 728712920}
   deposit: {fileID: 1757398117}
---- !u!114 &92844634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92844626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af5cc56b1682a3b40a836c3d62bcb8da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moonView: {fileID: 25739819}
-  deposit: {fileID: 1757398117}
---- !u!114 &92844635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92844626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71df5e95a29c474408b4db25deb5db0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dollView: {fileID: 1775442612}
-  deposit: {fileID: 1757398117}
 --- !u!114 &92844636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2506,8 +2508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd7e2376b08dbc42aabb973ce33cb9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterView: {fileID: 789123800}
-  deposit: {fileID: 1757398117}
+  ActivateNotif: {fileID: 789123800}
+  Deposit: {fileID: 1757398117}
+  ObjectToBeChecked: letter
 --- !u!1 &97921769
 GameObject:
   m_ObjectHideFlags: 0
