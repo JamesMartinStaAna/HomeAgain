@@ -1623,11 +1623,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 3300915879949329886, guid: 44d4357e67e0f5e488360fd13d942b47,
-    type: 3}
-  deposit: {fileID: 0}
-  gameActivate: {fileID: 0}
-  pickUpNotif: {fileID: 0}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!65 &54794175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3702,11 +3702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4629053196612712906, guid: 6dc99539b05c5d74baa157cc932295c5,
-    type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 1010734342}
-  pickUpNotif: {fileID: 858845160}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!65 &154249083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3832,14 +3832,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab47cc764750efe4a9d85c90bc0e9794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactIcon: {fileID: 1037366631}
-  interactIcon_Light: {fileID: 652332420}
-  interactIcon_Door: {fileID: 2065052479}
-  interactIcon_Stairs: {fileID: 510987740}
-  interactIcon_GrabObject: {fileID: 893126798}
-  interactIcon_To_Lobby: {fileID: 1810054148}
-  interactIcon_To_LivingRoom: {fileID: 1740253310}
-  interactIcon_Task: {fileID: 1579066033}
+  InteractIcon:
+  - {fileID: 1037366631}
+  - {fileID: 652332420}
+  - {fileID: 2065052479}
+  - {fileID: 510987740}
+  - {fileID: 1810054148}
+  - {fileID: 1740253310}
+  - {fileID: 893126798}
+  - {fileID: 1579066033}
   animator: {fileID: 161141105}
   Invenanimator: {fileID: 247129838}
 --- !u!95 &161141105
@@ -13768,8 +13769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 1699730971}
   Interact: {fileID: 1895672849}
-  inventory: {fileID: 1116471410}
-  combine: {fileID: 0}
+  Inventory: {fileID: 0}
 --- !u!1 &714191865
 GameObject:
   m_ObjectHideFlags: 0
@@ -19991,7 +19991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ea6228b543fc54084ea093c85a0fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameActive: {fileID: 0}
+  ObjectsToActivate: {fileID: 0}
 --- !u!95 &803263149
 Animator:
   serializedVersion: 3
@@ -22331,8 +22331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 1699730971}
   Interact: {fileID: 1895672849}
-  inventory: {fileID: 1116471410}
-  combine: {fileID: 0}
+  Inventory: {fileID: 0}
 --- !u!65 &902069307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45553,11 +45552,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 380177621830777707, guid: 9e93c4cf9bc760745a8876b3b339c0d7,
-    type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 1021650857}
-  pickUpNotif: {fileID: 140322434}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!65 &1342390474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59445,8 +59444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 1699730971}
   Interact: {fileID: 1895672849}
-  inventory: {fileID: 1116471410}
-  combine: {fileID: 0}
+  Inventory: {fileID: 0}
 --- !u!65 &1776650012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68177,11 +68175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b9b555df887d84ab0aa716b7ef30a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 2181742216930859216, guid: a5ca51b14a184f047944e5f582f35bac,
-    type: 3}
-  deposit: {fileID: 1562941645}
-  gameActivate: {fileID: 320237253}
-  pickUpNotif: {fileID: 153842803}
+  ItemButton: {fileID: 0}
+  Deposit: {fileID: 0}
+  ObjectsToActivate: []
+  ObjectsToDeposit: []
+  PickUpNotif: {fileID: 0}
 --- !u!1 &1927639515
 GameObject:
   m_ObjectHideFlags: 0
