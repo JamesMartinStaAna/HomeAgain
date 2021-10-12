@@ -77698,6 +77698,8 @@ GameObject:
   - component: {fileID: 1912110705}
   - component: {fileID: 1912110704}
   - component: {fileID: 1912110703}
+  - component: {fileID: 1912110706}
+  - component: {fileID: 1912110707}
   m_Layer: 5
   m_Name: doll_Drop
   m_TagString: doll_receiver
@@ -77731,7 +77733,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912110701}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16aee634bc34931408bd378317d84e4b, type: 3}
   m_Name: 
@@ -77779,6 +77781,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912110701}
   m_CullTransparentMesh: 0
+--- !u!114 &1912110706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912110701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d837bbb2a59c35445b47494e28176e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReceivableItems:
+  - doll
+  Deposit: {fileID: 1757398117}
+  WorldObjectsToActivate:
+  - {fileID: 1332701185}
+  - {fileID: 99831876}
+  WorldObjectsToDeposit:
+  - {fileID: 186585442}
+  Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  SoundClip: {fileID: 0}
+--- !u!114 &1912110707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912110701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb40b29a33749a408427074cdedefad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 4016485763761544068, guid: 50630efe96477cd4188e5cdc9b26a9cc,
+    type: 3}
 --- !u!1 &1912625588
 GameObject:
   m_ObjectHideFlags: 0

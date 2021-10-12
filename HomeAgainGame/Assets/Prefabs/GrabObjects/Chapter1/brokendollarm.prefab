@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9099543455582458233}
   - component: {fileID: 1506020914385240754}
   - component: {fileID: 1502824948111430269}
-  - component: {fileID: -7675487426256159467}
   - component: {fileID: 8468170653562044870}
   - component: {fileID: -3226952965633377893}
   - component: {fileID: 5286779544504082346}
@@ -91,29 +90,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &-7675487426256159467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016485763761544068}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a767f3ca22ec2246be1446c688d6215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  boxHighlight: {fileID: 0}
-  boxHighlightsprite: {fileID: 0}
-  lockHighlight: {fileID: 0}
-  lockHighlightsprite: {fileID: 0}
-  chestHighlight: {fileID: 0}
-  chestHighlightsprite: {fileID: 0}
-  dollHighlight: {fileID: 0}
-  dollHighlightsprite: {fileID: 0}
-  letterHighlight: {fileID: 0}
-  letterHighlightsprite: {fileID: 0}
 --- !u!114 &8468170653562044870
 MonoBehaviour:
   m_ObjectHideFlags: 0
