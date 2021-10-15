@@ -75,6 +75,7 @@ TagManager:
   - letter_receiver
   - triggerTrash
   - spoonNfork
+  - scissors
   layers:
   - Default
   - TransparentFX
