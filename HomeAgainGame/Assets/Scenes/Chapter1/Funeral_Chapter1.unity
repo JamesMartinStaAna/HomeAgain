@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -9154,6 +9154,7 @@ GameObject:
   - component: {fileID: 190633921}
   - component: {fileID: 190633920}
   - component: {fileID: 190633919}
+  - component: {fileID: 190633922}
   m_Layer: 0
   m_Name: Hallway_drawer
   m_TagString: grab_object
@@ -9257,6 +9258,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &190633922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190633917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: cbd6349b104daa94392783fde05b8a76, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 9df37e7d99fa40c4694ba46d01f2ab51, type: 3}
 --- !u!1 &195115517
 GameObject:
   m_ObjectHideFlags: 0
@@ -13028,8 +13043,6 @@ GameObject:
   m_Component:
   - component: {fileID: 320913374}
   - component: {fileID: 320913375}
-  - component: {fileID: 320913377}
-  - component: {fileID: 320913376}
   m_Layer: 0
   m_Name: plant4
   m_TagString: view
@@ -13101,32 +13114,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &320913376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320913373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9701ea9880b57da4687368b06c05d890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objView: {fileID: 1820287595}
---- !u!65 &320913377
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320913373}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6100001, y: 0.5500001, z: 2.1199408}
-  m_Center: {x: 0, y: 0, z: -0.9599704}
 --- !u!224 &323495816 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
@@ -15713,6 +15700,7 @@ GameObject:
   - component: {fileID: 405803444}
   - component: {fileID: 405803443}
   - component: {fileID: 405803442}
+  - component: {fileID: 405803445}
   m_Layer: 0
   m_Name: Tresure Chest open grab2
   m_TagString: grab_object
@@ -15816,6 +15804,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &405803445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405803440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: a69cbbd95f30f98429e0939a8b3623ba, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 85ac7202a1bbb7d4a8526b4d1db1aeff, type: 3}
 --- !u!1 &409680250
 GameObject:
   m_ObjectHideFlags: 0
@@ -30951,6 +30953,7 @@ GameObject:
   - component: {fileID: 641037453}
   - component: {fileID: 641037452}
   - component: {fileID: 641037451}
+  - component: {fileID: 641037454}
   m_Layer: 0
   m_Name: Board
   m_TagString: view
@@ -31048,6 +31051,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &641037454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641037449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 7381fa7de785fc547b486a567303220a, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 84cf6007cdcb26445bcf882b53cabc7e, type: 3}
 --- !u!1 &645981112
 GameObject:
   m_ObjectHideFlags: 0
@@ -33896,6 +33913,7 @@ GameObject:
   - component: {fileID: 763343982}
   - component: {fileID: 763343985}
   - component: {fileID: 763343984}
+  - component: {fileID: 763343986}
   m_Layer: 0
   m_Name: cardboard_box
   m_TagString: grab_object
@@ -33999,6 +34017,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.57000005, y: 0.7847494, z: 2.2350698}
   m_Center: {x: 0, y: 0.20237455, z: -0.09976268}
+--- !u!114 &763343986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763343981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: e4a8d03ee7fc76f489f734abf17769b6, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 5041821cee41013449cdd2712197966d, type: 3}
 --- !u!1 &768643752
 GameObject:
   m_ObjectHideFlags: 0
@@ -34189,6 +34221,7 @@ GameObject:
   - component: {fileID: 777615768}
   - component: {fileID: 777615770}
   - component: {fileID: 777615771}
+  - component: {fileID: 777615769}
   m_Layer: 0
   m_Name: rug
   m_TagString: grab_object
@@ -34260,6 +34293,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &777615769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777615766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: e470e65d7a86b8746af3ad27f421352a, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 55eaeaee069f9194e9bd5edcce030a7a, type: 3}
 --- !u!65 &777615770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35033,6 +35080,7 @@ GameObject:
   - component: {fileID: 813171328}
   - component: {fileID: 813171327}
   - component: {fileID: 813171326}
+  - component: {fileID: 813171330}
   m_Layer: 0
   m_Name: cardboard_box open
   m_TagString: grab_object
@@ -35135,6 +35183,20 @@ Transform:
   m_Father: {fileID: 29260524}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813171330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813171325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 1eddeedf60726454bb10a9db7bea8708, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 7f1c97dcb8d7be7439ebe69dbf2f1cb7, type: 3}
 --- !u!1 &813903565
 GameObject:
   m_ObjectHideFlags: 0
@@ -39737,6 +39799,7 @@ GameObject:
   - component: {fileID: 1008379863}
   - component: {fileID: 1008379865}
   - component: {fileID: 1008379864}
+  - component: {fileID: 1008379866}
   m_Layer: 0
   m_Name: Tresure Chest open grab
   m_TagString: grab_object
@@ -39840,6 +39903,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7200001, y: 0.74274164, z: 2.5046797}
   m_Center: {x: 0.000000960297, y: 0.14137109, z: -1.1523399}
+--- !u!114 &1008379866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008379861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: a69cbbd95f30f98429e0939a8b3623ba, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 85ac7202a1bbb7d4a8526b4d1db1aeff, type: 3}
 --- !u!1 &1010045069
 GameObject:
   m_ObjectHideFlags: 0
@@ -44742,6 +44819,7 @@ GameObject:
   - component: {fileID: 1172959547}
   - component: {fileID: 1172959549}
   - component: {fileID: 1172959548}
+  - component: {fileID: 1172959550}
   m_Layer: 0
   m_Name: MB_window 2 (1)
   m_TagString: view
@@ -44839,6 +44917,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1970205, y: 0.94700134, z: 3.1222663}
   m_Center: {x: 0.03239345, y: -0.25016275, z: -1.4611332}
+--- !u!114 &1172959550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172959545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 46c9d7c771e2d3d41b62ff2732dc2e67, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: bcb3be3beaadf68489e6d55d2ce7f8ee, type: 3}
 --- !u!1 &1177715180
 GameObject:
   m_ObjectHideFlags: 0
@@ -74894,6 +74986,7 @@ GameObject:
   - component: {fileID: 1835851542}
   - component: {fileID: 1835851544}
   - component: {fileID: 1835851543}
+  - component: {fileID: 1835851545}
   m_Layer: 0
   m_Name: Tresure Chest
   m_TagString: view
@@ -74991,6 +75084,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6324413, y: 0.7283765, z: 1.7014561}
   m_Center: {x: 0.04378027, y: 0.1341884, z: -0.75072825}
+--- !u!114 &1835851545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835851540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 94f52916f851c3f46ba2d28caad799a2, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: cc08315375a6e0444b4b92d75e6c0a10, type: 3}
 --- !u!1 &1836083132
 GameObject:
   m_ObjectHideFlags: 0
@@ -86267,6 +86374,7 @@ GameObject:
   - component: {fileID: 2007635642}
   - component: {fileID: 2007635641}
   - component: {fileID: 2007635640}
+  - component: {fileID: 2007635643}
   m_Layer: 0
   m_Name: painting1
   m_TagString: view
@@ -86364,6 +86472,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2007635643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007635638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 2253753d980671a45b680b596bdcaf78, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: e755a0ffc92e82841895e03aa2e68788, type: 3}
 --- !u!1 &2008735236
 GameObject:
   m_ObjectHideFlags: 0
@@ -88764,6 +88886,7 @@ GameObject:
   - component: {fileID: 2128634285}
   - component: {fileID: 2128634287}
   - component: {fileID: 2128634286}
+  - component: {fileID: 2128634288}
   m_Layer: 0
   m_Name: desk
   m_TagString: grab_object
@@ -88868,6 +88991,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22878277, y: 0.7352128, z: 2.9470205}
   m_Center: {x: -0.49596566, y: -0.14356804, z: -1.3735104}
+--- !u!114 &2128634288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128634283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: f1f8bcafb9c873047939bd1377060df6, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 1f5f6be0fdd9f194c86e6be1ad4e4b5b, type: 3}
 --- !u!1 &2129017810
 GameObject:
   m_ObjectHideFlags: 0

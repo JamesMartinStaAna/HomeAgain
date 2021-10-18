@@ -76,6 +76,10 @@ TagManager:
   - triggerTrash
   - spoonNfork
   - scissors
+  - portrait
+  - frame
+  - familyportrait
+  - trashbag
   layers:
   - Default
   - TransparentFX

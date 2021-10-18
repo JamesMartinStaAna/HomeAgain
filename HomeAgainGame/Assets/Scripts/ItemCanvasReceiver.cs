@@ -24,7 +24,7 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
     {
 
     }
-
+    
     public void OnDrop(PointerEventData eventData)
     {
         RectTransform draggedObject = eventData.pointerDrag.GetComponent<RectTransform>();

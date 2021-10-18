@@ -9160,6 +9160,7 @@ GameObject:
   - component: {fileID: 230365100}
   - component: {fileID: 230365102}
   - component: {fileID: 230365101}
+  - component: {fileID: 230365103}
   m_Layer: 0
   m_Name: plant3 (1)
   m_TagString: view
@@ -9257,6 +9258,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1606793, y: 0.5500001, z: 2.10174}
   m_Center: {x: 0.015061696, y: 0, z: -0.95087004}
+--- !u!114 &230365103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230365098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: dd8fd996708eaac44867870381921d44, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: a1c2de68861f99b41bceb735f1b7fb0f, type: 3}
 --- !u!1 &232674300
 GameObject:
   m_ObjectHideFlags: 0
@@ -10735,6 +10750,7 @@ GameObject:
   - component: {fileID: 320913375}
   - component: {fileID: 320913377}
   - component: {fileID: 320913376}
+  - component: {fileID: 320913378}
   m_Layer: 0
   m_Name: plant4
   m_TagString: view
@@ -10828,10 +10844,24 @@ BoxCollider:
   m_GameObject: {fileID: 320913373}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.6100001, y: 0.5500001, z: 2.1199408}
   m_Center: {x: 0, y: 0, z: -0.9599704}
+--- !u!114 &320913378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320913373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: dd8fd996708eaac44867870381921d44, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: a1c2de68861f99b41bceb735f1b7fb0f, type: 3}
 --- !u!224 &323495816 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8869160543603263533, guid: c14dab0eadc605241a98042f6067464e,
@@ -19110,6 +19140,7 @@ GameObject:
   - component: {fileID: 562682637}
   - component: {fileID: 562682636}
   - component: {fileID: 562682635}
+  - component: {fileID: 562682638}
   m_Layer: 0
   m_Name: Family_Portrait-small
   m_TagString: view
@@ -19207,6 +19238,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &562682638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562682633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 9e414fc899fe30041a1281a836294d06, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: c52b6b606ba393847bd5ee4c21b91d69, type: 3}
 --- !u!1 &569447531
 GameObject:
   m_ObjectHideFlags: 0
@@ -25058,6 +25103,7 @@ GameObject:
   - component: {fileID: 641037453}
   - component: {fileID: 641037452}
   - component: {fileID: 641037451}
+  - component: {fileID: 641037454}
   m_Layer: 0
   m_Name: Board
   m_TagString: view
@@ -25155,6 +25201,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &641037454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641037449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 7381fa7de785fc547b486a567303220a, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 84cf6007cdcb26445bcf882b53cabc7e, type: 3}
 --- !u!1001 &659764822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68288,6 +68348,8 @@ GameObject:
   - component: {fileID: 2007635642}
   - component: {fileID: 2007635641}
   - component: {fileID: 2007635640}
+  - component: {fileID: 2007635643}
+  - component: {fileID: 2007635644}
   m_Layer: 0
   m_Name: painting1
   m_TagString: view
@@ -68385,6 +68447,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2007635643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007635638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 2253753d980671a45b680b596bdcaf78, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: e755a0ffc92e82841895e03aa2e68788, type: 3}
+--- !u!114 &2007635644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007635638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 2253753d980671a45b680b596bdcaf78, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: e755a0ffc92e82841895e03aa2e68788, type: 3}
 --- !u!1 &2008735236
 GameObject:
   m_ObjectHideFlags: 0

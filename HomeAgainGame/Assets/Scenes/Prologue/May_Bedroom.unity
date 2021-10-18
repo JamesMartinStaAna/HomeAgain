@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3995,6 +3995,7 @@ GameObject:
   - component: {fileID: 154249084}
   - component: {fileID: 154249083}
   - component: {fileID: 154249082}
+  - component: {fileID: 154249086}
   m_Layer: 0
   m_Name: kitchen counter open
   m_TagString: grab_object
@@ -4098,6 +4099,20 @@ Transform:
   m_Father: {fileID: 794726917}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154249086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154249081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 297bd5feae237ed4385510a727c1e6cc, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: b7410dd26a48b9a4798de2e633045667, type: 3}
 --- !u!224 &155394166 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3206031115063680630, guid: 3d477bc7871e41445852cd1cf4d14d9c,
@@ -6147,6 +6162,7 @@ GameObject:
   - component: {fileID: 289013855}
   - component: {fileID: 289013857}
   - component: {fileID: 289013858}
+  - component: {fileID: 289013856}
   m_Layer: 0
   m_Name: Dad_Mug_pickup
   m_TagString: grab_object
@@ -6218,6 +6234,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &289013856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289013853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 8063bf08b8ae6604fb0bff3d8251e0b1, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: b6230aab045f5784aaa79c5cbeb4cf9b, type: 3}
 --- !u!65 &289013857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11929,6 +11959,7 @@ GameObject:
   - component: {fileID: 589269179}
   - component: {fileID: 589269178}
   - component: {fileID: 589269177}
+  - component: {fileID: 589269180}
   m_Layer: 0
   m_Name: May_Mug_pickup
   m_TagString: grab_object
@@ -12031,6 +12062,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &589269180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589269175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: d1c4904cfabc72a4f915d76334e40578, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 91015ed12fd5647469c0bac79c4bba01, type: 3}
 --- !u!1 &603838293
 GameObject:
   m_ObjectHideFlags: 0
@@ -20904,6 +20949,7 @@ GameObject:
   - component: {fileID: 806881608}
   - component: {fileID: 806881610}
   - component: {fileID: 806881609}
+  - component: {fileID: 806881611}
   m_Layer: 0
   m_Name: Mom_Mug_pickup
   m_TagString: grab_object
@@ -21006,6 +21052,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.13740925, y: 1.0040643, z: 3.8345575}
   m_Center: {x: 0.0036932826, y: 0.10332143, z: -0.26921368}
+--- !u!114 &806881611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806881606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: e4585b27eabae6c4695ba7dfcf731a02, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 0b582a8f9e5c6d74aba9756a066e061b, type: 3}
 --- !u!1 &807801544
 GameObject:
   m_ObjectHideFlags: 0
@@ -46054,6 +46114,7 @@ GameObject:
   - component: {fileID: 1342390475}
   - component: {fileID: 1342390474}
   - component: {fileID: 1342390473}
+  - component: {fileID: 1342390476}
   m_Layer: 0
   m_Name: 'vent_cabinets closed '
   m_TagString: grab_object
@@ -46157,6 +46218,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1342390476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342390471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: e1776561b3395784091ab26714844315, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 9480174d8563efc4cba386223ac3968c, type: 3}
 --- !u!1001 &1344826091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47264,6 +47339,7 @@ GameObject:
   - component: {fileID: 1378915620}
   - component: {fileID: 1378915623}
   - component: {fileID: 1378915622}
+  - component: {fileID: 1378915624}
   m_Layer: 0
   m_Name: vent_cabinets
   m_TagString: view
@@ -47361,6 +47437,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3191433, y: 1.1974083, z: 2.5397666}
   m_Center: {x: -1.4074202, y: -0.0063839657, z: -1.1698829}
+--- !u!114 &1378915624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378915619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: e1776561b3395784091ab26714844315, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 9480174d8563efc4cba386223ac3968c, type: 3}
 --- !u!1 &1381419119
 GameObject:
   m_ObjectHideFlags: 0
@@ -55900,6 +55990,7 @@ GameObject:
   - component: {fileID: 1557406900}
   - component: {fileID: 1557406902}
   - component: {fileID: 1557406901}
+  - component: {fileID: 1557406903}
   m_Layer: 0
   m_Name: footrest_pickup
   m_TagString: grab_object
@@ -56002,6 +56093,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19, y: 0.5973979, z: 2.2523758}
   m_Center: {x: 0, y: 0.24369895, z: 0.32520008}
+--- !u!114 &1557406903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557406898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: c5183d62cbc889943a85c2d6264d9c23, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: a150940b447d02b4186b0358e27596a4, type: 3}
 --- !u!1 &1560058093
 GameObject:
   m_ObjectHideFlags: 0
@@ -57619,7 +57724,6 @@ MonoBehaviour:
   Deposit: {fileID: 1562941645}
   WorldObjectsToActivate:
   - {fileID: 1135712674}
-  - {fileID: 1365830949}
   WorldObjectsToDeposit:
   - {fileID: 610474960}
   - {fileID: 1428441377}
@@ -60402,6 +60506,7 @@ GameObject:
   - component: {fileID: 1748254286}
   - component: {fileID: 1748254289}
   - component: {fileID: 1748254288}
+  - component: {fileID: 1748254290}
   m_Layer: 0
   m_Name: closeref
   m_TagString: view
@@ -60499,6 +60604,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14051056, y: 0.8755585, z: 2.5354986}
   m_Center: {x: 1.0599709, y: -0.011858114, z: -1.1677489}
+--- !u!114 &1748254290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748254285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: 13c470d08acaecc419661ed33602e2fa, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 08653a901d62dfe4eb6c3086f1a76df5, type: 3}
 --- !u!1 &1748651030
 GameObject:
   m_ObjectHideFlags: 0
@@ -70048,6 +70167,7 @@ GameObject:
   - component: {fileID: 1925672480}
   - component: {fileID: 1925672482}
   - component: {fileID: 1925672483}
+  - component: {fileID: 1925672484}
   m_Layer: 0
   m_Name: Hallway_drawer
   m_TagString: grab_object
@@ -70151,6 +70271,20 @@ MonoBehaviour:
   - {fileID: 320237253}
   ObjectsToDeposit: []
   PickUpNotif: {fileID: 153842803}
+--- !u!114 &1925672484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925672479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e237d69f63bd80348b313b2c41861a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveSprite: {fileID: 21300000, guid: cbd6349b104daa94392783fde05b8a76, type: 3}
+  InactiveSprite: {fileID: 21300000, guid: 9df37e7d99fa40c4694ba46d01f2ab51, type: 3}
 --- !u!1 &1927639515
 GameObject:
   m_ObjectHideFlags: 0
