@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1900841210175956438}
   - component: {fileID: 1900841210175956439}
   - component: {fileID: 1900841210175956432}
-  - component: {fileID: 7130931875225053303}
+  - component: {fileID: 7170257716459659855}
+  - component: {fileID: -2915247028968802655}
   m_Layer: 5
   m_Name: Trashbag
   m_TagString: trashbag
@@ -105,7 +106,7 @@ MonoBehaviour:
   ObjectHighlightName: 
   ObjectToBeChecked: 
   ObjectId: trashbag
---- !u!114 &7130931875225053303
+--- !u!114 &7170257716459659855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReceivableItems:
-  - portrait
+  - familyportrait
   Deposit: {fileID: 0}
   WorldObjectsToActivate: []
   WorldObjectsToDeposit: []
@@ -126,3 +127,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   SoundClip: {fileID: 0}
+--- !u!114 &-2915247028968802655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900841210175956434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3659597a342a39e4ab5481241fecbab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton:
+  - {fileID: 1968176693591137459, guid: 0658bfd68b98f3d40b8f3fa08e9fe493, type: 3}

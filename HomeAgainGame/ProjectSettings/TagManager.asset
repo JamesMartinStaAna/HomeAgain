@@ -80,6 +80,11 @@ TagManager:
   - frame
   - familyportrait
   - trashbag
+  - scissors2
+  - trashbagportrait
+  - trashbagbear
+  - trashbagflowers
+  - brokenbear
   layers:
   - Default
   - TransparentFX

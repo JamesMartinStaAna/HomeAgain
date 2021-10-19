@@ -12,18 +12,6 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
     public List<GameObject> WorldObjectsToDeposit;
     public UnityEvent Callback;
     public AudioSource SoundClip;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     
     public void OnDrop(PointerEventData eventData)
     {

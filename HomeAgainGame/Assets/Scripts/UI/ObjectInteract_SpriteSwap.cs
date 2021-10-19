@@ -12,13 +12,21 @@ public class ObjectInteract_SpriteSwap : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
+
     private void OnTriggerEnter(Collider collision)
     {
-        spriteRenderer.sprite = ActiveSprite;
+        if (collision.CompareTag("Player"))
+        {
+            spriteRenderer.sprite = ActiveSprite;
+        }
+        
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        spriteRenderer.sprite = InactiveSprite;
+        if (collision.CompareTag("Player"))
+        {
+            spriteRenderer.sprite = InactiveSprite;
+        }
     }
 }
