@@ -50,7 +50,6 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         }
 
 
-
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         
@@ -66,7 +65,7 @@ public class DragObject : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta;  
 
         if(rectTransform.anchoredPosition == eventData.delta)
         {

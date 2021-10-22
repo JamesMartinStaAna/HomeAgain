@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2915247028968802655, guid: de512b2b28a0806458008fe21ff86784,
+        type: 3}
+      propertyPath: itemButton.Array.data[0]
+      value: 
+      objectReference: {fileID: 1714477597188921679, guid: 79a9b89214ef8f34d9247c8b40c96a0e,
+        type: 3}
     - target: {fileID: 1900841210175956432, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
       propertyPath: ObjectId
@@ -120,7 +126,7 @@ PrefabInstance:
     - target: {fileID: 1900841210175956434, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
       propertyPath: m_Name
-      value: Trashbagbear
+      value: Trashbagbear Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1900841210175956434, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
@@ -136,7 +142,12 @@ PrefabInstance:
     - target: {fileID: 7170257716459659855, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
       propertyPath: ReceivableItems.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7170257716459659855, guid: de512b2b28a0806458008fe21ff86784,
+        type: 3}
+      propertyPath: ReceivableItems.Array.data[0]
+      value: flowers
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de512b2b28a0806458008fe21ff86784, type: 3}

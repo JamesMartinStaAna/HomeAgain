@@ -85,6 +85,9 @@ TagManager:
   - trashbagbear
   - trashbagflowers
   - brokenbear
+  - flower
+  - trashbagflowers2
+  - chairobject
   layers:
   - Default
   - TransparentFX

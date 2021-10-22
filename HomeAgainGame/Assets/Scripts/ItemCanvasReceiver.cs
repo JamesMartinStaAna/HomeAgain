@@ -22,6 +22,7 @@ public class ItemCanvasReceiver : MonoBehaviour, IDropHandler
 
         // Check if the draggedObject is valid
         DragObject draggableObjectComponent = draggedObject.GetComponent<DragObject>();
+        draggedObject.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         if (draggableObjectComponent != null)
         {
             // Check if the id is valid

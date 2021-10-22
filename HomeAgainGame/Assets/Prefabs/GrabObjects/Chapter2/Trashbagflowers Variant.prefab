@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: ObjectId
       value: trashbagflowers
       objectReference: {fileID: 0}
+    - target: {fileID: 1900841210175956432, guid: de512b2b28a0806458008fe21ff86784,
+        type: 3}
+      propertyPath: ObjectHighlightName
+      value: GarbageSparkle
+      objectReference: {fileID: 0}
     - target: {fileID: 1900841210175956433, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 1900841210175956434, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
       propertyPath: m_Name
-      value: Trashbagflowers
+      value: Trashbagflowers Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1900841210175956434, guid: de512b2b28a0806458008fe21ff86784,
         type: 3}
@@ -133,5 +138,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1b872f17ad6c6014ab4353a806abb6b7,
         type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 1900841210175956439, guid: de512b2b28a0806458008fe21ff86784,
+        type: 3}
+      propertyPath: m_IgnoreParentGroups
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -2915247028968802655, guid: de512b2b28a0806458008fe21ff86784, type: 3}
+    - {fileID: 7170257716459659855, guid: de512b2b28a0806458008fe21ff86784, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de512b2b28a0806458008fe21ff86784, type: 3}
