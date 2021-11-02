@@ -125,6 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2334245207061342999, guid: 0dea639f071af314b99321f98777e7d9, type: 3}
-  ObjectHighlightName: 
+  ObjectHighlightName: dollSparkle
   ObjectToBeChecked: 
   ObjectId: doll
