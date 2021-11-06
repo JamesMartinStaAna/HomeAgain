@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class TriggerDetector : MonoBehaviour
 {
-    public GameObject gameActive;
+    public List<GameObject> ObjectsToActivate;
+    public List<GameObject> ObjectsToDeposit;
+    public GameObject Deposit;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,22 @@ public class TriggerDetector : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-        gameActive.SetActive(true);
+
+        if (ObjectsToActivate != null)
+        {
+            foreach (GameObject obj in ObjectsToActivate)
+            {
+                obj.SetActive(true);
+            }
+        }
+
+        if (ObjectsToDeposit != null)
+        {
+            foreach (GameObject obj in ObjectsToDeposit)
+            {
+                obj.transform.position = Deposit.transform.position;
+            }
+        }
 
     }
 

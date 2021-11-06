@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 1714477597188921677, guid: 79a9b89214ef8f34d9247c8b40c96a0e,
         type: 3}
       propertyPath: ObjectHighlightName
-      value: 
+      value: AtticSparkle
       objectReference: {fileID: 0}
     - target: {fileID: 1714477597188921677, guid: 79a9b89214ef8f34d9247c8b40c96a0e,
         type: 3}
@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 1714477597188921679, guid: 79a9b89214ef8f34d9247c8b40c96a0e,
         type: 3}
       propertyPath: m_Name
-      value: Trashbagflowers 2 Variant
+      value: Trashbagflowers 2 Variant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1714477597188921679, guid: 79a9b89214ef8f34d9247c8b40c96a0e,
         type: 3}
